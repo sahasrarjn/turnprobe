@@ -21,6 +21,7 @@ import soundfile as sf
 
 ROOT = Path(__file__).resolve().parents[1]
 PAUSE = ROOT / "runs/20260913-225604-pause-sweep-openai"
+PAUSE_V1 = ROOT / "runs/20260913-190315-pause-sweep-openai"  # source of the hero phone-number trial
 OVERLAP = [ROOT / "runs/20260913-190825-overlap-openai", ROOT / "runs/20260913-225604-overlap-openai"]
 FRAG = ROOT / "runs/20260913-225604-fragments-openai"
 OUT = Path(sys.argv[1]) if len(sys.argv) > 1 else ROOT / "docs/post1"
@@ -82,7 +83,7 @@ def example(run: Path, tid: str, name: str) -> dict:
             "marks": d["marks"], "analysis": {k: d["analysis"].get(k) for k in ("outcome", "final_gap_ms", "reply_gap_ms", "stop_latency_ms")},
             "user": envelope(x[:, 0], sr), "model": envelope(x[:, 1], sr), "duration_ms": round(len(x) / sr * 1000),
             "events": sorted(keep, key=lambda e: e["t_ms"]),
-            "responses": [{"text": texts.get(rid, ""), "status": status.get(rid)} for rid in status]}
+            "responses": [{"text": texts.get(rid, ""), "status": status.get(rid), "heard": rid in first_audio} for rid in status]}
 
 
 def trials(run: Path):
@@ -120,21 +121,31 @@ def main():
               f"gap p50/p90={data['gaps'][key]['p50']}/{data['gaps'][key]['p90']} anatomy={data['anatomy'][key]} no_resp={data['meta'][key]['no_response']}")
         print("            by pause: " + " ".join(f"{p['pause']}:{p['split']}/{p['audible']}/{p['n']}" for p in pts))
 
+    for s, key in SET.items():
+        rs = [r for r in pr if r["setting"] == s]
+        print(f"  {key:9} heard by kind " + str({k: f"{v[0]}/{v[1]}" for k, v in data['meta'][key]['audible_by_kind'].items()})
+              + " | gen p50 " + str(data['anatomy'][key]['generation']) + " | commit p50 " + str(data['anatomy'][key]['commit_offset']))
+    data["meta"]["pause_trials"] = [len(pr), len([r for r in json.loads("[" + ",".join((PAUSE / "summary.jsonl").read_text().split("\n")[:-1]) + "]")])]
+
     # classifier ceilings: decision time minus commit, max per setting
+    kept = {r["trial_id"] for r in pr}
     for s, key in SET.items():
         waits = []
         for d in trials(PAUSE):
-            if d["setting"] != s or d["analysis"].get("outcome") not in VALID:
+            if d["setting"] != s or d["trial_id"] not in kept:
                 continue
             a = d["analysis"]
             if a.get("endpoint_lag_ms") is not None and a.get("vad_end_offset_ms") is not None:
                 waits.append(a["endpoint_lag_ms"] - a["vad_end_offset_ms"])
         data["meta"][key]["classifier_wait_max"] = round(max(waits)) if waits else None
         data["meta"][key]["classifier_wait_p95"] = pct(waits, 95)
-        print(f"  {key:9} classifier wait after commit: p95 {pct(waits, 95)} max {max(waits) if waits else None}")
+        data["meta"][key]["classifier_wait_p99"] = pct(waits, 99)
+        print(f"  {key:9} classifier wait after commit: p95 {pct(waits, 95)} p99 {pct(waits, 99)} max {max(waits) if waits else None}")
 
     ov = []
+    ov_rows_all = []
     for run in OVERLAP:
+        ov_rows_all += rows_of(run)
         voice = json.loads((run / "run.json").read_text())["config"].get("voice") or "coral"
         for r in rows_of(run):
             if r["outcome"] in ("kept_talking", "stopped_then_replied", "stopped_silent"):
@@ -159,8 +170,9 @@ def main():
     ocfg = json.loads((OVERLAP[0] / "run.json").read_text())
     data["meta"]["clips"], data["meta"]["question"] = ocfg["clips"], ocfg["question"]
     data["meta"]["stimuli"] = json.loads((PAUSE / "run.json").read_text())["stimuli"]
-    allrows = rows_of(PAUSE) + sum((rows_of(r) for r in OVERLAP), []) + fr
+    allrows = pr + ov_rows_all + fr
     data["meta"]["sessions"] = sum(1 for r in allrows if r["outcome"] not in ("error", "skipped_budget"))
+    print(f"analyzed sessions: pause {len(pr)} + overlap {len(ov)} + fragments {len(fr)}")
     data["meta"]["cost_usd"] = round(sum(r.get("cost_usd", 0) for r in allrows), 2)
     lat = [r["send_lateness_ms"]["p99"] for r in allrows if r.get("send_lateness_ms")]
     data["meta"]["harness_p99_max"] = round(max(lat), 2)
@@ -181,8 +193,11 @@ def main():
         ev = [json.loads(l) for l in (PAUSE / "trials" / d["trial_id"] / "events.jsonl").read_text().splitlines() if l.strip()]
         text = "".join(e.get("delta", "") for e in ev if e["type"] == "transcript")
         return -("finish" in text.lower() or "go ahead" in text.lower())
-    t = pick(PAUSE, lambda d: SET[d["setting"]] == "server" and d["stimulus"] == "phone" and d["analysis"]["outcome"] == "cut_in", prefer=cut_quote)
-    data["examples"].append(example(PAUSE, t, "audible-cut-in"))
+    def v1_quote(d):
+        ev = [json.loads(l) for l in (PAUSE_V1 / "trials" / d["trial_id"] / "events.jsonl").read_text().splitlines() if l.strip()]
+        return "still reading it out" in "".join(e.get("delta", "") for e in ev if e["type"] == "transcript")
+    t = pick(PAUSE_V1, lambda d: SET[d["setting"]] == "server" and d["stimulus"] == "phone" and d["analysis"]["outcome"] == "cut_in" and v1_quote(d))
+    data["examples"].append(example(PAUSE_V1, t, "audible-cut-in"))
     t = pick(PAUSE, lambda d: SET[d["setting"]] == "sem_low" and d["stimulus"] == "capital" and (d["analysis"].get("final_gap_ms") or 0) > 7000,
              prefer=lambda d: d["pause_ms"])
     data["examples"].append(example(PAUSE, t, "patient-wait"))
