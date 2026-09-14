@@ -75,13 +75,23 @@ def example(run: Path, tid: str, name: str) -> dict:
         if e["type"] == "audio" and not e.get("ignored") and e.get("response_id") not in first_audio:
             first_audio[e.get("response_id")] = e["t_ms"]
     keep += [{"t_ms": t, "type": "first_audio"} for t in first_audio.values()]
+    duration_ms = round(len(x) / sr * 1000)
+    # The trace shows a window around the events; the clip is cut to exactly that window so the
+    # player's clock, the waveform and the axis agree (0:00 in the player = left edge of the trace).
+    marks = d["marks"]
+    t0 = marks.get("A.start", marks.get("model.onset", 0.0))
+    t1 = max(first_audio.values())
+    w0 = max(0, math.floor((t0 - 700) / 500) * 500)
+    w1 = min(duration_ms, round(t1 + 2600))
+    fade = 0.25
     (OUT / "audio").mkdir(parents=True, exist_ok=True)
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(tdir / "audio.wav"), "-codec:a", "libmp3lame",
-                    "-b:a", "64k", str(OUT / "audio" / f"{name}.mp3")], check=True)
+    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-ss", f"{w0 / 1000:.3f}", "-t", f"{(w1 - w0) / 1000:.3f}",
+                    "-i", str(tdir / "audio.wav"), "-af", f"afade=t=out:st={(w1 - w0) / 1000 - fade:.3f}:d={fade}",
+                    "-codec:a", "libmp3lame", "-b:a", "64k", str(OUT / "audio" / f"{name}.mp3")], check=True)
     return {"name": name, "trial": f"{run.name}/{tid}", "setting": SET[d["setting"]],
             "meta": {k: d.get(k) for k in ("stimulus", "voice", "pause_ms", "clip", "offset_ms")},
             "marks": d["marks"], "analysis": {k: d["analysis"].get(k) for k in ("outcome", "final_gap_ms", "reply_gap_ms", "stop_latency_ms")},
-            "user": envelope(x[:, 0], sr), "model": envelope(x[:, 1], sr), "duration_ms": round(len(x) / sr * 1000),
+            "user": envelope(x[:, 0], sr), "model": envelope(x[:, 1], sr), "duration_ms": duration_ms, "window": [w0, w1],
             "events": sorted(keep, key=lambda e: e["t_ms"]),
             "responses": [{"text": texts.get(rid, ""), "status": status.get(rid), "heard": rid in first_audio} for rid in status]}
 
