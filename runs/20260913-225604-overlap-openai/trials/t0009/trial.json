@@ -1,0 +1,115 @@
+{
+  "trial_id": "t0009",
+  "setting": "semantic_vad:eagerness=auto",
+  "rep": 0,
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "started": "2026-09-13T23:03:47.309100-07:00",
+  "rerun": true,
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 9135.7265,
+    "X.start": 11635.708333333334,
+    "X.end": 14525.708333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9130.0,
+        9650.0
+      ],
+      [
+        10070.0,
+        11800.0
+      ],
+      [
+        16690.0,
+        17030.0
+      ],
+      [
+        17400.0,
+        18940.0
+      ],
+      [
+        19340.0,
+        19940.0
+      ],
+      [
+        20430.0,
+        22160.0
+      ],
+      [
+        22470.0,
+        25130.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 158.4,
+    "stop_latency_ms": 158.8,
+    "talk_over_ms": 164.3,
+    "reply_gap_ms": 2164.3,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick, steady checklist to stabilize that connection.First, move closer to your router and watch if the drops stop, because distance and walls can make Wi-Fi flaky. Next, reboot the router by",
+    "reply_text": "First step: restart your router and modem. Turn them off, wait about 10 to 20 seconds, then power them back on and let everything reconnect fully.",
+    "cost_usd": 0.039,
+    "send_lateness_ms": {
+      "p50": 0.785208,
+      "p99": 1.3115635000000057,
+      "max": 5.322666
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENu55j9FoewdxeFiKiTxp",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369427,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

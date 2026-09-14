@@ -1,0 +1,92 @@
+{
+  "trial_id": "t0186",
+  "setting": "semantic_vad:eagerness=low",
+  "stimulus": "capital",
+  "pause_ms": 1800,
+  "rep": 1,
+  "kind": "incomplete",
+  "started": "2026-09-13T19:03:15.998836-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2680.0,
+    "B.start": 4480.0,
+    "B.end": 5695.0
+  },
+  "analysis": {
+    "outcome": "clean",
+    "first_onset_ms": 14210.0,
+    "split_in_pause": false,
+    "final_gap_ms": 8515.0,
+    "endpoint_lag_ms": 7927.4,
+    "vad_end_offset_ms": 665.0,
+    "generation_lag_ms": 561.4,
+    "responses": 1,
+    "cancelled": 0,
+    "talk_over_ms": 0.0,
+    "cost_usd": 0.01161,
+    "truncations": 0,
+    "api_errors": [],
+    "model_segments": [
+      [
+        14210.0,
+        15340.0
+      ]
+    ],
+    "send_lateness_ms": {
+      "p50": 1.291375,
+      "p99": 2.5632552200000003,
+      "max": 9.423167
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "low"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqbjqg7WxjjjL4DPQfhl",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789356075,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "low",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

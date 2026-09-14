@@ -1,0 +1,49 @@
+{
+  "trial_id": "t0001",
+  "setting": "mock:silence_duration_ms=500,response_delay_ms=200,response_ms=6000",
+  "clip": "stop",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:07:34.906072-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 5820.0,
+    "model.onset": 6519.729958,
+    "X.start": 9019.75,
+    "X.end": 10069.75
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        6520.0,
+        9070.0
+      ],
+      [
+        10770.0,
+        16780.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 42.4,
+    "stop_latency_ms": 42.6,
+    "talk_over_ms": 50.2,
+    "reply_gap_ms": 700.2,
+    "responses_after_overlap": 1,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.0,
+    "send_lateness_ms": {
+      "p50": 1.2289165,
+      "p99": 2.1323157800000003,
+      "max": 2.854458
+    }
+  },
+  "adapter": {
+    "system": "mock",
+    "silence_duration_ms": 500,
+    "response_delay_ms": 200,
+    "threshold_db": -45
+  }
+}

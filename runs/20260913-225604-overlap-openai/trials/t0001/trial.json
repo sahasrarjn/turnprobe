@@ -1,0 +1,129 @@
+{
+  "trial_id": "t0001",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.374842-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8144.675083,
+    "X.start": 10644.666666666666,
+    "X.end": 13534.666666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8140.0,
+        8370.0
+      ],
+      [
+        8790.0,
+        10790.0
+      ],
+      [
+        14950.0,
+        15350.0
+      ],
+      [
+        15770.0,
+        17600.0
+      ],
+      [
+        18360.0,
+        20980.0
+      ],
+      [
+        21510.0,
+        22660.0
+      ],
+      [
+        23090.0,
+        25200.0
+      ],
+      [
+        25840.0,
+        26790.0
+      ],
+      [
+        27170.0,
+        28420.0
+      ],
+      [
+        29070.0,
+        32440.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 138.5,
+    "stop_latency_ms": 138.9,
+    "talk_over_ms": 145.3,
+    "reply_gap_ms": 1415.3,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick, steady set of checks to get that connection stable again.First, move close to your router and see if the drops still happen, just to rule out weak signal. Next, restart your router and modem by unplugging them for",
+    "reply_text": "First, restart your gear in the right order. Turn off your router and modem, or your combined gateway, wait about 30 seconds, then power the modem back on first. When its lights are stable, power the router back on, and then wait for both to fully reconnect before you test your devices again.",
+    "cost_usd": 0.05008,
+    "send_lateness_ms": {
+      "p50": 0.632979,
+      "p99": 1.3424496599999987,
+      "max": 6.161083
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENtxdghgE1O0uaVWUL2ur",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789368965,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

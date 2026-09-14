@@ -1,0 +1,64 @@
+{
+  "experiment": "pause_sweep",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-13T22:35:44.314668-07:00",
+  "config": {
+    "system": "openai_live",
+    "settings": [
+      "default:"
+    ],
+    "pauses": [
+      300,
+      600,
+      900,
+      1200,
+      1800,
+      2500
+    ],
+    "reps": 3,
+    "stimuli": [
+      "booking",
+      "phone",
+      "capital",
+      "reservation"
+    ],
+    "tts": "openai",
+    "voice": "coral",
+    "model": null,
+    "concurrency": 3,
+    "out": "runs",
+    "seed": 7,
+    "budget_usd": 1.5
+  },
+  "tts": {
+    "provider": "openai",
+    "voice": "coral"
+  },
+  "stimuli": {
+    "booking": {
+      "kind": "incomplete",
+      "a": "I'd like to book a table for",
+      "b": "four people at seven tonight.",
+      "method": "continuous"
+    },
+    "phone": {
+      "kind": "dictation",
+      "a": "Sure, my phone number is four one five,",
+      "b": "five five five, zero one nine two.",
+      "method": "continuous"
+    },
+    "capital": {
+      "kind": "incomplete",
+      "a": "Can you tell me what the capital of",
+      "b": "Australia is?",
+      "method": "continuous"
+    },
+    "reservation": {
+      "kind": "complete",
+      "a": "I need to change my reservation.",
+      "b": "It's under the name Jordan.",
+      "method": "continuous"
+    }
+  },
+  "trials_planned": 72
+}

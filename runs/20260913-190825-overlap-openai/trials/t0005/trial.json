@@ -1,0 +1,106 @@
+{
+  "trial_id": "t0005",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T19:08:32.762210-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8269.99375,
+    "X.start": 10770.0,
+    "X.end": 12965.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8270.0,
+        8600.0
+      ],
+      [
+        9190.0,
+        10930.0
+      ],
+      [
+        14340.0,
+        17290.0
+      ],
+      [
+        17890.0,
+        18490.0
+      ],
+      [
+        18870.0,
+        25050.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 155.9,
+    "stop_latency_ms": 156.2,
+    "talk_over_ms": 160.0,
+    "reply_gap_ms": 1375.0,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s go through a quick, steady set of steps you can try right now.First, power off your modem and router, wait about 20 seconds, then turn them back on and let the lights settle.",
+    "reply_text": "The first step is to power-cycle your router and modem. Unplug them, wait about 10 to 15 seconds, then plug them back in and give them a minute to fully restart before you test your connection again.",
+    "cost_usd": 0.03656,
+    "send_lateness_ms": {
+      "p50": 1.449959,
+      "p99": 2.112537,
+      "max": 5.0455
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqRKslrmt9hNtGl6n9gN",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355431,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "trial_id": "t0011",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375370-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 9217.096167,
+    "X.start": 11717.083333333334,
+    "X.end": 15017.083333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9210.0,
+        9530.0
+      ],
+      [
+        9990.0,
+        11850.0
+      ],
+      [
+        16900.0,
+        20560.0
+      ],
+      [
+        21140.0,
+        24590.0
+      ],
+      [
+        25160.0,
+        30600.0
+      ],
+      [
+        31130.0,
+        38010.0
+      ],
+      [
+        38380.0,
+        40150.0
+      ],
+      [
+        40570.0,
+        44480.0
+      ],
+      [
+        44850.0,
+        47030.0
+      ],
+      [
+        47510.0,
+        52060.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 128.0,
+    "stop_latency_ms": 128.1,
+    "talk_over_ms": 132.9,
+    "reply_gap_ms": 1882.9,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a simple step-by-step reset and cleanup routine.First, move closer to the router and temporarily turn off anything that might interfere, like a microwave, baby monitor, or a crowded USB 3",
+    "reply_text": "If you don\u2019t know your router\u2019s password, first check the sticker on the router itself. Many have a default username and password printed on the bottom or back. If your internet provider gave you the router, you might also find the login in their app or on your account page.\n\nIf you still can\u2019t get in, you can reset the router to factory settings by pressing and holding the reset button, usually with a paperclip, for about 10 to 15 seconds. That wipes custom settings, so you\u2019ll need to set up the Wi-Fi name and password again, and any special configurations will be lost. After that, create a new strong password, write it down somewhere safe, and reconnect your devices.",
+    "cost_usd": 0.07711,
+    "send_lateness_ms": {
+      "p50": 0.235271,
+      "p99": 1.5382532499999981,
+      "max": 24.372542
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENu1VQuuTJQaBfsvVrrBS",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369205,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

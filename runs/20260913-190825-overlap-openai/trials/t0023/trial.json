@@ -1,0 +1,149 @@
+{
+  "trial_id": "t0023",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T19:08:32.762292-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8047.865958,
+    "X.start": 10547.875,
+    "X.end": 13092.875
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8050.0,
+        10680.0
+      ],
+      [
+        14390.0,
+        17680.0
+      ],
+      [
+        18140.0,
+        22120.0
+      ],
+      [
+        22670.0,
+        25920.0
+      ],
+      [
+        26240.0,
+        28400.0
+      ],
+      [
+        29060.0,
+        32320.0
+      ],
+      [
+        32950.0,
+        36690.0
+      ],
+      [
+        37340.0,
+        39840.0
+      ],
+      [
+        40210.0,
+        44250.0
+      ],
+      [
+        44670.0,
+        48520.0
+      ],
+      [
+        49190.0,
+        50440.0
+      ],
+      [
+        50800.0,
+        51750.0
+      ],
+      [
+        52300.0,
+        54720.0
+      ],
+      [
+        55140.0,
+        56800.0
+      ],
+      [
+        57200.0,
+        58120.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 122.6,
+    "stop_latency_ms": 123.0,
+    "talk_over_ms": 132.1,
+    "reply_gap_ms": 1297.1,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick routine you can try to steady that connection.First, restart your router and modem by unplugging them for about 20 seconds, then plug them back in and wait until all the lights settle. Next,",
+    "reply_text": "If you don\u2019t know the router password, first check the sticker on the router. Many still have the default username and password printed on the bottom or back. Next, look for a quick setup card or the original box, since some providers put the default login there.\n\nIf that doesn\u2019t work, try connecting with an Ethernet cable to a computer. Sometimes the router admin page will let you in more easily from a wired connection. Then open your browser and go to the router\u2019s address, often 192 dot 168 dot 1 dot 1, or 192 dot 168 dot 0 dot 1.\n\nIf you still can\u2019t log in, you can reset the router. Hold the reset pin for about 10 to 15 seconds, and it will return to factory settings. Just remember that resets wipe custom names and passwords. After that, you\u2019ll set a new Wi-Fi name and password yourself. If you\u2019d rather not reset, you can call your internet provider and ask them to help recover or replace the login details.",
+    "cost_usd": 0.10444,
+    "send_lateness_ms": {
+      "p50": 1.0542289999999999,
+      "p99": 2.10837225,
+      "max": 24.795083
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqYIOp5cgZWaFE1Tqisw",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355862,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

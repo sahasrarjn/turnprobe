@@ -1,0 +1,138 @@
+{
+  "trial_id": "t0033",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "right",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762332-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8311.879042,
+    "X.start": 10811.875,
+    "X.end": 11961.875
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8310.0,
+        8640.0
+      ],
+      [
+        9140.0,
+        10930.0
+      ],
+      [
+        17060.0,
+        17560.0
+      ],
+      [
+        17880.0,
+        21330.0
+      ],
+      [
+        21830.0,
+        24560.0
+      ],
+      [
+        25190.0,
+        29310.0
+      ],
+      [
+        29640.0,
+        32300.0
+      ],
+      [
+        32920.0,
+        38480.0
+      ],
+      [
+        39450.0,
+        41490.0
+      ],
+      [
+        41850.0,
+        48570.0
+      ],
+      [
+        48910.0,
+        51720.0
+      ],
+      [
+        52090.0,
+        55240.0
+      ],
+      [
+        56000.0,
+        56980.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 112.7,
+    "stop_latency_ms": 113.1,
+    "talk_over_ms": 118.1,
+    "reply_gap_ms": 5098.1,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick, steady checklist to stabilize your Wi\u2011Fi connection.First, move closer to your router and watch if the drop still happens; if it improves, signal strength is part of the problem. Next, restart your router",
+    "reply_text": "First, move closer to the router and watch if the connection stabilizes. If it does, signal strength could be part of the problem. Next, restart the router by unplugging it, waiting about 15 seconds, then plugging it back in and letting it fully reboot. Then, on your device, toggle Wi-Fi off and on, and forget the network and rejoin it with the password. After that, check for interference: turn off or move away from devices like microwaves, baby monitors, or crowded Bluetooth gadgets. Next, update your device\u2019s Wi-Fi drivers or system software, and if your router has a firmware update, install that too. Finally, if it still drops, try a different channel or band, like switching between 2.4 gigahertz and 5 gigahertz, and if that doesn\u2019t help, contact your internet provider or consider replacing the router.",
+    "cost_usd": 0.09356,
+    "send_lateness_ms": {
+      "p50": 0.365834,
+      "p99": 2.099774,
+      "max": 17.563292
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqca9sy14iuYMoSvl4sD",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789356128,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

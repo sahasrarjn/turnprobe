@@ -1,0 +1,87 @@
+{
+  "trial_id": "t0002",
+  "setting": "semantic_vad:eagerness=low",
+  "stimulus": "capital",
+  "voice": "ash",
+  "condition": "whole",
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.376171-07:00",
+  "marks": {
+    "U.start": 500.0,
+    "U.end": 4195.0
+  },
+  "analysis": {
+    "outcome": "clean",
+    "final_gap_ms": 1455.0,
+    "commit_after_end_ms": 725.0,
+    "decide_after_commit_ms": 128.1,
+    "turns_ended": 1,
+    "model_segments": [
+      [
+        5650.0,
+        7870.0
+      ],
+      [
+        8670.0,
+        11960.0
+      ]
+    ],
+    "cost_usd": 0.01165,
+    "send_lateness_ms": {
+      "p50": 0.6854169999999999,
+      "p99": 1.3816244099999984,
+      "max": 10.538667
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "low"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENtxubly6Ye4O5CAq8lhS",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789368982,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "low",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,115 @@
+{
+  "trial_id": "t0193",
+  "setting": "semantic_vad:eagerness=auto",
+  "stimulus": "address",
+  "kind": "dictation",
+  "voice": "ash",
+  "pause_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.409339-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 4005.0,
+    "B.start": 6505.0,
+    "B.end": 9575.0
+  },
+  "analysis": {
+    "outcome": "cut_in",
+    "first_onset_ms": 5460.0,
+    "split_in_pause": true,
+    "final_gap_ms": 1295.0,
+    "endpoint_lag_ms": 715.0,
+    "vad_end_offset_ms": 625.0,
+    "generation_lag_ms": 541.1,
+    "responses": 2,
+    "cancelled": 1,
+    "talk_over_ms": 155.0,
+    "truncations": 1,
+    "api_errors": [],
+    "short_in_pause": 1,
+    "short_over_user": 1,
+    "model_segments": [
+      [
+        5460.0,
+        5790.0
+      ],
+      [
+        6270.0,
+        6660.0
+      ],
+      [
+        10870.0,
+        11280.0
+      ],
+      [
+        11630.0,
+        14000.0
+      ],
+      [
+        14340.0,
+        14730.0
+      ],
+      [
+        15100.0,
+        16600.0
+      ]
+    ],
+    "cost_usd": 0.03559,
+    "send_lateness_ms": {
+      "p50": 1.4005204999999998,
+      "p99": 2.3224645500000034,
+      "max": 11.612666
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENuDoHdPQ15S9BhIsSwzI",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369968,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

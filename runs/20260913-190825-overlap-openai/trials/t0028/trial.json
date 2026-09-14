@@ -1,0 +1,169 @@
+{
+  "trial_id": "t0028",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762312-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8186.615417,
+    "X.start": 10686.625,
+    "X.end": 11166.625
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8180.0,
+        8580.0
+      ],
+      [
+        9140.0,
+        10770.0
+      ],
+      [
+        12350.0,
+        12660.0
+      ],
+      [
+        13170.0,
+        16130.0
+      ],
+      [
+        16590.0,
+        17100.0
+      ],
+      [
+        17410.0,
+        23580.0
+      ],
+      [
+        24140.0,
+        24550.0
+      ],
+      [
+        24880.0,
+        25930.0
+      ],
+      [
+        26270.0,
+        28250.0
+      ],
+      [
+        28560.0,
+        29790.0
+      ],
+      [
+        30350.0,
+        32090.0
+      ],
+      [
+        32480.0,
+        35970.0
+      ],
+      [
+        36600.0,
+        37480.0
+      ],
+      [
+        37800.0,
+        42270.0
+      ],
+      [
+        42900.0,
+        43170.0
+      ],
+      [
+        43490.0,
+        47890.0
+      ],
+      [
+        48210.0,
+        49290.0
+      ],
+      [
+        49970.0,
+        51480.0
+      ],
+      [
+        51880.0,
+        53190.0
+      ],
+      [
+        53700.0,
+        56200.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 98.5,
+    "stop_latency_ms": 98.7,
+    "talk_over_ms": 83.4,
+    "reply_gap_ms": 1183.4,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s go through a steady reset and check routine together. I\u2019ll keep it smooth and practical.First, move close to your router, then toggle Wi-Fi off and back on so your device reconnects cleanly. Next, restart the router: unplug",
+    "reply_text": "Okay, let\u2019s walk through a simple reset and cleanup routine together.First, power off your modem and router completely, then unplug them for about 20 seconds to clear any stuck state. Next, plug the modem back in, wait until all its lights look stable, then turn the router back on. After that, on your phone or computer, forget the Wi-Fi network and rejoin it by typing the password fresh. If it still drops, move closer to the router and try a different device to see if the issue is local to one gadget. Then, log into the router\u2019s admin page and check for firmware updates and auto-channel settings, which can improve stability. Finally, if it keeps happening, test with an Ethernet cable; if wired is stable, you may need a new router, less interference, or help from your internet provider.",
+    "cost_usd": 0.08925,
+    "send_lateness_ms": {
+      "p50": 1.418667,
+      "p99": 2.1276503,
+      "max": 5.720625
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqaFs8sQ5Vm64GsaaClZ",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355983,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

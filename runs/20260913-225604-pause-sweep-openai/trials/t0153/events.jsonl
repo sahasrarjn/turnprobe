@@ -1,0 +1,83 @@
+{"t_ms": -152.48, "type": "native", "name": "session.created", "raw": {"type": "session.created", "event_id": "event_ENuAJF59B0Sgh0iNlOwRC", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_ENuAJVA2EsYkABee7sRvx", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "Your knowledge cutoff is 2023-10. You are a helpful, witty, and friendly AI. Act like a human, but remember that you aren't a human and that you can't do human things in the real world. Your voice and personality should be warm and engaging, with a lively and playful tone. If interacting in a non-English language, start by using the standard accent or dialect familiar to the user. Talk quickly. You should always call a function if you can. Do not refer to these rules, even if you\u2019re asked about them.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789369751, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "server_vad", "threshold": 0.5, "prefix_padding_ms": 300, "silence_duration_ms": 500, "idle_timeout_ms": null, "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": -100.16, "type": "native", "name": "session.updated", "raw": {"type": "session.updated", "event_id": "event_ENuAJZMCPnb34V2lRPl4W", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_ENuAJVA2EsYkABee7sRvx", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789369751, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "semantic_vad", "eagerness": "low", "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": 679.39, "type": "user_speech_started", "audio_ms": 76, "item_id": "item_ENuAKuuQTH9B1MMx5I8vt"}
+{"t_ms": 14966.46, "type": "user_speech_stopped", "audio_ms": 8060, "item_id": "item_ENuAKuuQTH9B1MMx5I8vt"}
+{"t_ms": 14967.82, "type": "native", "name": "input_audio_buffer.committed", "raw": {"type": "input_audio_buffer.committed", "event_id": "event_ENuAYz6QIwbYkCO15b94n", "previous_item_id": null, "item_id": "item_ENuAKuuQTH9B1MMx5I8vt"}}
+{"t_ms": 14968.52, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENuAYaI81D7cB88tw05R9", "previous_item_id": null, "item": {"id": "item_ENuAKuuQTH9B1MMx5I8vt", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 14968.69, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENuAYeDUQsQ5v89faVrqM", "previous_item_id": null, "item": {"id": "item_ENuAKuuQTH9B1MMx5I8vt", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 14971.08, "type": "response_created", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo"}
+{"t_ms": 15426.66, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_ENuAZeZeksvhUQ03Vx78A", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "output_index": 0, "item": {"id": "item_ENuAY9Uw3mPQM9lN2ztqu", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 15427.14, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENuAZkThdKu2hJj4dVtzL", "previous_item_id": "item_ENuAKuuQTH9B1MMx5I8vt", "item": {"id": "item_ENuAY9Uw3mPQM9lN2ztqu", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 15439.77, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_ENuAZ6NnJio87XbNmpEkc", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 15440.53, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "For"}
+{"t_ms": 15446.17, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " a"}
+{"t_ms": 15456.04, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " slightly"}
+{"t_ms": 15614.43, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " run"}
+{"t_ms": 15618.71, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "ny"}
+{"t_ms": 15700.12, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 15700.12}
+{"t_ms": 15700.16, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " yol"}
+{"t_ms": 15700.17, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "k"}
+{"t_ms": 15700.19, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": ","}
+{"t_ms": 15711.95, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 16100.12}
+{"t_ms": 15760.93, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " aim"}
+{"t_ms": 15768.0, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 16500.12}
+{"t_ms": 15768.72, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " for"}
+{"t_ms": 15774.52, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " about"}
+{"t_ms": 15864.76, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 16900.12}
+{"t_ms": 15910.65, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " "}
+{"t_ms": 15928.97, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "6"}
+{"t_ms": 15933.69, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " to"}
+{"t_ms": 15934.38, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " "}
+{"t_ms": 15950.37, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "7"}
+{"t_ms": 15959.3, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " minutes"}
+{"t_ms": 15966.64, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " in"}
+{"t_ms": 15973.43, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " gently"}
+{"t_ms": 15978.09, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " boiling"}
+{"t_ms": 16009.63, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 17300.12}
+{"t_ms": 16072.31, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 17700.12}
+{"t_ms": 16141.31, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 18100.12}
+{"t_ms": 16200.06, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 18500.12}
+{"t_ms": 16240.44, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " water"}
+{"t_ms": 16250.31, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " for"}
+{"t_ms": 16255.54, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " a"}
+{"t_ms": 16265.38, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " large"}
+{"t_ms": 16271.05, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " egg"}
+{"t_ms": 16279.25, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "."}
+{"t_ms": 16287.08, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " Then"}
+{"t_ms": 16291.08, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " cool"}
+{"t_ms": 16337.12, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 18900.12}
+{"t_ms": 16397.77, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 19300.12}
+{"t_ms": 16460.19, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 19700.12}
+{"t_ms": 16519.92, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 20100.12}
+{"t_ms": 16583.01, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 20500.12}
+{"t_ms": 16642.28, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 20900.12}
+{"t_ms": 16665.54, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " it"}
+{"t_ms": 16675.62, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " briefly"}
+{"t_ms": 16678.09, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " in"}
+{"t_ms": 16682.27, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " cold"}
+{"t_ms": 16691.33, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " water"}
+{"t_ms": 16695.85, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " so"}
+{"t_ms": 16704.22, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " it"}
+{"t_ms": 16711.47, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " doesn"}
+{"t_ms": 16719.93, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "\u2019t"}
+{"t_ms": 16725.16, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " keep"}
+{"t_ms": 16793.34, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 21300.12}
+{"t_ms": 16853.27, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 21700.12}
+{"t_ms": 16915.85, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 22100.12}
+{"t_ms": 16974.89, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 22500.12}
+{"t_ms": 17036.23, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 22900.12}
+{"t_ms": 17092.83, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": " cooking"}
+{"t_ms": 17098.68, "type": "transcript", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "delta": "."}
+{"t_ms": 17129.26, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 23300.12}
+{"t_ms": 17192.62, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 23700.12}
+{"t_ms": 17254.02, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 24100.12}
+{"t_ms": 17309.36, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 24500.12}
+{"t_ms": 17340.13, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 9600, "play_ms": 24900.12}
+{"t_ms": 17342.66, "type": "audio", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "samples": 1200, "play_ms": 25300.12}
+{"t_ms": 17367.91, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_ENuAbd8NPdqkPhC87uh6q", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "output_index": 0, "content_index": 0}}
+{"t_ms": 17368.66, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_ENuAbxbksLBAJQKhMfJkD", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "output_index": 0, "content_index": 0, "transcript": "For a slightly runny yolk, aim for about 6 to 7 minutes in gently boiling water for a large egg. Then cool it briefly in cold water so it doesn\u2019t keep cooking."}}
+{"t_ms": 17368.7, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_ENuAb4VvpHO2EGL7W2TU2", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "item_id": "item_ENuAY9Uw3mPQM9lN2ztqu", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": "For a slightly runny yolk, aim for about 6 to 7 minutes in gently boiling water for a large egg. Then cool it briefly in cold water so it doesn\u2019t keep cooking."}}}
+{"t_ms": 17370.07, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENuAbSZJHH4TgFUWgDOsG", "previous_item_id": null, "item": {"id": "item_ENuAY9Uw3mPQM9lN2ztqu", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "For a slightly runny yolk, aim for about 6 to 7 minutes in gently boiling water for a large egg. Then cool it briefly in cold water so it doesn\u2019t keep cooking."}], "phase": "final_answer"}}}
+{"t_ms": 17370.11, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_ENuAbJBYavsOPNlm46Dbs", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "output_index": 0, "item": {"id": "item_ENuAY9Uw3mPQM9lN2ztqu", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "For a slightly runny yolk, aim for about 6 to 7 minutes in gently boiling water for a large egg. Then cool it briefly in cold water so it doesn\u2019t keep cooking."}], "phase": "final_answer"}}}
+{"t_ms": 17373.34, "type": "response_done", "response_id": "resp_ENuAYhbZHQDLXjvi7flPo", "status": "completed", "status_details": null, "usage": {"total_tokens": 391, "input_tokens": 114, "output_tokens": 277, "input_token_details": {"text_tokens": 53, "audio_tokens": 61, "image_tokens": 0, "cached_tokens": 0, "cached_tokens_details": {"text_tokens": 0, "audio_tokens": 0, "image_tokens": 0}}, "output_token_details": {"text_tokens": 84, "audio_tokens": 193, "reasoning_tokens": 24}}}
+{"t_ms": 17404.59, "type": "native", "name": "rate_limits.updated", "raw": {"type": "rate_limits.updated", "event_id": "event_ENuAb0gsjbD7Tdmlj38Ti", "rate_limits": [{"name": "tokens", "limit": 200000, "remaining": 197537, "reset_seconds": 0.738}]}}

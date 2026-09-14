@@ -1,0 +1,106 @@
+{
+  "trial_id": "t0006",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "stop",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762215-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8274.664416,
+    "X.start": 10774.666666666666,
+    "X.end": 12094.666666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8270.0,
+        8630.0
+      ],
+      [
+        9210.0,
+        10890.0
+      ],
+      [
+        13570.0,
+        13910.0
+      ],
+      [
+        14530.0,
+        15150.0
+      ],
+      [
+        15640.0,
+        19830.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 112.2,
+    "stop_latency_ms": 112.4,
+    "talk_over_ms": 115.3,
+    "reply_gap_ms": 1475.3,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s go step by step and steady to get that connection behaving again.First, get close to your router and watch if the drops still happen, because distance and interference can mimic a failing connection. Next,",
+    "reply_text": "Okay, stopping here. If you want, you can tell me what changed or what you\u2019d like to do instead, and I\u2019ll follow your lead.",
+    "cost_usd": 0.03451,
+    "send_lateness_ms": {
+      "p50": 1.233958,
+      "p99": 2.12546136,
+      "max": 13.2335
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqRpCXwp59iDyHTG3rDy",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355461,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

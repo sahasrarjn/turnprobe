@@ -1,0 +1,117 @@
+{
+  "trial_id": "t0009",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "stop",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762228-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8274.065583,
+    "X.start": 10774.083333333334,
+    "X.end": 12094.083333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8270.0,
+        8590.0
+      ],
+      [
+        9260.0,
+        10890.0
+      ],
+      [
+        13510.0,
+        13770.0
+      ],
+      [
+        14380.0,
+        14890.0
+      ],
+      [
+        15450.0,
+        16680.0
+      ],
+      [
+        17150.0,
+        19800.0
+      ],
+      [
+        20180.0,
+        20790.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 115.1,
+    "stop_latency_ms": 115.5,
+    "talk_over_ms": 115.9,
+    "reply_gap_ms": 1415.9,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s go step by step and steady things out\u2014this will be a quick walkthrough.First, move closer to the router and watch if the drops stop; that helps you rule out weak signal. Next, restart your router and",
+    "reply_text": "Okay, stopping. I won\u2019t continue the steps. If you want to pick it back up later or switch to something else, just say the word.",
+    "cost_usd": 0.03768,
+    "send_lateness_ms": {
+      "p50": 1.263354,
+      "p99": 2.1464535,
+      "max": 18.848875
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqSoxSKE2szbx0WdgLLj",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355522,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

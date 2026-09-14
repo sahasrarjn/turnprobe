@@ -1,0 +1,130 @@
+{
+  "trial_id": "t0004",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "okay",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375335-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 9272.564875,
+    "X.start": 11772.583333333334,
+    "X.end": 12287.583333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9270.0,
+        11890.0
+      ],
+      [
+        14030.0,
+        14520.0
+      ],
+      [
+        14860.0,
+        21170.0
+      ],
+      [
+        21740.0,
+        26190.0
+      ],
+      [
+        26550.0,
+        29060.0
+      ],
+      [
+        29660.0,
+        32110.0
+      ],
+      [
+        32420.0,
+        35400.0
+      ],
+      [
+        36160.0,
+        36650.0
+      ],
+      [
+        37020.0,
+        43270.0
+      ],
+      [
+        43830.0,
+        50640.0
+      ],
+      [
+        51180.0,
+        57300.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 115.4,
+    "stop_latency_ms": 115.5,
+    "talk_over_ms": 117.4,
+    "reply_gap_ms": 1742.4,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick, steady troubleshooting routine to pin down what\u2019s going on.First, restart everything in the chain: turn off your router and modem, wait about 20 seconds, then power them back on and give them a minute to reconnect.",
+    "reply_text": "First, power off your router and modem, wait about 20 seconds, then turn them back on and give them a minute to fully reconnect. Next, check the cable connections on the back of the router and modem, making sure they\u2019re snug, and if you use Ethernet, try a different port or cable. Then, move closer to the router and test again; if that helps, reposition the router higher and out in the open. After that, on your device, forget the Wi\u2011Fi network, reconnect, and carefully re-enter the password to clear any saved glitch. Next, update your device\u2019s Wi\u2011Fi drivers, or run system updates, and also check your router\u2019s firmware through its admin page. Finally, if it still drops, reduce interference by moving away from cordless phones and microwaves, switching the router channel, or temporarily trying a 5 gigahertz band, and then contact your internet provider if the problem continues.",
+    "cost_usd": 0.09409,
+    "send_lateness_ms": {
+      "p50": 0.408292,
+      "p99": 1.5864498800000073,
+      "max": 25.646625
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENtysEwDLS43mMhpRP2Yr",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369042,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

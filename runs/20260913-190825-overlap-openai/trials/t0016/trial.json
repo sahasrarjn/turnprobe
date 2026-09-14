@@ -1,0 +1,121 @@
+{
+  "trial_id": "t0016",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762263-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8222.518458,
+    "X.start": 10722.5,
+    "X.end": 12917.5
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8220.0,
+        8670.0
+      ],
+      [
+        9130.0,
+        10860.0
+      ],
+      [
+        14500.0,
+        15030.0
+      ],
+      [
+        15610.0,
+        16970.0
+      ],
+      [
+        17470.0,
+        19390.0
+      ],
+      [
+        19810.0,
+        23000.0
+      ],
+      [
+        23510.0,
+        24250.0
+      ],
+      [
+        24710.0,
+        28300.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 143.8,
+    "stop_latency_ms": 144.3,
+    "talk_over_ms": 137.5,
+    "reply_gap_ms": 1582.5,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick, practical sequence to stabilize your connection. I\u2019ll go step by step.First, move closer to your router and watch whether the drops stop, since distance and walls can weaken the signal. Next, restart your router",
+    "reply_text": "First step: power-cycle the basics. Turn off your Wi\u2011Fi on the device, then unplug the router and modem for about 10 to 15 seconds. Plug them back in, wait for the lights to stabilize, and then reconnect your device to the network.",
+    "cost_usd": 0.04694,
+    "send_lateness_ms": {
+      "p50": 1.2675,
+      "p99": 2.1295949999999992,
+      "max": 8.752917
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqVwh2KgAaGFkvmQCd7m",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355716,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

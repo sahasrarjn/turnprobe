@@ -1,0 +1,49 @@
+{
+  "trial_id": "t0001",
+  "setting": "mock:silence_duration_ms=800,response_delay_ms=150",
+  "stimulus": "booking",
+  "pause_ms": 1400,
+  "rep": 1,
+  "kind": "incomplete",
+  "started": "2026-09-13T18:35:15.698193-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2060.0,
+    "B.start": 3460.0,
+    "B.end": 5010.0
+  },
+  "analysis": {
+    "outcome": "cut_in",
+    "first_onset_ms": 3020.0,
+    "split_in_pause": true,
+    "final_gap_ms": 910.0,
+    "endpoint_lag_ms": 752.1,
+    "vad_end_offset_ms": -50.0,
+    "generation_lag_ms": 160.3,
+    "responses": 2,
+    "cancelled": 1,
+    "truncations": 1,
+    "api_errors": [],
+    "model_segments": [
+      [
+        3020.0,
+        3570.0
+      ],
+      [
+        5920.0,
+        8330.0
+      ]
+    ],
+    "send_lateness_ms": {
+      "p50": 2.053875,
+      "p99": 2.1722793599999983,
+      "max": 2.6545
+    }
+  },
+  "adapter": {
+    "system": "mock",
+    "silence_duration_ms": 800,
+    "response_delay_ms": 150,
+    "threshold_db": -45
+  }
+}

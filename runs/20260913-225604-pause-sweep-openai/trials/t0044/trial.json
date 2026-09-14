@@ -1,0 +1,95 @@
+{
+  "trial_id": "t0044",
+  "setting": "semantic_vad:eagerness=auto",
+  "stimulus": "order",
+  "kind": "complete",
+  "voice": "coral",
+  "pause_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.408723-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2330.0,
+    "B.start": 4830.0,
+    "B.end": 6575.0
+  },
+  "analysis": {
+    "outcome": "cut_in",
+    "first_onset_ms": 3600.0,
+    "split_in_pause": true,
+    "final_gap_ms": null,
+    "endpoint_lag_ms": null,
+    "vad_end_offset_ms": null,
+    "generation_lag_ms": null,
+    "responses": 1,
+    "cancelled": 1,
+    "talk_over_ms": 110.0,
+    "truncations": 1,
+    "api_errors": [],
+    "short_in_pause": 0,
+    "short_over_user": 0,
+    "model_segments": [
+      [
+        3600.0,
+        4940.0
+      ]
+    ],
+    "cost_usd": 0.01265,
+    "send_lateness_ms": {
+      "p50": 0.18283349999999998,
+      "p99": 1.0528937499999989,
+      "max": 8.749042
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENu1NNb4ny5Dz832fCZtN",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369197,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

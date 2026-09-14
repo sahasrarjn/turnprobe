@@ -1,0 +1,114 @@
+{
+  "trial_id": "t0034",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762336-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8340.253,
+    "X.start": 10840.25,
+    "X.end": 13035.25
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8340.0,
+        8890.0
+      ],
+      [
+        9400.0,
+        10980.0
+      ],
+      [
+        14590.0,
+        17960.0
+      ],
+      [
+        18530.0,
+        22760.0
+      ],
+      [
+        23180.0,
+        26500.0
+      ],
+      [
+        27080.0,
+        27650.0
+      ],
+      [
+        28080.0,
+        31510.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 141.9,
+    "stop_latency_ms": 142.5,
+    "talk_over_ms": 139.8,
+    "reply_gap_ms": 1554.8,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a steady checklist to get that connection behaving again.First, move closer to your router and make sure it\u2019s in the open, away from thick walls, metal, or things like microw",
+    "reply_text": "Step one is to check your router\u2019s placement and interference. Make sure it\u2019s out in the open, not tucked behind a TV or inside a cabinet, and not sitting next to things like microwaves or cordless bases. If you can, move it to a higher spot and closer to where you actually use the Wi\u2011Fi.",
+    "cost_usd": 0.0494,
+    "send_lateness_ms": {
+      "p50": 1.364667,
+      "p99": 2.21884816,
+      "max": 3.515084
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqcxNpyP1JYlzLIQcAOK",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789356151,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

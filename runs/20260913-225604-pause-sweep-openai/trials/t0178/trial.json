@@ -1,0 +1,103 @@
+{
+  "trial_id": "t0178",
+  "setting": "semantic_vad:eagerness=high",
+  "stimulus": "booking",
+  "kind": "incomplete",
+  "voice": "coral",
+  "pause_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.409281-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2585.0,
+    "B.start": 5085.0,
+    "B.end": 7220.0
+  },
+  "analysis": {
+    "outcome": "clean",
+    "first_onset_ms": 8690.0,
+    "split_in_pause": true,
+    "final_gap_ms": 1470.0,
+    "endpoint_lag_ms": 758.7,
+    "vad_end_offset_ms": 680.0,
+    "generation_lag_ms": 698.9,
+    "responses": 2,
+    "cancelled": 1,
+    "talk_over_ms": 0.0,
+    "truncations": 0,
+    "api_errors": [],
+    "short_in_pause": 0,
+    "short_over_user": 0,
+    "model_segments": [
+      [
+        8690.0,
+        9030.0
+      ],
+      [
+        9490.0,
+        10890.0
+      ],
+      [
+        11620.0,
+        15670.0
+      ]
+    ],
+    "cost_usd": 0.01323,
+    "send_lateness_ms": {
+      "p50": 0.829625,
+      "p99": 2.1130576399999996,
+      "max": 9.122833
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "high"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENuCQNt3V30UOcLSVMyxR",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369882,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "high",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

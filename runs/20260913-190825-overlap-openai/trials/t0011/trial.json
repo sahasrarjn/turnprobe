@@ -1,0 +1,158 @@
+{
+  "trial_id": "t0011",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "mmhm",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T19:08:32.762236-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8337.392375,
+    "X.start": 10837.375,
+    "X.end": 11367.375
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8330.0,
+        8850.0
+      ],
+      [
+        9230.0,
+        10950.0
+      ],
+      [
+        13030.0,
+        13450.0
+      ],
+      [
+        13820.0,
+        17430.0
+      ],
+      [
+        18040.0,
+        18510.0
+      ],
+      [
+        18860.0,
+        20730.0
+      ],
+      [
+        21170.0,
+        23700.0
+      ],
+      [
+        24290.0,
+        25310.0
+      ],
+      [
+        25620.0,
+        26390.0
+      ],
+      [
+        26810.0,
+        29460.0
+      ],
+      [
+        30050.0,
+        30520.0
+      ],
+      [
+        30950.0,
+        32530.0
+      ],
+      [
+        32900.0,
+        35020.0
+      ],
+      [
+        35610.0,
+        40320.0
+      ],
+      [
+        40950.0,
+        41390.0
+      ],
+      [
+        41790.0,
+        45590.0
+      ],
+      [
+        46080.0,
+        46840.0
+      ],
+      [
+        47210.0,
+        48370.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 110.6,
+    "stop_latency_ms": 111.0,
+    "talk_over_ms": 112.6,
+    "reply_gap_ms": 1662.6,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick reset and a few checks to steady that connection.First, turn off Wi\u2011Fi on your device, wait about ten seconds, then turn it back on. Next, restart your router by unplugging it, waiting fifteen",
+    "reply_text": "First, move closer to your router so we know it\u2019s not just a weak signal issue. Next, on your device, turn Wi-Fi off, wait about 10 seconds, then turn it back on. Then restart the router by unplugging it, waiting 15 to 30 seconds, and plugging it back in. After that, forget the network on your device, then reconnect and re-enter the password. If it still drops, try another device to see if the problem is the network or just one gadget. Finally, check for router firmware updates or interference from nearby electronics; if that\u2019s tricky, your internet provider can help.",
+    "cost_usd": 0.07512,
+    "send_lateness_ms": {
+      "p50": 1.3416044999999999,
+      "p99": 2.116342,
+      "max": 17.597917
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqTE6cRe0sibh3UaictV",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355548,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

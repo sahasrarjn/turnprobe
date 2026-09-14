@@ -1,0 +1,150 @@
+{
+  "trial_id": "t0010",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762232-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8236.264833,
+    "X.start": 10736.25,
+    "X.end": 13281.25
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8230.0,
+        10870.0
+      ],
+      [
+        14880.0,
+        15240.0
+      ],
+      [
+        15960.0,
+        17490.0
+      ],
+      [
+        17930.0,
+        19490.0
+      ],
+      [
+        19810.0,
+        22970.0
+      ],
+      [
+        23410.0,
+        25480.0
+      ],
+      [
+        25790.0,
+        27220.0
+      ],
+      [
+        27640.0,
+        27710.0
+      ],
+      [
+        28050.0,
+        29940.0
+      ],
+      [
+        30330.0,
+        32570.0
+      ],
+      [
+        32890.0,
+        35590.0
+      ],
+      [
+        36350.0,
+        37290.0
+      ],
+      [
+        37750.0,
+        41320.0
+      ],
+      [
+        41700.0,
+        45820.0
+      ],
+      [
+        46570.0,
+        47270.0
+      ],
+      [
+        47630.0,
+        49800.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 131.2,
+    "stop_latency_ms": 131.5,
+    "talk_over_ms": 133.8,
+    "reply_gap_ms": 1598.8,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick, steady set of steps to get that connection stable.First, restart your router and modem by unplugging them for about 15 seconds, then plug them back in and wait until the lights settle. Next,",
+    "reply_text": "Gotcha. If you don\u2019t know the router password, first look at the router itself\u2014there\u2019s often a sticker on the bottom or back with the default login, sometimes labeled \u201cadmin\u201d and \u201cpassword\u201d or the Wi\u2011Fi name and key. If you changed it before and can\u2019t remember, check your internet provider\u2019s app or account page, since many let you view or reset Wi\u2011Fi settings there. If that\u2019s not available, you can do a full reset by holding the reset pin for about 10 seconds, but that wipes custom settings, so you\u2019ll set the Wi\u2011Fi name and password again from scratch. If you\u2019re unsure, your provider\u2019s support line can walk you through it safely.",
+    "cost_usd": 0.0766,
+    "send_lateness_ms": {
+      "p50": 1.38725,
+      "p99": 2.11191196,
+      "max": 2.677
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqTAtfPfoce8G5DZU7fm",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355544,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "experiment": "fragments",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-13T22:56:04.363717-07:00",
+  "config": {
+    "system": "openai",
+    "settings": [
+      "semantic_vad:eagerness=low",
+      "semantic_vad:eagerness=auto"
+    ],
+    "stimuli": [
+      "capital",
+      "weather",
+      "booking",
+      "reservation"
+    ],
+    "voices": [
+      "coral",
+      "ash"
+    ],
+    "pause_ms": 1500,
+    "reps": 1,
+    "tts": "openai",
+    "model": "gpt-realtime-2.1",
+    "concurrency": 2,
+    "out": "runs",
+    "budget_usd": 0.8,
+    "seed": 13
+  },
+  "stimuli": {
+    "capital": {
+      "kind": "incomplete",
+      "a": "Can you tell me what the capital of",
+      "b": "Australia is?"
+    },
+    "weather": {
+      "kind": "incomplete",
+      "a": "What's the weather going to be like in",
+      "b": "Seattle this weekend?"
+    },
+    "booking": {
+      "kind": "incomplete",
+      "a": "I'd like to book a table for",
+      "b": "four people at seven tonight."
+    },
+    "reservation": {
+      "kind": "complete",
+      "a": "I need to change my reservation.",
+      "b": "It's under the name Jordan."
+    }
+  },
+  "trials_planned": 48
+}

@@ -1,0 +1,125 @@
+{
+  "trial_id": "t0026",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T19:08:32.762304-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8185.438292,
+    "X.start": 10685.458333333334,
+    "X.end": 12880.458333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8180.0,
+        8580.0
+      ],
+      [
+        9030.0,
+        10870.0
+      ],
+      [
+        14150.0,
+        14620.0
+      ],
+      [
+        15020.0,
+        16440.0
+      ],
+      [
+        16900.0,
+        19000.0
+      ],
+      [
+        19380.0,
+        20020.0
+      ],
+      [
+        20350.0,
+        22500.0
+      ],
+      [
+        22840.0,
+        24630.0
+      ],
+      [
+        25100.0,
+        27760.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 181.7,
+    "stop_latency_ms": 182.1,
+    "talk_over_ms": 184.5,
+    "reply_gap_ms": 1269.5,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s go through a quick, steady checklist together. I\u2019ll keep it simple and practical.First, move closer to your router and watch the Wi-Fi icon; if the signal jumps around, you may just be on the edge of its range. Next,",
+    "reply_text": "First, move closer to your router and watch whether the connection stabilizes. If it does, the issue may be signal strength or interference, like thick walls or other electronics. If it still drops, you can move on to restarting the router.",
+    "cost_usd": 0.04546,
+    "send_lateness_ms": {
+      "p50": 0.567917,
+      "p99": 2.08655897,
+      "max": 5.2255
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqZi0ay3SQyfzY1yCzVY",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355950,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

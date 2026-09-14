@@ -1,0 +1,39 @@
+{
+  "experiment": "pause_sweep",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-13T18:33:12.850698-07:00",
+  "config": {
+    "system": "mock",
+    "settings": [
+      "mock:silence_duration_ms=500,response_delay_ms=300",
+      "mock:silence_duration_ms=800,response_delay_ms=150"
+    ],
+    "pauses": [
+      300,
+      1400
+    ],
+    "reps": 2,
+    "stimuli": [
+      "booking"
+    ],
+    "tts": "say",
+    "voice": null,
+    "model": null,
+    "concurrency": 1,
+    "out": "runs/calibration",
+    "seed": 7
+  },
+  "tts": {
+    "provider": "say",
+    "voice": "Samantha"
+  },
+  "stimuli": {
+    "booking": {
+      "kind": "incomplete",
+      "a": "I'd like to book a table for",
+      "b": "four people at seven tonight.",
+      "method": "continuous"
+    }
+  },
+  "trials_planned": 8
+}

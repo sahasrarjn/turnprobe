@@ -1,0 +1,102 @@
+{
+  "trial_id": "t0019",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "stop",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762275-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8384.116334,
+    "X.start": 10884.125,
+    "X.end": 12204.125
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8380.0,
+        8620.0
+      ],
+      [
+        9250.0,
+        10990.0
+      ],
+      [
+        13670.0,
+        14320.0
+      ],
+      [
+        14870.0,
+        18960.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 102.3,
+    "stop_latency_ms": 102.7,
+    "talk_over_ms": 105.9,
+    "reply_gap_ms": 1465.9,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick sequence you can try to steady your connection.First, power-cycle the basics: turn off your computer or phone\u2019s Wi\u2011Fi, then unplug your router and modem for about 15 seconds and plug them back in.",
+    "reply_text": "Stopping now. If you want to continue later, just say the word and I\u2019ll pick up with a fresh, simple walkthrough.",
+    "cost_usd": 0.03222,
+    "send_lateness_ms": {
+      "p50": 1.272959,
+      "p99": 2.138442,
+      "max": 10.036292
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqWwrlu0YDlncqdEyzOc",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355778,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

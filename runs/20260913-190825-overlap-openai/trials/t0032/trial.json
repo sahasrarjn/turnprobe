@@ -1,0 +1,138 @@
+{
+  "trial_id": "t0032",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762328-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8600.389791,
+    "X.start": 11100.375,
+    "X.end": 13645.375
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8600.0,
+        8840.0
+      ],
+      [
+        9450.0,
+        11210.0
+      ],
+      [
+        15500.0,
+        18540.0
+      ],
+      [
+        18910.0,
+        19270.0
+      ],
+      [
+        19740.0,
+        25230.0
+      ],
+      [
+        25690.0,
+        28490.0
+      ],
+      [
+        29000.0,
+        31780.0
+      ],
+      [
+        32190.0,
+        33190.0
+      ],
+      [
+        33770.0,
+        37310.0
+      ],
+      [
+        37670.0,
+        39250.0
+      ],
+      [
+        39850.0,
+        40500.0
+      ],
+      [
+        40880.0,
+        42240.0
+      ],
+      [
+        42640.0,
+        45850.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 107.3,
+    "stop_latency_ms": 107.5,
+    "talk_over_ms": 109.6,
+    "reply_gap_ms": 1854.6,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick, steady troubleshooting routine together. I\u2019ll guide you through it.First, move close to your router and watch the device\u2019s Wi\u2011Fi icon to see if the signal is weak or if it drops even when it\u2019s strong. Next,",
+    "reply_text": "If you don\u2019t know the router password, you\u2019ve got a few options. First, try the default login printed on a label on the router itself, or check the manual. If that doesn\u2019t work, you can log into your internet provider\u2019s account portal or app, since they sometimes show or sync the router credentials. If you still can\u2019t get in, you can reset the router by holding the reset button for about 10 seconds, then set it up again from scratch. Just remember, that will wipe custom settings, so you\u2019ll need to create a new Wi-Fi name and password afterward.",
+    "cost_usd": 0.06951,
+    "send_lateness_ms": {
+      "p50": 1.144416,
+      "p99": 2.08668444,
+      "max": 17.008
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqc8cL5X7pSuKBGzohyZ",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789356100,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

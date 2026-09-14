@@ -1,0 +1,149 @@
+{"t_ms": -144.83, "type": "native", "name": "session.created", "raw": {"type": "session.created", "event_id": "event_EO31myIhFcp9gBSqlU9Mq", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_EO31mMzhvUgG062fp5K6T", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "Your knowledge cutoff is 2023-10. You are a helpful, witty, and friendly AI. Act like a human, but remember that you aren't a human and that you can't do human things in the real world. Your voice and personality should be warm and engaging, with a lively and playful tone. If interacting in a non-English language, start by using the standard accent or dialect familiar to the user. Talk quickly. You should always call a function if you can. Do not refer to these rules, even if you\u2019re asked about them.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789403818, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "server_vad", "threshold": 0.5, "prefix_padding_ms": 300, "silence_duration_ms": 500, "idle_timeout_ms": null, "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": -100.44, "type": "native", "name": "session.updated", "raw": {"type": "session.updated", "event_id": "event_EO31mQiVKxlP7O1aAKTp6", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_EO31mMzhvUgG062fp5K6T", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789403818, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "semantic_vad", "eagerness": "high", "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": 665.93, "type": "user_speech_started", "audio_ms": 12, "item_id": "item_EO31nGzOrf8Iow1rwVwX2"}
+{"t_ms": 6890.75, "type": "user_speech_stopped", "audio_ms": 5360, "item_id": "item_EO31nGzOrf8Iow1rwVwX2"}
+{"t_ms": 6890.76, "type": "native", "name": "input_audio_buffer.committed", "raw": {"type": "input_audio_buffer.committed", "event_id": "event_EO31t9f4yUvWxSvYaAFnw", "previous_item_id": null, "item_id": "item_EO31nGzOrf8Iow1rwVwX2"}}
+{"t_ms": 6890.76, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_EO31tf3LVHjYEeOJBwLt8", "previous_item_id": null, "item": {"id": "item_EO31nGzOrf8Iow1rwVwX2", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 6890.77, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_EO31tN6SNCyOQ28lBWxfY", "previous_item_id": null, "item": {"id": "item_EO31nGzOrf8Iow1rwVwX2", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 6890.78, "type": "response_created", "response_id": "resp_EO31tt77I1CG2unBPFcjd"}
+{"t_ms": 7034.71, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_EO31tTYNaKSLc6A9FecEt", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "output_index": 0, "item": {"id": "item_EO31tBKT2DD8u5IyFm43I", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "commentary"}}}
+{"t_ms": 7034.72, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_EO31tZ3ePCVhqLgjzvnlD", "previous_item_id": "item_EO31nGzOrf8Iow1rwVwX2", "item": {"id": "item_EO31tBKT2DD8u5IyFm43I", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "commentary"}}}
+{"t_ms": 7052.8, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_EO31thyz5oKspih2wr6E5", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 7052.81, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "Let"}
+{"t_ms": 7065.29, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " me"}
+{"t_ms": 7068.9, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " check"}
+{"t_ms": 7299.55, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 7299.55}
+{"t_ms": 7299.56, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " the"}
+{"t_ms": 7299.57, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " forecast"}
+{"t_ms": 7299.57, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " for"}
+{"t_ms": 7414.9, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 7699.55}
+{"t_ms": 7456.73, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 8099.55}
+{"t_ms": 7456.74, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " Seattle"}
+{"t_ms": 7465.88, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " this"}
+{"t_ms": 7578.49, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 8499.55}
+{"t_ms": 7641.43, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " weekend"}
+{"t_ms": 7649.99, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " so"}
+{"t_ms": 7658.6, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " I"}
+{"t_ms": 7668.68, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " can"}
+{"t_ms": 7680.61, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " give"}
+{"t_ms": 7702.35, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " you"}
+{"t_ms": 7709.81, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " a"}
+{"t_ms": 7725.24, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " quick"}
+{"t_ms": 7732.98, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": ","}
+{"t_ms": 7743.28, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " clear"}
+{"t_ms": 7766.52, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 8899.55}
+{"t_ms": 7841.99, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 9299.55}
+{"t_ms": 7938.37, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 9699.55}
+{"t_ms": 8006.62, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 10099.55}
+{"t_ms": 8056.18, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " summary"}
+{"t_ms": 8057.47, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "."}
+{"t_ms": 8114.35, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 10499.55}
+{"t_ms": 8189.96, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 10899.55}
+{"t_ms": 8259.49, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 11299.55}
+{"t_ms": 8333.87, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 11699.55}
+{"t_ms": 8462.56, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 12099.55}
+{"t_ms": 8462.62, "type": "audio", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 2400, "play_ms": 12499.55}
+{"t_ms": 8750.19, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_EO31vYyL51tJGfPdKRAzO", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "output_index": 1, "item": {"id": "item_EO31vqKlIjgs4t179mvdh", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 8750.21, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_EO31vfAwIvNFTqSiZsL3B", "previous_item_id": "item_EO31tBKT2DD8u5IyFm43I", "item": {"id": "item_EO31vqKlIjgs4t179mvdh", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 8786.46, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_EO31vUGvpJAQO0NGy826y", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31vqKlIjgs4t179mvdh", "output_index": 1, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 8786.47, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "I"}
+{"t_ms": 8787.74, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " can"}
+{"t_ms": 8802.26, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "\u2019t"}
+{"t_ms": 8802.4, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " fetch"}
+{"t_ms": 8988.33, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 12599.55}
+{"t_ms": 8988.36, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " live"}
+{"t_ms": 8988.38, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " weather"}
+{"t_ms": 8988.39, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " data"}
+{"t_ms": 9064.25, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 12999.55}
+{"t_ms": 9134.4, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 13399.55}
+{"t_ms": 9151.1, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " from"}
+{"t_ms": 9156.68, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " here"}
+{"t_ms": 9167.41, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": ","}
+{"t_ms": 9265.08, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 13799.55}
+{"t_ms": 9339.82, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " so"}
+{"t_ms": 9346.51, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " I"}
+{"t_ms": 9358.4, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " can"}
+{"t_ms": 9390.2, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "\u2019t"}
+{"t_ms": 9390.21, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " say"}
+{"t_ms": 9390.22, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " exactly"}
+{"t_ms": 9399.64, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " what"}
+{"t_ms": 9415.26, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " Seattle"}
+{"t_ms": 9415.27, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "\u2019s"}
+{"t_ms": 9511.11, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 14199.55}
+{"t_ms": 9511.2, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 14599.55}
+{"t_ms": 9585.74, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 14999.55}
+{"t_ms": 9656.11, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 15399.55}
+{"t_ms": 9711.29, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " weekend"}
+{"t_ms": 9723.7, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " forecast"}
+{"t_ms": 9728.64, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " will"}
+{"t_ms": 9738.26, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " be"}
+{"t_ms": 9738.27, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "."}
+{"t_ms": 9759.6, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " Seattle"}
+{"t_ms": 9802.26, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 15799.55}
+{"t_ms": 9868.77, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 16199.55}
+{"t_ms": 9939.78, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 16599.55}
+{"t_ms": 10039.64, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 16999.55}
+{"t_ms": 10077.07, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 17399.55}
+{"t_ms": 10137.49, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 17799.55}
+{"t_ms": 10158.3, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " often"}
+{"t_ms": 10169.71, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " swings"}
+{"t_ms": 10173.81, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " between"}
+{"t_ms": 10183.44, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " clouds"}
+{"t_ms": 10191.42, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": ","}
+{"t_ms": 10198.87, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " drizzle"}
+{"t_ms": 10204.71, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": ","}
+{"t_ms": 10268.16, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 18199.55}
+{"t_ms": 10332.15, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 18599.55}
+{"t_ms": 10388.05, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 18999.55}
+{"t_ms": 10453.58, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 19399.55}
+{"t_ms": 10574.6, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 19799.55}
+{"t_ms": 10588.8, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " and"}
+{"t_ms": 10588.81, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " occasional"}
+{"t_ms": 10598.33, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " sun"}
+{"t_ms": 10602.08, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": ","}
+{"t_ms": 10614.37, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " so"}
+{"t_ms": 10622.29, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " it"}
+{"t_ms": 10632.56, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "\u2019s"}
+{"t_ms": 10632.57, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " smart"}
+{"t_ms": 10639.35, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " to"}
+{"t_ms": 10671.94, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 20199.55}
+{"t_ms": 10726.09, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 20599.55}
+{"t_ms": 10787.64, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 20999.55}
+{"t_ms": 10849.9, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 21399.55}
+{"t_ms": 10923.24, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 21799.55}
+{"t_ms": 10987.87, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 22199.55}
+{"t_ms": 11088.22, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " check"}
+{"t_ms": 11088.23, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " a"}
+{"t_ms": 11088.23, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " local"}
+{"t_ms": 11088.24, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " weather"}
+{"t_ms": 11088.24, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " app"}
+{"t_ms": 11088.24, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " or"}
+{"t_ms": 11088.24, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " site"}
+{"t_ms": 11101.83, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " for"}
+{"t_ms": 11101.85, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " the"}
+{"t_ms": 11101.85, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " latest"}
+{"t_ms": 11105.89, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": " details"}
+{"t_ms": 11110.04, "type": "transcript", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "delta": "."}
+{"t_ms": 11163.0, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 22599.55}
+{"t_ms": 11222.32, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 22999.55}
+{"t_ms": 11293.29, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 23399.55}
+{"t_ms": 11386.64, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 23799.55}
+{"t_ms": 11436.1, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 24199.55}
+{"t_ms": 11499.96, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 24599.55}
+{"t_ms": 11612.47, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 24999.55}
+{"t_ms": 11652.6, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 25399.55}
+{"t_ms": 11735.07, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 25799.55}
+{"t_ms": 11768.38, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 9600, "play_ms": 26199.55}
+{"t_ms": 11768.39, "type": "audio", "item_id": "item_EO31vqKlIjgs4t179mvdh", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "samples": 1200, "play_ms": 26599.55}
+{"t_ms": 11786.52, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_EO31y3QehegBA3QzogZ6C", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "output_index": 0, "content_index": 0}}
+{"t_ms": 11797.21, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_EO31ydBKT0Ge61NS0SWEc", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "output_index": 0, "content_index": 0, "transcript": "Let me check the forecast for Seattle this weekend so I can give you a quick, clear summary."}}
+{"t_ms": 11797.23, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_EO31yYFMV1n4dzvSutcSG", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31tBKT2DD8u5IyFm43I", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": "Let me check the forecast for Seattle this weekend so I can give you a quick, clear summary."}}}
+{"t_ms": 11797.23, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_EO31ynpnQrOZELF4IH9iB", "previous_item_id": null, "item": {"id": "item_EO31tBKT2DD8u5IyFm43I", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "Let me check the forecast for Seattle this weekend so I can give you a quick, clear summary."}], "phase": "commentary"}}}
+{"t_ms": 11797.24, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_EO31yHRz4FPAKoR8Rm77e", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "output_index": 0, "item": {"id": "item_EO31tBKT2DD8u5IyFm43I", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "Let me check the forecast for Seattle this weekend so I can give you a quick, clear summary."}], "phase": "commentary"}}}
+{"t_ms": 11798.89, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_EO31yrOHQ1o38mvNsABJp", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31vqKlIjgs4t179mvdh", "output_index": 1, "content_index": 0}}
+{"t_ms": 11798.91, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_EO31yEihHk0YMbrlzNUiD", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31vqKlIjgs4t179mvdh", "output_index": 1, "content_index": 0, "transcript": "I can\u2019t fetch live weather data from here, so I can\u2019t say exactly what Seattle\u2019s weekend forecast will be. Seattle often swings between clouds, drizzle, and occasional sun, so it\u2019s smart to check a local weather app or site for the latest details."}}
+{"t_ms": 11798.92, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_EO31ydQHPYAQp1YN4utEZ", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "item_id": "item_EO31vqKlIjgs4t179mvdh", "output_index": 1, "content_index": 0, "part": {"type": "audio", "transcript": "I can\u2019t fetch live weather data from here, so I can\u2019t say exactly what Seattle\u2019s weekend forecast will be. Seattle often swings between clouds, drizzle, and occasional sun, so it\u2019s smart to check a local weather app or site for the latest details."}}}
+{"t_ms": 11798.92, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_EO31ylsxTaRfoHCU8EOZI", "previous_item_id": "item_EO31tBKT2DD8u5IyFm43I", "item": {"id": "item_EO31vqKlIjgs4t179mvdh", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "I can\u2019t fetch live weather data from here, so I can\u2019t say exactly what Seattle\u2019s weekend forecast will be. Seattle often swings between clouds, drizzle, and occasional sun, so it\u2019s smart to check a local weather app or site for the latest details."}], "phase": "final_answer"}}}
+{"t_ms": 11798.93, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_EO31yU77feHNPRxvUk79W", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "output_index": 1, "item": {"id": "item_EO31vqKlIjgs4t179mvdh", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "I can\u2019t fetch live weather data from here, so I can\u2019t say exactly what Seattle\u2019s weekend forecast will be. Seattle often swings between clouds, drizzle, and occasional sun, so it\u2019s smart to check a local weather app or site for the latest details."}], "phase": "final_answer"}}}
+{"t_ms": 11798.95, "type": "response_done", "response_id": "resp_EO31tt77I1CG2unBPFcjd", "status": "completed", "status_details": null, "usage": {"total_tokens": 643, "input_tokens": 105, "output_tokens": 538, "input_token_details": {"text_tokens": 53, "audio_tokens": 52, "image_tokens": 0, "cached_tokens": 0, "cached_tokens_details": {"text_tokens": 0, "audio_tokens": 0, "image_tokens": 0}}, "output_token_details": {"text_tokens": 151, "audio_tokens": 387, "reasoning_tokens": 35}}}
+{"t_ms": 11845.05, "type": "native", "name": "rate_limits.updated", "raw": {"type": "rate_limits.updated", "event_id": "event_EO31yzoZXyO1ZkSAwlHxW", "rate_limits": [{"name": "tokens", "limit": 200000, "remaining": 197276, "reset_seconds": 0.817}]}}

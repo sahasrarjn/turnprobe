@@ -1,0 +1,109 @@
+{
+  "trial_id": "t0002",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762187-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7996.843209,
+    "X.start": 10496.833333333334,
+    "X.end": 12691.833333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8000.0,
+        8490.0
+      ],
+      [
+        8820.0,
+        10630.0
+      ],
+      [
+        14010.0,
+        19960.0
+      ],
+      [
+        20750.0,
+        23220.0
+      ],
+      [
+        23560.0,
+        25740.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 127.9,
+    "stop_latency_ms": 128.2,
+    "talk_over_ms": 133.2,
+    "reply_gap_ms": 1318.2,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a steady fix together. I\u2019ll guide you step by step.First, move closer to the router and make sure it\u2019s not tucked behind a TV, inside a cabinet, or sitting next to something noisy like a microwave.",
+    "reply_text": "First, move closer to your router and check that it\u2019s in an open spot, not tucked behind furniture or inside a cabinet. If the signal is weak, the connection will drop more often, so getting a strong, steady signal is step one.",
+    "cost_usd": 0.04218,
+    "send_lateness_ms": {
+      "p50": 1.273584,
+      "p99": 2.1227631000000002,
+      "max": 9.40125
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqQOBm798y3zo71JXqZu",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355372,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "trial_id": "t0012",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762242-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8063.676333,
+    "X.start": 10563.666666666666,
+    "X.end": 11043.666666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8060.0,
+        8370.0
+      ],
+      [
+        8970.0,
+        10670.0
+      ],
+      [
+        12200.0,
+        12590.0
+      ],
+      [
+        13040.0,
+        16480.0
+      ],
+      [
+        16980.0,
+        19680.0
+      ],
+      [
+        20250.0,
+        22530.0
+      ],
+      [
+        22840.0,
+        25770.0
+      ],
+      [
+        26300.0,
+        26730.0
+      ],
+      [
+        27140.0,
+        29200.0
+      ],
+      [
+        29810.0,
+        30300.0
+      ],
+      [
+        30710.0,
+        35360.0
+      ],
+      [
+        36100.0,
+        36550.0
+      ],
+      [
+        36930.0,
+        39840.0
+      ],
+      [
+        40170.0,
+        41150.0
+      ],
+      [
+        41930.0,
+        43460.0
+      ],
+      [
+        43860.0,
+        47640.0
+      ],
+      [
+        48120.0,
+        48410.0
+      ],
+      [
+        48820.0,
+        50170.0
+      ],
+      [
+        50540.0,
+        53910.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 100.3,
+    "stop_latency_ms": 100.6,
+    "talk_over_ms": 106.3,
+    "reply_gap_ms": 1156.3,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick sequence to steady your connection.First, turn off Wi\u2011Fi on your device, wait about ten seconds, then turn it back on and see if it reconnects cleanly. Next, restart your router: unplug it, wait",
+    "reply_text": "First, move close to the router and watch if the connection stays stable there; if it does, the issue may be distance or interference. Next, restart the router by unplugging it, waiting about 15 seconds, and plugging it back in. Then, reboot your device so it reconnects cleanly. After that, check for other devices that might be hogging bandwidth, like downloads or streaming, and pause them. Next, update your Wi-Fi adapter or driver and your router firmware if updates are available. Finally, if it still drops, try switching the router to a less crowded channel or to the 5 gigahertz band, and if that option isn\u2019t available, consider using a wired connection or contacting your internet provider.",
+    "cost_usd": 0.08367,
+    "send_lateness_ms": {
+      "p50": 1.434625,
+      "p99": 2.06278198,
+      "max": 14.161083
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqU3V95gZXCUJ8sDfyY3",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355599,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

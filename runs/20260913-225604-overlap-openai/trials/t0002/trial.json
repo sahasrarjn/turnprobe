@@ -1,0 +1,141 @@
+{
+  "trial_id": "t0002",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "mmhm",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375312-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8113.271291,
+    "X.start": 10613.291666666666,
+    "X.end": 11178.291666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8110.0,
+        8980.0
+      ],
+      [
+        9410.0,
+        10790.0
+      ],
+      [
+        12490.0,
+        16080.0
+      ],
+      [
+        16490.0,
+        20750.0
+      ],
+      [
+        21480.0,
+        25290.0
+      ],
+      [
+        25620.0,
+        28710.0
+      ],
+      [
+        29340.0,
+        33870.0
+      ],
+      [
+        34320.0,
+        35050.0
+      ],
+      [
+        35440.0,
+        40960.0
+      ],
+      [
+        41620.0,
+        45110.0
+      ],
+      [
+        45900.0,
+        51910.0
+      ],
+      [
+        52610.0,
+        54360.0
+      ],
+      [
+        54690.0,
+        56120.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 175.8,
+    "stop_latency_ms": 176.2,
+    "talk_over_ms": 176.7,
+    "reply_gap_ms": 1311.7,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a steady series of checks to pin down what\u2019s causing the drops.First, move close to the router and watch whether the drops still happen; if they don\u2019t, it may just be a weak signal or interference. Next,",
+    "reply_text": "first, move closer to the router and watch your Wi-Fi icon, because if the signal improves, distance or interference is part of the problem. Next, restart the router by unplugging it for about 15 seconds, then plugging it back in and waiting for the lights to stabilize. Then, forget the network on your device and reconnect by entering the password fresh. After that, check for nearby interference like microwaves, baby monitors, or lots of networks on the same channel; if you can, switch the router to a less crowded channel in its settings. Now, update your router\u2019s firmware and your device\u2019s Wi-Fi drivers or operating system to rule out bugs. Finally, if drops still happen, try a different device to compare, and consider resetting the router to factory settings and setting it up again. If it still misbehaves after all that, your router may be failing, and replacement might be the cleanest fix.",
+    "cost_usd": 0.10293,
+    "send_lateness_ms": {
+      "p50": 0.760812,
+      "p99": 1.3932642499999965,
+      "max": 14.062708
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENtxvgooFkHmZ8ypugb46",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789368983,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

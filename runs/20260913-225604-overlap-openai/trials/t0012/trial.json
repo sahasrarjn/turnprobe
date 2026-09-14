@@ -1,0 +1,154 @@
+{
+  "trial_id": "t0012",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375375-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 9461.650416,
+    "X.start": 11961.666666666666,
+    "X.end": 12331.666666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9460.0,
+        9900.0
+      ],
+      [
+        10310.0,
+        12070.0
+      ],
+      [
+        14100.0,
+        14470.0
+      ],
+      [
+        14890.0,
+        17250.0
+      ],
+      [
+        17630.0,
+        19320.0
+      ],
+      [
+        19680.0,
+        22720.0
+      ],
+      [
+        23350.0,
+        23780.0
+      ],
+      [
+        24140.0,
+        29030.0
+      ],
+      [
+        29750.0,
+        33940.0
+      ],
+      [
+        34680.0,
+        35170.0
+      ],
+      [
+        35620.0,
+        40750.0
+      ],
+      [
+        41490.0,
+        41860.0
+      ],
+      [
+        42250.0,
+        44370.0
+      ],
+      [
+        44720.0,
+        48560.0
+      ],
+      [
+        49250.0,
+        50970.0
+      ],
+      [
+        51370.0,
+        53270.0
+      ],
+      [
+        53740.0,
+        57360.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 102.5,
+    "stop_latency_ms": 102.9,
+    "talk_over_ms": 108.3,
+    "reply_gap_ms": 1768.3,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick set of steps to steady that connection.First, move closer to the router and watch if the drops stop, because that quickly tells you if it\u2019s a signal strength problem. Next, restart both the router and your modem by unplug",
+    "reply_text": "First, restart your router or modem by unplugging it, waiting about 15 seconds, then plugging it back in and giving it a minute to fully reconnect. Next, move closer to the router and remove any obvious interference like thick walls or crowded shelves. Then check that your device isn\u2019t accidentally switching between Wi-Fi bands or networks. After that, update the router\u2019s firmware and your device\u2019s Wi-Fi driver, since outdated software can cause drops. Also, change the Wi-Fi channel to a less crowded one, or switch between 2.4 and 5 gigahertz to see which is more stable. Finally, if it still drops, try a different device to isolate the issue, and consider a factory reset or contacting your internet provider if the problem continues.",
+    "cost_usd": 0.08514,
+    "send_lateness_ms": {
+      "p50": 0.9977495000000001,
+      "p99": 1.7125999999999995,
+      "max": 24.00175
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENu1W0FSAuwJLxBZhftio",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369206,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,166 @@
+{
+  "trial_id": "t0014",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T19:08:32.762255-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8409.190708,
+    "X.start": 10909.208333333334,
+    "X.end": 11389.208333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8410.0,
+        8820.0
+      ],
+      [
+        9130.0,
+        11030.0
+      ],
+      [
+        16670.0,
+        17150.0
+      ],
+      [
+        17490.0,
+        18240.0
+      ],
+      [
+        18640.0,
+        20250.0
+      ],
+      [
+        20640.0,
+        21840.0
+      ],
+      [
+        22170.0,
+        24520.0
+      ],
+      [
+        25220.0,
+        25630.0
+      ],
+      [
+        25960.0,
+        26820.0
+      ],
+      [
+        27430.0,
+        29600.0
+      ],
+      [
+        29970.0,
+        32790.0
+      ],
+      [
+        33670.0,
+        37250.0
+      ],
+      [
+        37660.0,
+        40520.0
+      ],
+      [
+        41270.0,
+        41740.0
+      ],
+      [
+        42120.0,
+        42850.0
+      ],
+      [
+        43240.0,
+        46480.0
+      ],
+      [
+        47250.0,
+        47640.0
+      ],
+      [
+        47970.0,
+        52560.0
+      ],
+      [
+        53320.0,
+        54830.0
+      ],
+      [
+        55160.0,
+        56390.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 113.5,
+    "stop_latency_ms": 113.8,
+    "talk_over_ms": 120.8,
+    "reply_gap_ms": 5280.8,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, we can walk through a quick, practical sequence to stabilize your connection.First, power-cycle everything: turn off your router and modem, wait about 20 seconds, then plug the modem in first, and the router second.",
+    "reply_text": "First, start simple: power off your router and modem, wait about 20 seconds, then turn them back on and let them fully reconnect. Next, check the physical stuff: make sure the power and Ethernet cables are snug, and if you use a splitter or coax, reseat that too. Then, reduce distance and interference by moving closer to the router, and keep it away from thick walls and devices like microwaves. After that, on your device, forget the Wi-Fi network, reconnect, and re-enter the password. Next, update your device\u2019s Wi-Fi drivers and your router\u2019s firmware, which can fix stability bugs. Finally, if it still drops, try changing the router\u2019s Wi-Fi channel or band, like switching between 2.4 and 5 gigahertz, or reset the router to defaults and set it up again, and then contact your internet provider if the issue continues.",
+    "cost_usd": 0.09525,
+    "send_lateness_ms": {
+      "p50": 1.1154375,
+      "p99": 1.9060969999999997,
+      "max": 24.898375
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqUzAR1nbG9IyNveG4Jl",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355657,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

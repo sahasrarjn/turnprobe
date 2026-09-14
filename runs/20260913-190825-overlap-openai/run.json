@@ -1,0 +1,69 @@
+{
+  "experiment": "overlap",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-13T19:08:32.748435-07:00",
+  "config": {
+    "system": "openai",
+    "settings": [
+      "server_vad:silence_duration_ms=500",
+      "semantic_vad:eagerness=auto"
+    ],
+    "clips": [
+      "mmhm",
+      "yeah",
+      "okay",
+      "right",
+      "stop",
+      "repeat",
+      "yeah_but"
+    ],
+    "offsets": [
+      2500
+    ],
+    "reps": 3,
+    "tts": "openai",
+    "voice": "coral",
+    "model": "gpt-realtime-2.1",
+    "concurrency": 2,
+    "out": "runs",
+    "budget_usd": 4.0,
+    "seed": 11
+  },
+  "tts": {
+    "provider": "openai",
+    "voice": "coral"
+  },
+  "question": "My wifi keeps dropping every few minutes. Can you walk me through fixing it, step by step?",
+  "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+  "clips": {
+    "mmhm": {
+      "kind": "backchannel",
+      "text": "Mm-hmm."
+    },
+    "yeah": {
+      "kind": "backchannel",
+      "text": "Yeah."
+    },
+    "okay": {
+      "kind": "backchannel",
+      "text": "Okay."
+    },
+    "right": {
+      "kind": "backchannel",
+      "text": "Right, right."
+    },
+    "stop": {
+      "kind": "interrupt",
+      "text": "Wait, stop."
+    },
+    "repeat": {
+      "kind": "interrupt",
+      "text": "Sorry, what was the first step again?"
+    },
+    "yeah_but": {
+      "kind": "interrupt",
+      "text": "Yeah, but what if I don't know the router password?"
+    }
+  },
+  "trials_planned": 42
+}

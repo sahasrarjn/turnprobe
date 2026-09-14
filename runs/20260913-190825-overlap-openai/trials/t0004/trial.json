@@ -1,0 +1,170 @@
+{
+  "trial_id": "t0004",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762205-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8240.039,
+    "X.start": 10740.041666666666,
+    "X.end": 11220.041666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8240.0,
+        8560.0
+      ],
+      [
+        9070.0,
+        10870.0
+      ],
+      [
+        15270.0,
+        15750.0
+      ],
+      [
+        16160.0,
+        19280.0
+      ],
+      [
+        19690.0,
+        20410.0
+      ],
+      [
+        20850.0,
+        22080.0
+      ],
+      [
+        22410.0,
+        23800.0
+      ],
+      [
+        24130.0,
+        25330.0
+      ],
+      [
+        25680.0,
+        27080.0
+      ],
+      [
+        27630.0,
+        28060.0
+      ],
+      [
+        28400.0,
+        30940.0
+      ],
+      [
+        31290.0,
+        33510.0
+      ],
+      [
+        33980.0,
+        34330.0
+      ],
+      [
+        34680.0,
+        40790.0
+      ],
+      [
+        41350.0,
+        41870.0
+      ],
+      [
+        42270.0,
+        45310.0
+      ],
+      [
+        45710.0,
+        48000.0
+      ],
+      [
+        48340.0,
+        49500.0
+      ],
+      [
+        49870.0,
+        51340.0
+      ],
+      [
+        51650.0,
+        52800.0
+      ],
+      [
+        53140.0,
+        56280.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 120.4,
+    "stop_latency_ms": 121.1,
+    "talk_over_ms": 130.0,
+    "reply_gap_ms": 4050.0,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a few quick fixes you can try in order.First, move closer to your router and watch your device\u2019s Wi-Fi icon to see if the signal is weak. Next, toggle Wi-Fi off and back on,",
+    "reply_text": "First, bring your router and modem into a simple known-good state: unplug both, wait about 20 seconds, then plug the modem in first, let it fully light up, and then plug the router back in. Next, move closer to the router and see if the drops stop, because distance and walls can cause the issue. Then check for interference by turning off or moving things like baby monitors, cordless phones, or other wireless gear. After that, update your router\u2019s firmware by logging into its admin page, usually by typing the router\u2019s address in a browser, then checking for updates. Next, on your device, \u201cforget\u201d the Wi-Fi network, reconnect, and re-enter the password to clear a bad saved configuration. Finally, if it still drops, switch the Wi-Fi channel or band, like trying 5 gigahertz instead of 2.4, and if possible, test with another device to see if the problem is the router or just one client.",
+    "cost_usd": 0.0977,
+    "send_lateness_ms": {
+      "p50": 1.304542,
+      "p99": 2.1135365399999997,
+      "max": 12.650833
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqQtfY7v8oT2O1kEO66T",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355403,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

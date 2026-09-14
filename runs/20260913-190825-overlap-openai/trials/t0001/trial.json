@@ -1,0 +1,158 @@
+{
+  "trial_id": "t0001",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "right",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.761786-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8094.371667,
+    "X.start": 10594.375,
+    "X.end": 11744.375
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8090.0,
+        10700.0
+      ],
+      [
+        16630.0,
+        17080.0
+      ],
+      [
+        17480.0,
+        20400.0
+      ],
+      [
+        20730.0,
+        24250.0
+      ],
+      [
+        25000.0,
+        29700.0
+      ],
+      [
+        30070.0,
+        32620.0
+      ],
+      [
+        33380.0,
+        33650.0
+      ],
+      [
+        33960.0,
+        36160.0
+      ],
+      [
+        36530.0,
+        39200.0
+      ],
+      [
+        40060.0,
+        40470.0
+      ],
+      [
+        40800.0,
+        42580.0
+      ],
+      [
+        42910.0,
+        44660.0
+      ],
+      [
+        45030.0,
+        46520.0
+      ],
+      [
+        47280.0,
+        47620.0
+      ],
+      [
+        47960.0,
+        50750.0
+      ],
+      [
+        51070.0,
+        53820.0
+      ],
+      [
+        54630.0,
+        55070.0
+      ],
+      [
+        55390.0,
+        56760.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 106.3,
+    "stop_latency_ms": 107.1,
+    "talk_over_ms": 105.6,
+    "reply_gap_ms": 4885.6,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s go through a quick set of checks together to steady that connection.First, check if other devices on the same network also drop; if only one device has the issue, focus on that device. Next, move closer",
+    "reply_text": "First, check whether other devices on the same Wi-Fi are dropping too, because if they are, it\u2019s likely the router or the internet connection itself. Next, move closer to the router and remove any obvious physical obstacles, like thick walls or metal cabinets, that might weaken the signal. Then, restart the router and modem by unplugging them, waiting about 15 seconds, and plugging them back in. After that, restart your device, and on it, \u201cforget\u201d the network and then reconnect, carefully re-entering the password. Next, update your device\u2019s Wi-Fi drivers or operating system, and if your router has firmware updates, install those too. Finally, reduce interference by switching the router to a less crowded channel or to the 5 gigahertz band, and if drops still happen, contact your internet provider to check for line issues.",
+    "cost_usd": 0.0919,
+    "send_lateness_ms": {
+      "p50": 1.3211249999999999,
+      "p99": 2.13898983,
+      "max": 4.907959
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqPRCt8SMH9XHE6KTFd6",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355313,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

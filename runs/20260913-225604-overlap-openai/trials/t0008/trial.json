@@ -1,0 +1,157 @@
+{
+  "trial_id": "t0008",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "right",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375357-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7870.188084,
+    "X.start": 10370.208333333334,
+    "X.end": 11910.208333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7870.0,
+        8230.0
+      ],
+      [
+        8670.0,
+        10480.0
+      ],
+      [
+        13140.0,
+        13500.0
+      ],
+      [
+        13940.0,
+        18100.0
+      ],
+      [
+        18470.0,
+        20960.0
+      ],
+      [
+        21720.0,
+        22050.0
+      ],
+      [
+        22360.0,
+        26000.0
+      ],
+      [
+        26700.0,
+        27050.0
+      ],
+      [
+        27400.0,
+        31410.0
+      ],
+      [
+        32200.0,
+        32650.0
+      ],
+      [
+        33120.0,
+        37670.0
+      ],
+      [
+        38460.0,
+        41770.0
+      ],
+      [
+        42090.0,
+        43960.0
+      ],
+      [
+        44390.0,
+        46080.0
+      ],
+      [
+        46410.0,
+        49970.0
+      ],
+      [
+        50320.0,
+        53170.0
+      ],
+      [
+        53610.0,
+        56960.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 100.7,
+    "stop_latency_ms": 101.3,
+    "talk_over_ms": 109.8,
+    "reply_gap_ms": 1229.8,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick fix step by step. I\u2019ll keep it moving and simple.First, power-cycle your gear: unplug the router and modem, wait about 15 seconds, then plug",
+    "reply_text": "First, power cycle your router and modem by unplugging them for about 20 seconds, then plugging them back in and waiting for the lights to settle. Next, check the Ethernet and power cables to make sure nothing is loose or damaged. Then, move closer to the router for a bit to see if weak signal or interference is the culprit. After that, forget the Wi\u2011Fi network on your device and join it again, carefully re-entering the password. Then update your device\u2019s Wi\u2011Fi drivers or operating system, since that often fixes stability quirks. Finally, if it still drops, log into the router\u2019s settings and try changing the Wi\u2011Fi channel or band, like switching between 2 point 4 and 5 gigahertz, and if needed, reset the router to defaults and set it up fresh.",
+    "cost_usd": 0.08533,
+    "send_lateness_ms": {
+      "p50": 0.5067714999999999,
+      "p99": 2.4886985100000074,
+      "max": 16.935709
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENu0Y4nm2wTuZ5kny0oGN",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369146,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

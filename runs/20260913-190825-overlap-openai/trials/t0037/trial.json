@@ -1,0 +1,134 @@
+{
+  "trial_id": "t0037",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "right",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T19:08:32.762348-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8365.316958,
+    "X.start": 10865.333333333334,
+    "X.end": 12015.333333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8360.0,
+        8670.0
+      ],
+      [
+        9200.0,
+        10980.0
+      ],
+      [
+        17060.0,
+        23060.0
+      ],
+      [
+        23400.0,
+        24360.0
+      ],
+      [
+        24910.0,
+        27030.0
+      ],
+      [
+        27750.0,
+        32420.0
+      ],
+      [
+        32730.0,
+        34780.0
+      ],
+      [
+        35420.0,
+        40300.0
+      ],
+      [
+        41000.0,
+        44280.0
+      ],
+      [
+        44600.0,
+        46950.0
+      ],
+      [
+        47560.0,
+        54570.0
+      ],
+      [
+        55210.0,
+        56910.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 120.5,
+    "stop_latency_ms": 120.8,
+    "talk_over_ms": 114.7,
+    "reply_gap_ms": 5044.7,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s walk through a quick sequence to stabilize your connection.First, move closer to the router and make sure it\u2019s in the open, away from thick walls, metal shelves, or other electronics that could interfere.",
+    "reply_text": "First, move closer to the router and check for anything that could interfere, like thick walls, a microwave, or a crowded shelf; if signal improves, it\u2019s likely placement. Next, power-cycle everything: turn off your modem and router, wait about 20 seconds, then turn them back on and let the lights settle. Then on your device, forget the Wi-Fi network, reconnect, and carefully re-enter the password. After that, update your device\u2019s Wi-Fi driver or system, and check if the router has a firmware update available. If drops continue, log into the router, switch the Wi-Fi channel, or try separating 2.4 and 5 gigahertz into different names. Finally, test with another device; if both drop, it\u2019s likely the router or your internet provider, and you may need to contact them or replace the hardware.",
+    "cost_usd": 0.08736,
+    "send_lateness_ms": {
+      "p50": 1.05775,
+      "p99": 2.137140409999999,
+      "max": 25.526042
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqdv0qHwgJ2hrlQJrySp",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789356211,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

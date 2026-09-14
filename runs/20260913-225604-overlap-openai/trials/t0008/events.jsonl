@@ -1,0 +1,392 @@
+{"t_ms": -168.32, "type": "native", "name": "session.created", "raw": {"type": "session.created", "event_id": "event_ENu0YsYy97iUYlLF8xtGx", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_ENu0Y4nm2wTuZ5kny0oGN", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "Your knowledge cutoff is 2023-10. You are a helpful, witty, and friendly AI. Act like a human, but remember that you aren't a human and that you can't do human things in the real world. Your voice and personality should be warm and engaging, with a lively and playful tone. If interacting in a non-English language, start by using the standard accent or dialect familiar to the user. Talk quickly. You should always call a function if you can. Do not refer to these rules, even if you\u2019re asked about them.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789369146, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "server_vad", "threshold": 0.5, "prefix_padding_ms": 300, "silence_duration_ms": 500, "idle_timeout_ms": null, "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": -100.19, "type": "native", "name": "session.updated", "raw": {"type": "session.updated", "event_id": "event_ENu0YoqJJDOlQWplCEiKq", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_ENu0Y4nm2wTuZ5kny0oGN", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789369146, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "server_vad", "threshold": 0.5, "prefix_padding_ms": 300, "silence_duration_ms": 500, "idle_timeout_ms": null, "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": 646.9, "type": "user_speech_started", "audio_ms": 244, "item_id": "item_ENu0ZQ4uZWTdiioMZSbbu"}
+{"t_ms": 7475.5, "type": "user_speech_stopped", "audio_ms": 7392, "item_id": "item_ENu0ZQ4uZWTdiioMZSbbu"}
+{"t_ms": 7475.52, "type": "native", "name": "input_audio_buffer.committed", "raw": {"type": "input_audio_buffer.committed", "event_id": "event_ENu0gxfOQHE7wR0OL6aQE", "previous_item_id": null, "item_id": "item_ENu0ZQ4uZWTdiioMZSbbu"}}
+{"t_ms": 7477.03, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENu0gPTnCDHRRp5Bt6PvY", "previous_item_id": null, "item": {"id": "item_ENu0ZQ4uZWTdiioMZSbbu", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 7477.05, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENu0gnjJ1lh8oDnRZF6F1", "previous_item_id": null, "item": {"id": "item_ENu0ZQ4uZWTdiioMZSbbu", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 7481.32, "type": "response_created", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw"}
+{"t_ms": 7697.84, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_ENu0gjEddzUVGr1eBFf28", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "output_index": 0, "item": {"id": "item_ENu0gDYwyCgvcGVtOZBwm", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "commentary"}}}
+{"t_ms": 7697.86, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENu0gHaHPPZELpCf8d7mP", "previous_item_id": "item_ENu0ZQ4uZWTdiioMZSbbu", "item": {"id": "item_ENu0gDYwyCgvcGVtOZBwm", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "commentary"}}}
+{"t_ms": 7697.87, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_ENu0ge5GDwZEKKgnXLQVd", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 7697.88, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "Alright"}
+{"t_ms": 7697.89, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": ","}
+{"t_ms": 7870.19, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 7870.19}
+{"t_ms": 7870.2, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " let"}
+{"t_ms": 7870.22, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "\u2019s"}
+{"t_ms": 7870.22, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " walk"}
+{"t_ms": 7870.23, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " through"}
+{"t_ms": 7898.5, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 8270.19}
+{"t_ms": 7961.14, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 8670.19}
+{"t_ms": 7961.18, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " a"}
+{"t_ms": 7968.48, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " quick"}
+{"t_ms": 7975.18, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " fix"}
+{"t_ms": 8091.39, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 9070.19}
+{"t_ms": 8120.8, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " step"}
+{"t_ms": 8122.96, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " by"}
+{"t_ms": 8220.98, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " step"}
+{"t_ms": 8220.99, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "."}
+{"t_ms": 8221.0, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " I"}
+{"t_ms": 8221.0, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "\u2019ll"}
+{"t_ms": 8221.01, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " keep"}
+{"t_ms": 8221.01, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " it"}
+{"t_ms": 8221.07, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 9470.19}
+{"t_ms": 8259.87, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 9870.19}
+{"t_ms": 8323.13, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 10270.19}
+{"t_ms": 8395.02, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 10670.19}
+{"t_ms": 8448.82, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " moving"}
+{"t_ms": 8455.07, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " and"}
+{"t_ms": 8464.08, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " simple"}
+{"t_ms": 8470.83, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "."}
+{"t_ms": 8503.44, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 11070.19}
+{"t_ms": 8565.95, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 11470.19}
+{"t_ms": 8630.2, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 11870.19}
+{"t_ms": 8744.79, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 12270.19}
+{"t_ms": 8753.89, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 12670.19}
+{"t_ms": 8813.82, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 13070.19}
+{"t_ms": 8823.64, "type": "audio", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 6000, "play_ms": 13470.19}
+{"t_ms": 9474.0, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_ENu0iYO6ZYSnLtwCHLgbr", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "output_index": 1, "item": {"id": "item_ENu0iwcF65PDVHwMY6mhz", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 9474.03, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENu0iyxCPezDjJGDmCZmw", "previous_item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "item": {"id": "item_ENu0iwcF65PDVHwMY6mhz", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 9490.53, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_ENu0itIANKUKVLSK8URSf", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "output_index": 1, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 9490.56, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "First"}
+{"t_ms": 9495.16, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": ","}
+{"t_ms": 9666.07, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 13720.19}
+{"t_ms": 9666.09, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " power"}
+{"t_ms": 9666.16, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "-cycle"}
+{"t_ms": 9792.44, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 14120.19}
+{"t_ms": 9793.19, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 14520.19}
+{"t_ms": 9793.22, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " your"}
+{"t_ms": 9798.47, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " gear"}
+{"t_ms": 9803.93, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": ":"}
+{"t_ms": 9880.16, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 14920.19}
+{"t_ms": 9960.26, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " unplug"}
+{"t_ms": 9966.5, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " the"}
+{"t_ms": 9974.05, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " router"}
+{"t_ms": 9981.91, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " and"}
+{"t_ms": 9989.92, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " modem"}
+{"t_ms": 9992.65, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": ","}
+{"t_ms": 10014.13, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 15320.19}
+{"t_ms": 10075.94, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 15720.19}
+{"t_ms": 10139.85, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 16120.19}
+{"t_ms": 10204.18, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 16520.19}
+{"t_ms": 10317.97, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " wait"}
+{"t_ms": 10318.0, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " about"}
+{"t_ms": 10318.01, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " "}
+{"t_ms": 10318.02, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": "15"}
+{"t_ms": 10318.03, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " seconds"}
+{"t_ms": 10318.04, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": ","}
+{"t_ms": 10318.05, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " then"}
+{"t_ms": 10318.06, "type": "transcript", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "delta": " plug"}
+{"t_ms": 10341.12, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 16920.19}
+{"t_ms": 10407.26, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 17320.19}
+{"t_ms": 10468.31, "type": "audio", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "samples": 9600, "play_ms": 17720.19}
+{"t_ms": 10470.88, "type": "user_speech_started", "audio_ms": 10068, "item_id": "item_ENu0jCGU1oLjdxvqScHCG"}
+{"t_ms": 10471.48, "type": "client_truncate", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "audio_end_ms": 0.0}
+{"t_ms": 10471.72, "type": "client_truncate", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "audio_end_ms": 2600.7}
+{"t_ms": 10499.77, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_ENu0jgFytZulib0qVui7s", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "output_index": 0, "content_index": 0}}
+{"t_ms": 10499.82, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_ENu0jofNz3qRVYH6VcsBd", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "output_index": 0, "content_index": 0, "transcript": "Alright, let\u2019s walk through a quick fix step by step. I\u2019ll keep it moving and simple."}}
+{"t_ms": 10499.84, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_ENu0jZdB660cOXBAnmUVo", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": "Alright, let\u2019s walk through a quick fix step by step. I\u2019ll keep it moving and simple."}}}
+{"t_ms": 10499.87, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENu0jqgJ8sGcjJ8Khmi1M", "previous_item_id": null, "item": {"id": "item_ENu0gDYwyCgvcGVtOZBwm", "type": "message", "status": "incomplete", "role": "assistant", "content": [{"type": "output_audio", "transcript": "Alright, let\u2019s walk through a quick fix step by step. I\u2019ll keep it moving and simple."}], "phase": "commentary"}}}
+{"t_ms": 10499.89, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_ENu0jH87uuJZu0bnm4aCH", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "output_index": 0, "item": {"id": "item_ENu0gDYwyCgvcGVtOZBwm", "type": "message", "status": "incomplete", "role": "assistant", "content": [{"type": "output_audio", "transcript": "Alright, let\u2019s walk through a quick fix step by step. I\u2019ll keep it moving and simple."}], "phase": "commentary"}}}
+{"t_ms": 10500.74, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_ENu0j18hYXukBkUbJTQOS", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "output_index": 1, "content_index": 0}}
+{"t_ms": 10500.76, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_ENu0jJFEYYSxrQk4sAbB4", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "output_index": 1, "content_index": 0, "transcript": "First, power-cycle your gear: unplug the router and modem, wait about 15 seconds, then plug"}}
+{"t_ms": 10500.78, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_ENu0jjetCmjbFprNYOFcU", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "output_index": 1, "content_index": 0, "part": {"type": "audio", "transcript": "First, power-cycle your gear: unplug the router and modem, wait about 15 seconds, then plug"}}}
+{"t_ms": 10502.6, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENu0jqQiyt6qoB2iiGloo", "previous_item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "item": {"id": "item_ENu0iwcF65PDVHwMY6mhz", "type": "message", "status": "incomplete", "role": "assistant", "content": [{"type": "output_audio", "transcript": "First, power-cycle your gear: unplug the router and modem, wait about 15 seconds, then plug"}], "phase": "final_answer"}}}
+{"t_ms": 10502.63, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_ENu0jPfSkAsJxxLa22YTK", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "output_index": 1, "item": {"id": "item_ENu0iwcF65PDVHwMY6mhz", "type": "message", "status": "incomplete", "role": "assistant", "content": [{"type": "output_audio", "transcript": "First, power-cycle your gear: unplug the router and modem, wait about 15 seconds, then plug"}], "phase": "final_answer"}}}
+{"t_ms": 10508.67, "type": "response_done", "response_id": "resp_ENu0gSwuG3VE5j2OyYsaw", "status": "cancelled", "status_details": {"type": "cancelled", "reason": "turn_detected"}, "usage": {"total_tokens": 485, "input_tokens": 123, "output_tokens": 362, "input_token_details": {"text_tokens": 52, "audio_tokens": 71, "image_tokens": 0, "cached_tokens": 0, "cached_tokens_details": {"text_tokens": 0, "audio_tokens": 0, "image_tokens": 0}}, "output_token_details": {"text_tokens": 149, "audio_tokens": 213, "reasoning_tokens": 74}}}
+{"t_ms": 10629.87, "type": "native", "name": "conversation.item.truncated", "raw": {"type": "conversation.item.truncated", "event_id": "event_ENu0jFrQnlPbVPKicHl0p", "item_id": "item_ENu0iwcF65PDVHwMY6mhz", "content_index": 0, "audio_end_ms": 0}}
+{"t_ms": 10629.9, "type": "native", "name": "conversation.item.truncated", "raw": {"type": "conversation.item.truncated", "event_id": "event_ENu0jhAX6k63Ic4Smzi0r", "item_id": "item_ENu0gDYwyCgvcGVtOZBwm", "content_index": 0, "audio_end_ms": 2600}}
+{"t_ms": 12557.36, "type": "user_speech_stopped", "audio_ms": 12480, "item_id": "item_ENu0jCGU1oLjdxvqScHCG"}
+{"t_ms": 12557.37, "type": "native", "name": "input_audio_buffer.committed", "raw": {"type": "input_audio_buffer.committed", "event_id": "event_ENu0lGnXdhde9NWz1zbrU", "previous_item_id": "item_ENu0iwcF65PDVHwMY6mhz", "item_id": "item_ENu0jCGU1oLjdxvqScHCG"}}
+{"t_ms": 12557.38, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENu0l9k1wrUeBCHkjY8g6", "previous_item_id": "item_ENu0iwcF65PDVHwMY6mhz", "item": {"id": "item_ENu0jCGU1oLjdxvqScHCG", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 12557.38, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENu0lTjbkKATLFCrCHoBd", "previous_item_id": "item_ENu0iwcF65PDVHwMY6mhz", "item": {"id": "item_ENu0jCGU1oLjdxvqScHCG", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 12559.51, "type": "response_created", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj"}
+{"t_ms": 12797.5, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_ENu0lUh1BThUqJ7TxAdiV", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "output_index": 0, "item": {"id": "item_ENu0l79LjWitNBD2qOyhH", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 12797.53, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENu0ljZWjo2bVgfJ9x8Xk", "previous_item_id": "item_ENu0jCGU1oLjdxvqScHCG", "item": {"id": "item_ENu0l79LjWitNBD2qOyhH", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 12811.48, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_ENu0lhQh6J7j3NysEpuWV", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 12811.51, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "First"}
+{"t_ms": 12818.99, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 13062.63, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 13062.63}
+{"t_ms": 13062.67, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " power"}
+{"t_ms": 13062.69, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " cycle"}
+{"t_ms": 13062.87, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 13462.63}
+{"t_ms": 13116.28, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 13862.63}
+{"t_ms": 13121.23, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " your"}
+{"t_ms": 13125.14, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " router"}
+{"t_ms": 13132.7, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 13217.17, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 14262.63}
+{"t_ms": 13273.53, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " modem"}
+{"t_ms": 13287.01, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " by"}
+{"t_ms": 13290.36, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " unplug"}
+{"t_ms": 13295.03, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "ging"}
+{"t_ms": 13303.88, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " them"}
+{"t_ms": 13310.69, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " for"}
+{"t_ms": 13318.18, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " about"}
+{"t_ms": 13350.69, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 14662.63}
+{"t_ms": 13461.36, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 15062.63}
+{"t_ms": 13496.91, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 15462.63}
+{"t_ms": 13652.5, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 15862.63}
+{"t_ms": 13652.52, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " "}
+{"t_ms": 13652.53, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "20"}
+{"t_ms": 13652.54, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " seconds"}
+{"t_ms": 13653.52, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 13665.77, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " then"}
+{"t_ms": 13673.84, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " plugging"}
+{"t_ms": 13681.34, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " them"}
+{"t_ms": 13688.39, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " back"}
+{"t_ms": 13694.52, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " in"}
+{"t_ms": 13737.69, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 16262.63}
+{"t_ms": 13800.28, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 16662.63}
+{"t_ms": 13865.01, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 17062.63}
+{"t_ms": 13987.43, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 17462.63}
+{"t_ms": 13999.14, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 17862.63}
+{"t_ms": 14065.69, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 18262.63}
+{"t_ms": 14096.43, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 14103.5, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " waiting"}
+{"t_ms": 14110.93, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " for"}
+{"t_ms": 14121.0, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 14126.76, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " lights"}
+{"t_ms": 14136.83, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " to"}
+{"t_ms": 14146.12, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " settle"}
+{"t_ms": 14151.93, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "."}
+{"t_ms": 14157.31, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Next"}
+{"t_ms": 14159.14, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 14229.42, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 18662.63}
+{"t_ms": 14297.46, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 19062.63}
+{"t_ms": 14359.49, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 19462.63}
+{"t_ms": 14513.17, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 19862.63}
+{"t_ms": 14513.59, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 20262.63}
+{"t_ms": 14577.44, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " check"}
+{"t_ms": 14585.45, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 14595.89, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Ethernet"}
+{"t_ms": 14604.48, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 14610.3, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " power"}
+{"t_ms": 14617.85, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " cables"}
+{"t_ms": 14638.91, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 20662.63}
+{"t_ms": 14716.43, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 21062.63}
+{"t_ms": 14792.3, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 21462.63}
+{"t_ms": 14858.57, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 21862.63}
+{"t_ms": 14928.91, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 22262.63}
+{"t_ms": 15034.75, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 22662.63}
+{"t_ms": 15043.59, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " to"}
+{"t_ms": 15052.03, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " make"}
+{"t_ms": 15061.04, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " sure"}
+{"t_ms": 15067.51, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " nothing"}
+{"t_ms": 15074.87, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " is"}
+{"t_ms": 15084.85, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " loose"}
+{"t_ms": 15094.93, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " or"}
+{"t_ms": 15099.16, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " damaged"}
+{"t_ms": 15105.04, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "."}
+{"t_ms": 15153.76, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 23062.63}
+{"t_ms": 15228.47, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 23462.63}
+{"t_ms": 15289.73, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 23862.63}
+{"t_ms": 15355.24, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 24262.63}
+{"t_ms": 15423.93, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 24662.63}
+{"t_ms": 15561.88, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 25062.63}
+{"t_ms": 15561.9, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Then"}
+{"t_ms": 15561.9, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 15562.3, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " move"}
+{"t_ms": 15562.32, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " closer"}
+{"t_ms": 15562.32, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " to"}
+{"t_ms": 15562.33, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 15562.33, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " router"}
+{"t_ms": 15567.25, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " for"}
+{"t_ms": 15640.65, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 25462.63}
+{"t_ms": 15707.23, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 25862.63}
+{"t_ms": 15774.67, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 26262.63}
+{"t_ms": 15844.56, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 26662.63}
+{"t_ms": 15903.42, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 27062.63}
+{"t_ms": 15964.18, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " a"}
+{"t_ms": 15971.23, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " bit"}
+{"t_ms": 15982.68, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " to"}
+{"t_ms": 15989.17, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " see"}
+{"t_ms": 16084.48, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " if"}
+{"t_ms": 16084.49, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " weak"}
+{"t_ms": 16084.5, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " signal"}
+{"t_ms": 16084.5, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " or"}
+{"t_ms": 16084.5, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " interference"}
+{"t_ms": 16084.56, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 27462.63}
+{"t_ms": 16113.58, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 27862.63}
+{"t_ms": 16458.28, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 28262.63}
+{"t_ms": 16501.88, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 28662.63}
+{"t_ms": 16510.05, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 29062.63}
+{"t_ms": 16607.48, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 29462.63}
+{"t_ms": 16607.51, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " is"}
+{"t_ms": 16607.52, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 16607.52, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " culprit"}
+{"t_ms": 16607.53, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "."}
+{"t_ms": 16607.54, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " After"}
+{"t_ms": 16607.55, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " that"}
+{"t_ms": 16607.56, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 16607.56, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " forget"}
+{"t_ms": 16610.03, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 29862.63}
+{"t_ms": 16610.25, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 30262.63}
+{"t_ms": 16641.27, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 30662.63}
+{"t_ms": 16703.53, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 31062.63}
+{"t_ms": 16769.04, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 31462.63}
+{"t_ms": 16829.77, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 31862.63}
+{"t_ms": 16842.23, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 16848.1, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Wi"}
+{"t_ms": 16860.59, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "\u2011"}
+{"t_ms": 16863.54, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "Fi"}
+{"t_ms": 16873.77, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " network"}
+{"t_ms": 16879.18, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " on"}
+{"t_ms": 16889.94, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " your"}
+{"t_ms": 16896.8, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " device"}
+{"t_ms": 16903.56, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 16974.6, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 32262.63}
+{"t_ms": 17037.61, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 32662.63}
+{"t_ms": 17132.89, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 33062.63}
+{"t_ms": 17164.19, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 33462.63}
+{"t_ms": 17229.69, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 33862.63}
+{"t_ms": 17279.07, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " join"}
+{"t_ms": 17286.79, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " it"}
+{"t_ms": 17294.23, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " again"}
+{"t_ms": 17302.6, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 17310.02, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " carefully"}
+{"t_ms": 17316.15, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " re"}
+{"t_ms": 17323.86, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "-enter"}
+{"t_ms": 17331.99, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "ing"}
+{"t_ms": 17340.62, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 17345.92, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " password"}
+{"t_ms": 17352.44, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "."}
+{"t_ms": 17391.19, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 34262.63}
+{"t_ms": 17452.44, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 34662.63}
+{"t_ms": 17514.57, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 35062.63}
+{"t_ms": 17658.82, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 35462.63}
+{"t_ms": 17659.42, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 35862.63}
+{"t_ms": 17704.2, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 36262.63}
+{"t_ms": 17732.9, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Then"}
+{"t_ms": 17739.63, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " update"}
+{"t_ms": 17746.6, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " your"}
+{"t_ms": 17754.86, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " device"}
+{"t_ms": 17759.86, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "\u2019s"}
+{"t_ms": 17829.56, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 36662.63}
+{"t_ms": 17901.46, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 37062.63}
+{"t_ms": 17958.59, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 37462.63}
+{"t_ms": 18021.61, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 37862.63}
+{"t_ms": 18082.4, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 38262.63}
+{"t_ms": 18180.85, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Wi"}
+{"t_ms": 18180.89, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "\u2011"}
+{"t_ms": 18180.91, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "Fi"}
+{"t_ms": 18180.92, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " drivers"}
+{"t_ms": 18191.39, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " or"}
+{"t_ms": 18201.78, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " operating"}
+{"t_ms": 18214.16, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " system"}
+{"t_ms": 18215.92, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 18250.22, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 38662.63}
+{"t_ms": 18326.83, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 39062.63}
+{"t_ms": 18392.01, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 39462.63}
+{"t_ms": 18461.57, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 39862.63}
+{"t_ms": 18532.07, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 40262.63}
+{"t_ms": 18599.32, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 40662.63}
+{"t_ms": 18705.85, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " since"}
+{"t_ms": 18705.89, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " that"}
+{"t_ms": 18705.91, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " often"}
+{"t_ms": 18705.92, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " fixes"}
+{"t_ms": 18705.93, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " stability"}
+{"t_ms": 18705.95, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " quir"}
+{"t_ms": 18705.96, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "ks"}
+{"t_ms": 18705.98, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "."}
+{"t_ms": 18747.78, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 41062.63}
+{"t_ms": 18817.87, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 41462.63}
+{"t_ms": 18886.14, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 41862.63}
+{"t_ms": 18951.99, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 42262.63}
+{"t_ms": 19018.89, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 42662.63}
+{"t_ms": 19089.14, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 43062.63}
+{"t_ms": 19109.97, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Finally"}
+{"t_ms": 19109.99, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 19126.97, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " if"}
+{"t_ms": 19134.23, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " it"}
+{"t_ms": 19229.85, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " still"}
+{"t_ms": 19229.86, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " drops"}
+{"t_ms": 19229.86, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 19229.86, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " log"}
+{"t_ms": 19237.94, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 43462.63}
+{"t_ms": 19306.73, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 43862.63}
+{"t_ms": 19374.1, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 44262.63}
+{"t_ms": 19446.61, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 44662.63}
+{"t_ms": 19516.93, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 45062.63}
+{"t_ms": 19596.39, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " into"}
+{"t_ms": 19605.64, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 19613.81, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " router"}
+{"t_ms": 19623.78, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "\u2019s"}
+{"t_ms": 19630.9, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " settings"}
+{"t_ms": 19641.95, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 19649.22, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " try"}
+{"t_ms": 19657.72, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " changing"}
+{"t_ms": 19754.07, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 19754.29, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 45462.63}
+{"t_ms": 19763.72, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 45862.63}
+{"t_ms": 19834.02, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 46262.63}
+{"t_ms": 19899.46, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 46662.63}
+{"t_ms": 19968.03, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 47062.63}
+{"t_ms": 20035.9, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 47462.63}
+{"t_ms": 20076.15, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " Wi"}
+{"t_ms": 20084.02, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "\u2011"}
+{"t_ms": 20092.81, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "Fi"}
+{"t_ms": 20100.58, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " channel"}
+{"t_ms": 20107.08, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " or"}
+{"t_ms": 20114.09, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " band"}
+{"t_ms": 20114.72, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 20132.57, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " like"}
+{"t_ms": 20139.38, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " switching"}
+{"t_ms": 20277.15, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 47862.63}
+{"t_ms": 20278.35, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 48262.63}
+{"t_ms": 20333.62, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 48662.63}
+{"t_ms": 20399.77, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 49062.63}
+{"t_ms": 20469.8, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 49462.63}
+{"t_ms": 20536.0, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 49862.63}
+{"t_ms": 20550.89, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " between"}
+{"t_ms": 20559.54, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " "}
+{"t_ms": 20567.87, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "2"}
+{"t_ms": 20573.64, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " point"}
+{"t_ms": 20575.68, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " "}
+{"t_ms": 20593.01, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "4"}
+{"t_ms": 20595.53, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 20596.61, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " "}
+{"t_ms": 20617.91, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "5"}
+{"t_ms": 20624.64, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " gig"}
+{"t_ms": 20631.96, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "ah"}
+{"t_ms": 20639.87, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "ertz"}
+{"t_ms": 20644.47, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 20802.23, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 50262.63}
+{"t_ms": 20803.68, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 50662.63}
+{"t_ms": 20854.74, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 51062.63}
+{"t_ms": 20915.54, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 51462.63}
+{"t_ms": 20981.4, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 51862.63}
+{"t_ms": 21033.8, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 21044.14, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " if"}
+{"t_ms": 21047.79, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " needed"}
+{"t_ms": 21059.51, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": ","}
+{"t_ms": 21066.8, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " reset"}
+{"t_ms": 21073.58, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " the"}
+{"t_ms": 21079.75, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " router"}
+{"t_ms": 21083.7, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " to"}
+{"t_ms": 21122.33, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 52262.63}
+{"t_ms": 21189.02, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 52662.63}
+{"t_ms": 21327.33, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 53062.63}
+{"t_ms": 21328.85, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 53462.63}
+{"t_ms": 21387.04, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 53862.63}
+{"t_ms": 21450.59, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 54262.63}
+{"t_ms": 21479.51, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " defaults"}
+{"t_ms": 21485.9, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " and"}
+{"t_ms": 21493.74, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " set"}
+{"t_ms": 21501.82, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " it"}
+{"t_ms": 21508.65, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " up"}
+{"t_ms": 21517.84, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": " fresh"}
+{"t_ms": 21527.75, "type": "transcript", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "delta": "."}
+{"t_ms": 21582.05, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 54662.63}
+{"t_ms": 21652.71, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 55062.63}
+{"t_ms": 21709.7, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 55462.63}
+{"t_ms": 21851.87, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 55862.63}
+{"t_ms": 21852.68, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 56262.63}
+{"t_ms": 21897.58, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 9600, "play_ms": 56662.63}
+{"t_ms": 21920.07, "type": "audio", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "samples": 8400, "play_ms": 57062.63}
+{"t_ms": 21946.05, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_ENu0uh6XrFe0OBZAOVx9n", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "output_index": 0, "content_index": 0}}
+{"t_ms": 21949.54, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_ENu0uN3x2EYYFy4APh11h", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "output_index": 0, "content_index": 0, "transcript": "First, power cycle your router and modem by unplugging them for about 20 seconds, then plugging them back in and waiting for the lights to settle. Next, check the Ethernet and power cables to make sure nothing is loose or damaged. Then, move closer to the router for a bit to see if weak signal or interference is the culprit. After that, forget the Wi\u2011Fi network on your device and join it again, carefully re-entering the password. Then update your device\u2019s Wi\u2011Fi drivers or operating system, since that often fixes stability quirks. Finally, if it still drops, log into the router\u2019s settings and try changing the Wi\u2011Fi channel or band, like switching between 2 point 4 and 5 gigahertz, and if needed, reset the router to defaults and set it up fresh."}}
+{"t_ms": 21949.56, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_ENu0ukCrdUhxWXd0W1ZPc", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "item_id": "item_ENu0l79LjWitNBD2qOyhH", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": "First, power cycle your router and modem by unplugging them for about 20 seconds, then plugging them back in and waiting for the lights to settle. Next, check the Ethernet and power cables to make sure nothing is loose or damaged. Then, move closer to the router for a bit to see if weak signal or interference is the culprit. After that, forget the Wi\u2011Fi network on your device and join it again, carefully re-entering the password. Then update your device\u2019s Wi\u2011Fi drivers or operating system, since that often fixes stability quirks. Finally, if it still drops, log into the router\u2019s settings and try changing the Wi\u2011Fi channel or band, like switching between 2 point 4 and 5 gigahertz, and if needed, reset the router to defaults and set it up fresh."}}}
+{"t_ms": 21949.56, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENu0uezCMvCWJVU6GhFbi", "previous_item_id": "item_ENu0jCGU1oLjdxvqScHCG", "item": {"id": "item_ENu0l79LjWitNBD2qOyhH", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "First, power cycle your router and modem by unplugging them for about 20 seconds, then plugging them back in and waiting for the lights to settle. Next, check the Ethernet and power cables to make sure nothing is loose or damaged. Then, move closer to the router for a bit to see if weak signal or interference is the culprit. After that, forget the Wi\u2011Fi network on your device and join it again, carefully re-entering the password. Then update your device\u2019s Wi\u2011Fi drivers or operating system, since that often fixes stability quirks. Finally, if it still drops, log into the router\u2019s settings and try changing the Wi\u2011Fi channel or band, like switching between 2 point 4 and 5 gigahertz, and if needed, reset the router to defaults and set it up fresh."}], "phase": "final_answer"}}}
+{"t_ms": 21949.57, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_ENu0uOP8gMN7SP8eN5yaq", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "output_index": 0, "item": {"id": "item_ENu0l79LjWitNBD2qOyhH", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "First, power cycle your router and modem by unplugging them for about 20 seconds, then plugging them back in and waiting for the lights to settle. Next, check the Ethernet and power cables to make sure nothing is loose or damaged. Then, move closer to the router for a bit to see if weak signal or interference is the culprit. After that, forget the Wi\u2011Fi network on your device and join it again, carefully re-entering the password. Then update your device\u2019s Wi\u2011Fi drivers or operating system, since that often fixes stability quirks. Finally, if it still drops, log into the router\u2019s settings and try changing the Wi\u2011Fi channel or band, like switching between 2 point 4 and 5 gigahertz, and if needed, reset the router to defaults and set it up fresh."}], "phase": "final_answer"}}}
+{"t_ms": 21951.51, "type": "response_done", "response_id": "resp_ENu0lkDiNpEflnMN9qEYj", "status": "completed", "status_details": null, "usage": {"total_tokens": 1357, "input_tokens": 252, "output_tokens": 1105, "input_token_details": {"text_tokens": 158, "audio_tokens": 94, "image_tokens": 0, "cached_tokens": 0, "cached_tokens_details": {"text_tokens": 0, "audio_tokens": 0, "image_tokens": 0}}, "output_token_details": {"text_tokens": 218, "audio_tokens": 887}}}
+{"t_ms": 21996.97, "type": "native", "name": "rate_limits.updated", "raw": {"type": "rate_limits.updated", "event_id": "event_ENu0vYu64vFyJobAbZapI", "rate_limits": [{"name": "tokens", "limit": 200000, "remaining": 196709, "reset_seconds": 0.987}]}}

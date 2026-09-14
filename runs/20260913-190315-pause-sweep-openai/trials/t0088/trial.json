@@ -1,0 +1,103 @@
+{
+  "trial_id": "t0088",
+  "setting": "server_vad:silence_duration_ms=500",
+  "stimulus": "capital",
+  "pause_ms": 1200,
+  "rep": 0,
+  "kind": "incomplete",
+  "started": "2026-09-13T19:03:15.998438-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2680.0,
+    "B.start": 3880.0,
+    "B.end": 5095.0
+  },
+  "analysis": {
+    "outcome": "clean",
+    "first_onset_ms": 6270.0,
+    "split_in_pause": true,
+    "final_gap_ms": 1175.0,
+    "endpoint_lag_ms": 681.1,
+    "vad_end_offset_ms": 601.0,
+    "generation_lag_ms": 478.4,
+    "responses": 2,
+    "cancelled": 1,
+    "talk_over_ms": 0.0,
+    "cost_usd": 0.01357,
+    "truncations": 1,
+    "api_errors": [],
+    "model_segments": [
+      [
+        6270.0,
+        6860.0
+      ],
+      [
+        7270.0,
+        8510.0
+      ],
+      [
+        9090.0,
+        11960.0
+      ]
+    ],
+    "send_lateness_ms": {
+      "p50": 0.420292,
+      "p99": 2.0858286799999997,
+      "max": 3.842167
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqSXzi0peBuZUUnZypjj",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355505,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

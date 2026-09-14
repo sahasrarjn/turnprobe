@@ -1,0 +1,101 @@
+{
+  "trial_id": "t0015",
+  "setting": "default:",
+  "clip": "okay",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:35:44.327618-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7919.983375,
+    "X.start": 10420.0,
+    "X.end": 10800.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7910.0,
+        8200.0
+      ],
+      [
+        8570.0,
+        8930.0
+      ],
+      [
+        9400.0,
+        11380.0
+      ],
+      [
+        12560.0,
+        14970.0
+      ],
+      [
+        15510.0,
+        17330.0
+      ],
+      [
+        17800.0,
+        19150.0
+      ],
+      [
+        19670.0,
+        22230.0
+      ],
+      [
+        22740.0,
+        25240.0
+      ],
+      [
+        25660.0,
+        29620.0
+      ],
+      [
+        30300.0,
+        33380.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": null,
+    "stop_latency_ms": 960.0,
+    "talk_over_ms": 380.0,
+    "reply_gap_ms": 1760.0,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.10675,
+      "p99": 2.2321840699999997,
+      "max": 17.144917
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789371619,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

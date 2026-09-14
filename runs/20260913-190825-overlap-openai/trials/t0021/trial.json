@@ -1,0 +1,141 @@
+{
+  "trial_id": "t0021",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-13T19:08:32.762283-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8043.956,
+    "X.start": 10543.958333333334,
+    "X.end": 13088.958333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8040.0,
+        8390.0
+      ],
+      [
+        8870.0,
+        10690.0
+      ],
+      [
+        14440.0,
+        15230.0
+      ],
+      [
+        15780.0,
+        19240.0
+      ],
+      [
+        19780.0,
+        23670.0
+      ],
+      [
+        24240.0,
+        29140.0
+      ],
+      [
+        29780.0,
+        34820.0
+      ],
+      [
+        35400.0,
+        37580.0
+      ],
+      [
+        38100.0,
+        40960.0
+      ],
+      [
+        41380.0,
+        43110.0
+      ],
+      [
+        43430.0,
+        45100.0
+      ],
+      [
+        45470.0,
+        47410.0
+      ],
+      [
+        47740.0,
+        48600.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 146.2,
+    "stop_latency_ms": 146.6,
+    "talk_over_ms": 146.0,
+    "reply_gap_ms": 1351.0,
+    "responses_after_overlap": 1,
+    "answer_text": "Alright, let\u2019s go through a steady, step-by-step walkthrough together. I\u2019ll keep it simple and paced.First, move closer to the router and stay there for the test, so we\u2019re not chasing a weak signal. Next, restart the router by unplugging it,",
+    "reply_text": "No problem. If you don\u2019t know the router password, first check the sticker on the router itself. A lot of routers have the default username and password printed right on the back or bottom. If that\u2019s not there, try the common defaults like \u201cadmin\u201d and \u201cadmin,\u201d or \u201cadmin\u201d and \u201cpassword.\u201d If those don\u2019t work, look up your router\u2019s model online and find the default login for that exact model. If it\u2019s already been changed and you can\u2019t recover it, you may need to reset the router using the tiny reset button, usually held down for about 10 seconds, but that will wipe custom settings. After that, you can log in with the defaults and set a new password.",
+    "cost_usd": 0.07501,
+    "send_lateness_ms": {
+      "p50": 0.887417,
+      "p99": 2.08318684,
+      "max": 16.619
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqXQ1DQZRFPitDWEmgow",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355809,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "trial_id": "t0003",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375328-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7965.109583,
+    "X.start": 10465.125,
+    "X.end": 10835.125
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7960.0,
+        8330.0
+      ],
+      [
+        8910.0,
+        10510.0
+      ],
+      [
+        12100.0,
+        12480.0
+      ],
+      [
+        12900.0,
+        17580.0
+      ],
+      [
+        18280.0,
+        21590.0
+      ],
+      [
+        21900.0,
+        23120.0
+      ],
+      [
+        23530.0,
+        24610.0
+      ],
+      [
+        24920.0,
+        27160.0
+      ],
+      [
+        28070.0,
+        31570.0
+      ],
+      [
+        31930.0,
+        33830.0
+      ],
+      [
+        34640.0,
+        38540.0
+      ],
+      [
+        38890.0,
+        39940.0
+      ],
+      [
+        40430.0,
+        44510.0
+      ],
+      [
+        45450.0,
+        49840.0
+      ],
+      [
+        50230.0,
+        52800.0
+      ],
+      [
+        53260.0,
+        55860.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 102.0,
+    "stop_latency_ms": 102.5,
+    "talk_over_ms": 44.9,
+    "reply_gap_ms": 1264.9,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s walk through a quick checklist to stabilize your connection.First, power cycle your modem and router: unplug both, wait about 20 seconds, then plug the modem in first, and once it\u2019s fully",
+    "reply_text": "First, if you can, move closer to the router and see if the drops still happen, just to rule out weak signal. Next, restart everything: shut down your computer or phone, unplug the router and modem, wait about 20 seconds, then plug them back in and power your device back up. Then check the basics: make sure the Ethernet cable to the modem is snug, and if you have another cable, try swapping it. After that, log into your router\u2019s settings and look for a channel or band option, and try switching channels, and if your device supports it, try using the 5 gigahertz band instead of 2.4. Next, update your network adapter driver or your phone or laptop\u2019s system software, and also check if the router has a firmware update available. Finally, if the connection still drops, try a full network reset on your device, and if that doesn\u2019t help, contact your internet provider, because the issue may be on their end.",
+    "cost_usd": 0.0954,
+    "send_lateness_ms": {
+      "p50": 0.763542,
+      "p99": 1.9708563599999993,
+      "max": 11.572667
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENtyENp9l3HKN8OaeGen3",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369002,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

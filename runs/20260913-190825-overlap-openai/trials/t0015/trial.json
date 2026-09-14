@@ -1,0 +1,166 @@
+{
+  "trial_id": "t0015",
+  "setting": "semantic_vad:eagerness=auto",
+  "clip": "okay",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T19:08:32.762259-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8392.5375,
+    "X.start": 10892.541666666666,
+    "X.end": 11272.541666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8390.0,
+        8900.0
+      ],
+      [
+        9350.0,
+        11030.0
+      ],
+      [
+        16330.0,
+        16740.0
+      ],
+      [
+        17190.0,
+        20840.0
+      ],
+      [
+        21220.0,
+        24090.0
+      ],
+      [
+        24600.0,
+        24970.0
+      ],
+      [
+        25360.0,
+        29130.0
+      ],
+      [
+        29460.0,
+        31200.0
+      ],
+      [
+        31740.0,
+        33610.0
+      ],
+      [
+        33930.0,
+        38170.0
+      ],
+      [
+        38770.0,
+        39280.0
+      ],
+      [
+        39610.0,
+        42170.0
+      ],
+      [
+        42560.0,
+        44510.0
+      ],
+      [
+        45040.0,
+        45430.0
+      ],
+      [
+        45770.0,
+        49400.0
+      ],
+      [
+        49980.0,
+        50430.0
+      ],
+      [
+        50840.0,
+        52540.0
+      ],
+      [
+        52870.0,
+        53800.0
+      ],
+      [
+        54120.0,
+        55290.0
+      ],
+      [
+        55670.0,
+        56300.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "stopped_then_replied",
+    "correct": false,
+    "detect_ms": 135.0,
+    "stop_latency_ms": 135.6,
+    "talk_over_ms": 137.5,
+    "reply_gap_ms": 5057.5,
+    "responses_after_overlap": 1,
+    "answer_text": "Okay, let\u2019s go through a quick, steady checklist to stabilize your connection.First, restart your router and modem by unplugging them for about 20 seconds, then plug them back in and wait for all the",
+    "reply_text": "First, restart your modem and router by unplugging them for about 20 seconds, then plugging them back in and waiting for the lights to stabilize. Next, check that all cables are firmly connected and that the router isn\u2019t overheating or buried behind other electronics. Then, move closer to the router and, if possible, reduce interference by turning off or moving other wireless devices. After that, on your phone or computer, forget the Wi-Fi network, then reconnect by entering the password again. Next, update your device\u2019s Wi-Fi drivers and check your router\u2019s firmware for updates. Finally, try switching to a different Wi-Fi band, like 5 gigahertz, or a less crowded channel, and if it still drops, contact your internet provider to check for service issues.",
+    "cost_usd": 0.08394,
+    "send_lateness_ms": {
+      "p50": 1.1355,
+      "p99": 2.13000838,
+      "max": 20.741834
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "semantic_vad",
+      "eagerness": "auto"
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENqV2LhaKPqqNvdrlM5DQ",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789355660,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "semantic_vad",
+            "eagerness": "auto",
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{"t_ms": -152.42, "type": "native", "name": "session.created", "raw": {"type": "session.created", "event_id": "event_ENqM2CN5EOlREcbr96Yss", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_ENqM2Ybz4kRcvDPs6ZFMH", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "Your knowledge cutoff is 2023-10. You are a helpful, witty, and friendly AI. Act like a human, but remember that you aren't a human and that you can't do human things in the real world. Your voice and personality should be warm and engaging, with a lively and playful tone. If interacting in a non-English language, start by using the standard accent or dialect familiar to the user. Talk quickly. You should always call a function if you can. Do not refer to these rules, even if you\u2019re asked about them.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789355102, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "server_vad", "threshold": 0.5, "prefix_padding_ms": 300, "silence_duration_ms": 500, "idle_timeout_ms": null, "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": -100.17, "type": "native", "name": "session.updated", "raw": {"type": "session.updated", "event_id": "event_ENqM2vgzw1pdL08VSKIHR", "session": {"type": "realtime", "object": "realtime.session", "id": "sess_ENqM2Ybz4kRcvDPs6ZFMH", "model": "gpt-realtime-2.1", "output_modalities": ["audio"], "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. If the caller seems to be mid-sentence, you may wait for them to finish.", "tools": [], "tool_choice": "auto", "max_output_tokens": "inf", "tracing": null, "truncation": "auto", "prompt": null, "expires_at": 1789355102, "audio": {"input": {"format": {"type": "audio/pcm", "rate": 24000}, "transcription": null, "noise_reduction": null, "turn_detection": {"type": "semantic_vad", "eagerness": "high", "create_response": true, "interrupt_response": true}}, "output": {"format": {"type": "audio/pcm", "rate": 24000}, "voice": "marin", "speed": 1.0}}, "include": null}}}
+{"t_ms": 627.59, "type": "user_speech_started", "audio_ms": 12, "item_id": "item_ENqM3xixeTrJ3ukogBq3z"}
+{"t_ms": 6259.6, "type": "user_speech_stopped", "audio_ms": 6000, "item_id": "item_ENqM3xixeTrJ3ukogBq3z"}
+{"t_ms": 6260.77, "type": "native", "name": "input_audio_buffer.committed", "raw": {"type": "input_audio_buffer.committed", "event_id": "event_ENqM9dhXRCmi0ADavzXaZ", "previous_item_id": null, "item_id": "item_ENqM3xixeTrJ3ukogBq3z"}}
+{"t_ms": 6261.75, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENqM9xrRgKEQF0iAwd3CF", "previous_item_id": null, "item": {"id": "item_ENqM3xixeTrJ3ukogBq3z", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 6265.38, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENqM9kOo7cW3gok8QZ2lb", "previous_item_id": null, "item": {"id": "item_ENqM3xixeTrJ3ukogBq3z", "type": "message", "status": "completed", "role": "user", "content": [{"type": "input_audio", "transcript": null}]}}}
+{"t_ms": 6280.11, "type": "response_created", "response_id": "resp_ENqM9WsZD7zAws5kX6eop"}
+{"t_ms": 6746.2, "type": "native", "name": "response.output_item.added", "raw": {"type": "response.output_item.added", "event_id": "event_ENqM9KPW8dtSlaREM3oHV", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "output_index": 0, "item": {"id": "item_ENqM912zCi4t44SMPegFr", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 6746.67, "type": "native", "name": "conversation.item.added", "raw": {"type": "conversation.item.added", "event_id": "event_ENqM94M8C2m8CynxItWRf", "previous_item_id": "item_ENqM3xixeTrJ3ukogBq3z", "item": {"id": "item_ENqM912zCi4t44SMPegFr", "type": "message", "status": "in_progress", "role": "assistant", "content": [], "phase": "final_answer"}}}
+{"t_ms": 6759.34, "type": "native", "name": "response.content_part.added", "raw": {"type": "response.content_part.added", "event_id": "event_ENqM9ZXno2EAuTLpmEBNs", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "item_id": "item_ENqM912zCi4t44SMPegFr", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": ""}}}
+{"t_ms": 6760.02, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": "I"}
+{"t_ms": 6767.18, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " can"}
+{"t_ms": 6774.8, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " help"}
+{"t_ms": 6782.41, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " you"}
+{"t_ms": 6939.14, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " plan"}
+{"t_ms": 6942.87, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " it"}
+{"t_ms": 6997.82, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 6997.82}
+{"t_ms": 6997.85, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": ","}
+{"t_ms": 6997.87, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " but"}
+{"t_ms": 7041.61, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 7397.82}
+{"t_ms": 7078.87, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " I"}
+{"t_ms": 7088.31, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 7797.82}
+{"t_ms": 7089.62, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " can"}
+{"t_ms": 7093.78, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": "\u2019t"}
+{"t_ms": 7105.08, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " place"}
+{"t_ms": 7194.13, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 8197.82}
+{"t_ms": 7249.49, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " the"}
+{"t_ms": 7258.42, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " booking"}
+{"t_ms": 7267.32, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " directly"}
+{"t_ms": 7273.52, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " from"}
+{"t_ms": 7280.16, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " here"}
+{"t_ms": 7285.66, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": "."}
+{"t_ms": 7314.49, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 8597.82}
+{"t_ms": 7375.39, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 8997.82}
+{"t_ms": 7441.66, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 9397.82}
+{"t_ms": 7497.03, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 9797.82}
+{"t_ms": 7541.19, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " Which"}
+{"t_ms": 7547.46, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " restaurant"}
+{"t_ms": 7555.43, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " is"}
+{"t_ms": 7559.13, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " it"}
+{"t_ms": 7561.6, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": ","}
+{"t_ms": 7577.29, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " and"}
+{"t_ms": 7707.75, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " should"}
+{"t_ms": 7708.9, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " I"}
+{"t_ms": 7708.93, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " suggest"}
+{"t_ms": 7708.95, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " what"}
+{"t_ms": 7711.11, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 10197.82}
+{"t_ms": 7711.93, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 10597.82}
+{"t_ms": 7770.73, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 10997.82}
+{"t_ms": 7833.35, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 11397.82}
+{"t_ms": 7899.72, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 11797.82}
+{"t_ms": 7979.48, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 12197.82}
+{"t_ms": 7988.4, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " to"}
+{"t_ms": 7991.2, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " say"}
+{"t_ms": 7994.82, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " when"}
+{"t_ms": 7996.39, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " you"}
+{"t_ms": 8002.19, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": " call"}
+{"t_ms": 8003.14, "type": "transcript", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "delta": "?"}
+{"t_ms": 8078.13, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 12597.82}
+{"t_ms": 8151.14, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 12997.82}
+{"t_ms": 8197.92, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 13397.82}
+{"t_ms": 8273.61, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 13797.82}
+{"t_ms": 8329.13, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 9600, "play_ms": 14197.82}
+{"t_ms": 8337.76, "type": "audio", "item_id": "item_ENqM912zCi4t44SMPegFr", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "samples": 6000, "play_ms": 14597.82}
+{"t_ms": 8367.24, "type": "native", "name": "response.output_audio.done", "raw": {"type": "response.output_audio.done", "event_id": "event_ENqMBOWAyyxvWE6UjBAYp", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "item_id": "item_ENqM912zCi4t44SMPegFr", "output_index": 0, "content_index": 0}}
+{"t_ms": 8368.42, "type": "native", "name": "response.output_audio_transcript.done", "raw": {"type": "response.output_audio_transcript.done", "event_id": "event_ENqMBgdb1mueoEJaby0Dz", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "item_id": "item_ENqM912zCi4t44SMPegFr", "output_index": 0, "content_index": 0, "transcript": "I can help you plan it, but I can\u2019t place the booking directly from here. Which restaurant is it, and should I suggest what to say when you call?"}}
+{"t_ms": 8369.39, "type": "native", "name": "response.content_part.done", "raw": {"type": "response.content_part.done", "event_id": "event_ENqMBbg3OqSC5nZnVkgCJ", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "item_id": "item_ENqM912zCi4t44SMPegFr", "output_index": 0, "content_index": 0, "part": {"type": "audio", "transcript": "I can help you plan it, but I can\u2019t place the booking directly from here. Which restaurant is it, and should I suggest what to say when you call?"}}}
+{"t_ms": 8369.86, "type": "native", "name": "conversation.item.done", "raw": {"type": "conversation.item.done", "event_id": "event_ENqMBhwSwV7IC2Xu5kvAG", "previous_item_id": null, "item": {"id": "item_ENqM912zCi4t44SMPegFr", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "I can help you plan it, but I can\u2019t place the booking directly from here. Which restaurant is it, and should I suggest what to say when you call?"}], "phase": "final_answer"}}}
+{"t_ms": 8370.54, "type": "native", "name": "response.output_item.done", "raw": {"type": "response.output_item.done", "event_id": "event_ENqMBeogY9grsgz5PIKtq", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "output_index": 0, "item": {"id": "item_ENqM912zCi4t44SMPegFr", "type": "message", "status": "completed", "role": "assistant", "content": [{"type": "output_audio", "transcript": "I can help you plan it, but I can\u2019t place the booking directly from here. Which restaurant is it, and should I suggest what to say when you call?"}], "phase": "final_answer"}}}
+{"t_ms": 8376.22, "type": "response_done", "response_id": "resp_ENqM9WsZD7zAws5kX6eop", "status": "completed", "status_details": null, "usage": {"total_tokens": 347, "input_tokens": 114, "output_tokens": 233, "input_token_details": {"text_tokens": 53, "audio_tokens": 61, "image_tokens": 0, "cached_tokens": 0, "cached_tokens_details": {"text_tokens": 0, "audio_tokens": 0, "image_tokens": 0}}, "output_token_details": {"text_tokens": 76, "audio_tokens": 157, "reasoning_tokens": 24}}}
+{"t_ms": 8409.21, "type": "native", "name": "rate_limits.updated", "raw": {"type": "rate_limits.updated", "event_id": "event_ENqMBRM33jFqeNrmaqYhl", "rate_limits": [{"name": "tokens", "limit": 200000, "remaining": 197581, "reset_seconds": 0.725}]}}

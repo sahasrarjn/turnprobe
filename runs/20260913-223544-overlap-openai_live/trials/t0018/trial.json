@@ -1,0 +1,121 @@
+{
+  "trial_id": "t0018",
+  "setting": "default:",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 2,
+  "started": "2026-09-13T22:35:44.327627-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8613.413834,
+    "X.start": 11113.416666666666,
+    "X.end": 13658.416666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8610.0,
+        9040.0
+      ],
+      [
+        9440.0,
+        12500.0
+      ],
+      [
+        15150.0,
+        15640.0
+      ],
+      [
+        16010.0,
+        17720.0
+      ],
+      [
+        18250.0,
+        18910.0
+      ],
+      [
+        19400.0,
+        24080.0
+      ],
+      [
+        24830.0,
+        29540.0
+      ],
+      [
+        30140.0,
+        34020.0
+      ],
+      [
+        34760.0,
+        38990.0
+      ],
+      [
+        39500.0,
+        41650.0
+      ],
+      [
+        42170.0,
+        43810.0
+      ],
+      [
+        44250.0,
+        47320.0
+      ],
+      [
+        48200.0,
+        49740.0
+      ],
+      [
+        50050.0,
+        52230.0
+      ],
+      [
+        52590.0,
+        55400.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": null,
+    "stop_latency_ms": 1386.6,
+    "talk_over_ms": 1386.6,
+    "reply_gap_ms": 1491.6,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.03667,
+    "send_lateness_ms": {
+      "p50": 0.910084,
+      "p99": 2.1582044000000002,
+      "max": 11.433834
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 44.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789371674,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

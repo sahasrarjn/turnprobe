@@ -1,0 +1,149 @@
+{
+  "trial_id": "t0006",
+  "setting": "server_vad:silence_duration_ms=500",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-13T22:56:04.375349-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8119.888916,
+    "X.start": 10619.875,
+    "X.end": 13919.875
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8120.0,
+        8480.0
+      ],
+      [
+        8970.0,
+        10450.0
+      ],
+      [
+        15770.0,
+        18870.0
+      ],
+      [
+        19280.0,
+        20870.0
+      ],
+      [
+        21460.0,
+        25170.0
+      ],
+      [
+        25530.0,
+        27850.0
+      ],
+      [
+        28580.0,
+        32900.0
+      ],
+      [
+        33700.0,
+        35520.0
+      ],
+      [
+        35940.0,
+        40100.0
+      ],
+      [
+        40490.0,
+        41960.0
+      ],
+      [
+        42350.0,
+        43930.0
+      ],
+      [
+        44670.0,
+        48850.0
+      ],
+      [
+        49230.0,
+        50810.0
+      ],
+      [
+        51360.0,
+        52780.0
+      ],
+      [
+        53110.0,
+        55130.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": 102.9,
+    "stop_latency_ms": 103.3,
+    "talk_over_ms": 0.0,
+    "reply_gap_ms": 1850.1,
+    "responses_after_overlap": 2,
+    "answer_text": "Okay, let\u2019s steady that connection. I\u2019ll walk through a clear sequence you can follow.First, move closer to your router and watch if the drops stop, since weak signal can look like random disconnects. Next, restart your router and modem",
+    "reply_text": " | If you don\u2019t know the router password, you\u2019ve got a few options. First, check the router itself. There\u2019s often a sticker on the bottom or back with the default username and password, sometimes labeled \u201cadmin\u201d or \u201cwireless key.\u201d Next, try the default login listed in the manual or on the manufacturer\u2019s website. If it\u2019s been changed and you can\u2019t recover it, you can reset the router with the small reset button, usually held for about ten seconds, which restores factory defaults, though you\u2019ll have to set up Wi\u2011Fi again. You can also check if your internet provider gave you a management app or a customer portal where you can see or change the password. And if none of that works, contacting your provider is the safest next step.",
+    "cost_usd": 0.08078,
+    "send_lateness_ms": {
+      "p50": 0.80025,
+      "p99": 1.6978697200000001,
+      "max": 20.468375
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_ENtzbBFbsrgb1k6JOqPar",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789369087,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}
