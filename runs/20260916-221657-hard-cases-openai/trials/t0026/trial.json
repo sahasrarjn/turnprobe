@@ -1,0 +1,99 @@
+{
+  "trial_id": "t0026",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "correction",
+  "voice": "coral",
+  "variant": "time",
+  "rep": 3,
+  "started": "2026-09-16T22:17:06.791812-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 5045.0,
+    "B.start": 5845.0,
+    "B.end": 7750.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8960.0,
+        9350.0
+      ],
+      [
+        9800.0,
+        12060.0
+      ]
+    ],
+    "responses": 2,
+    "truncations": 0,
+    "transcript": "Booked: a table for 8 on Friday at 6.",
+    "outcome": "clean",
+    "said_early": "",
+    "reply": "Booked: a table for 8 on Friday at 6.",
+    "final_right": true,
+    "final_wrong": true,
+    "ends_mid_sentence": false,
+    "final_gap_ms": 1210,
+    "cost_usd": 0.01053,
+    "send_lateness_ms": {
+      "p50": 1.703562,
+      "p99": 2.1684167600000004,
+      "max": 5.127541,
+      "spikes": [],
+      "send_call_max_ms": 1.0
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOz3wnS8LkhWA6yEAXA7X",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are the phone booking assistant for Luigi's restaurant. When a caller asks for a table, confirm the booking by repeating the party size, day and time. Keep replies short.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789626904,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

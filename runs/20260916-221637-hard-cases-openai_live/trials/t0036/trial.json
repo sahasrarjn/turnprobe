@@ -1,0 +1,93 @@
+{
+  "trial_id": "t0036",
+  "setting": "default:",
+  "case": "echo_ctrl",
+  "voice": "ash",
+  "rep": 0,
+  "started": "2026-09-16T22:16:47.559992-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7949.526625
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7940.0,
+        12390.0
+      ],
+      [
+        12940.0,
+        15980.0
+      ],
+      [
+        16390.0,
+        19670.0
+      ],
+      [
+        20190.0,
+        21560.0
+      ],
+      [
+        21870.0,
+        24770.0
+      ],
+      [
+        25380.0,
+        25760.0
+      ],
+      [
+        26170.0,
+        28770.0
+      ],
+      [
+        29260.0,
+        34760.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your router and your device to clear any temporary glitches. Then move closer to the router and check if the drop still happens. Next, forget the network on your device and reconnect with the password. After that, check for updates for your device network drivers, or the system. Then, make sure power saving mode isn't turning off Wi-Fi. Finally, if it still drops, try changing the router's Wi-Fi channel, or contact your provider to check the line.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 23520,
+    "longest_gap_ms": 610,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 26820,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.368542,
+      "p99": 2.11892012,
+      "max": 2.260542,
+      "spikes": [],
+      "send_call_max_ms": 5.0
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630395,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

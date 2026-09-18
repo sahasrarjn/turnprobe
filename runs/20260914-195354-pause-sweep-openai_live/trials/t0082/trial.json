@@ -1,0 +1,79 @@
+{
+  "trial_id": "t0082",
+  "setting": "default:",
+  "stimulus": "router",
+  "kind": "incomplete",
+  "voice": "coral",
+  "pause_ms": 600,
+  "rep": 0,
+  "started": "2026-09-14T20:01:54.315203-07:00",
+  "rerun": true,
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 3275.0,
+    "B.start": 3875.0,
+    "B.end": 5725.0
+  },
+  "analysis": {
+    "outcome": "clean",
+    "first_onset_ms": 7320.0,
+    "split_in_pause": false,
+    "final_gap_ms": 1595.0,
+    "endpoint_lag_ms": null,
+    "vad_end_offset_ms": null,
+    "generation_lag_ms": null,
+    "responses": 0,
+    "cancelled": 0,
+    "talk_over_ms": 0.0,
+    "truncations": 0,
+    "api_errors": [],
+    "short_in_pause": 0,
+    "short_over_user": 0,
+    "model_segments": [
+      [
+        7320.0,
+        7750.0
+      ],
+      [
+        8270.0,
+        11770.0
+      ],
+      [
+        12390.0,
+        12960.0
+      ]
+    ],
+    "cost_usd": 0.01372,
+    "send_lateness_ms": {
+      "p50": 0.127875,
+      "p99": 1.2678754999999982,
+      "max": 8.418333
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": null,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789448973,
+      "model": "gpt-live-1",
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

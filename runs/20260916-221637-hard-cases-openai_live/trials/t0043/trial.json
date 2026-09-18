@@ -1,0 +1,102 @@
+{
+  "trial_id": "t0043",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -24.0,
+  "rep": 0,
+  "started": "2026-09-16T22:16:47.560021-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7970.4685
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7970.0,
+        8240.0
+      ],
+      [
+        8580.0,
+        11070.0
+      ],
+      [
+        11510.0,
+        12480.0
+      ],
+      [
+        13000.0,
+        16110.0
+      ],
+      [
+        16460.0,
+        17500.0
+      ],
+      [
+        17920.0,
+        19290.0
+      ],
+      [
+        20050.0,
+        22630.0
+      ],
+      [
+        23570.0,
+        26810.0
+      ],
+      [
+        27410.0,
+        30930.0
+      ],
+      [
+        31440.0,
+        36440.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, unplug your modem and router for a full minute, then plug them back in. Next, on your device, turn Wi-Fi off and back on, and forget your network. Rejoin it with the password. Then, move closer to the router to rule out interference and check for router firmware updates in its app or web page. After that, restart your device and run a quick speed test. If it still drops, try switching your router's Wi-Fi channel or ask your internet provider to check the line.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 23590,
+    "longest_gap_ms": 940,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 28470,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.380917,
+      "p99": 2.132565,
+      "max": 13.006042,
+      "spikes": [],
+      "send_call_max_ms": 0.9
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630611,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

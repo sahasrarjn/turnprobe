@@ -1,0 +1,130 @@
+{
+  "trial_id": "t0003",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "um_hold",
+  "rep": 0,
+  "started": "2026-09-16T16:04:15.259934-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2105.0,
+    "U.start": 2505.0,
+    "U.end": 5025.0,
+    "N.start": 5925.0,
+    "N.end": 8065.0,
+    "B.start": 9565.0,
+    "B.end": 13295.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9320.0,
+        9670.0
+      ],
+      [
+        14700.0,
+        15050.0
+      ],
+      [
+        15560.0,
+        17430.0
+      ],
+      [
+        17860.0,
+        18340.0
+      ],
+      [
+        18760.0,
+        19250.0
+      ],
+      [
+        19740.0,
+        20180.0
+      ],
+      [
+        20720.0,
+        21080.0
+      ],
+      [
+        21570.0,
+        21940.0
+      ],
+      [
+        22360.0,
+        22770.0
+      ],
+      [
+        23450.0,
+        23910.0
+      ]
+    ],
+    "responses": 3,
+    "truncations": 1,
+    "transcript": "No rush. I\u2019m Thanks. Confirming, I have 4, 7, 7, 1, 2, 2, 9. Is that right?",
+    "outcome": "cut_in_during_hold",
+    "said_during_hold": "No rush. I\u2019m",
+    "said_over_number": "",
+    "reply": "Thanks. Confirming, I have 4, 7, 7, 1, 2, 2, 9. Is that right?",
+    "readback_ok": true,
+    "final_gap_ms": 1405,
+    "cost_usd": 0.02532,
+    "send_lateness_ms": {
+      "p50": 1.049521,
+      "p99": 1.8608737499999974,
+      "max": 6.00025
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOsz06EfGx0Q4fGkyy8Q2",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a customer support voice assistant. When the caller gives an account number, read it back digit by digit to confirm. Keep replies short.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789603535,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

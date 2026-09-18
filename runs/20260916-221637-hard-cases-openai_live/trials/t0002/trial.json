@@ -1,0 +1,82 @@
+{
+  "trial_id": "t0002",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -24.0,
+  "rep": 3,
+  "started": "2026-09-16T22:16:47.559837-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8182.47675
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8180.0,
+        8560.0
+      ],
+      [
+        9020.0,
+        13180.0
+      ],
+      [
+        13640.0,
+        21640.0
+      ],
+      [
+        22190.0,
+        24910.0
+      ],
+      [
+        25410.0,
+        30150.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, unplug your modem and router, wait 30 seconds, then plug them back in. Next, restart your phone or laptop. After it powers on, forget the Wi-Fi network in settings and reconnect by re-entering the password. Then, move closer to the router to rule out weak signal. If it\u2019s still unstable, use a different Wi-Fi channel in router settings or update its firmware.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 20000,
+    "longest_gap_ms": 550,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 21970,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.438167,
+      "p99": 2.3316201200000024,
+      "max": 12.739208,
+      "spikes": [],
+      "send_call_max_ms": 6.1
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789629443,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

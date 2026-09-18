@@ -1,0 +1,84 @@
+{
+  "trial_id": "t0011",
+  "setting": "default:",
+  "case": "side_talk",
+  "rep": 0,
+  "started": "2026-09-16T15:57:39.043905-07:00",
+  "marks": {
+    "O.start": 500.0,
+    "O.end": 3375.0,
+    "H.start": 12744.291666666666,
+    "H.end": 13804.291666666666,
+    "T.start": 14704.291666666666,
+    "T.end": 19124.291666666668,
+    "F.start": 20624.291666666668,
+    "F.end": 24544.291666666668
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4560.0,
+        8430.0
+      ],
+      [
+        9010.0,
+        10510.0
+      ],
+      [
+        11140.0,
+        11460.0
+      ],
+      [
+        15930.0,
+        16810.0
+      ],
+      [
+        27240.0,
+        30120.0
+      ],
+      [
+        31190.0,
+        34520.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. Press and hold the reset button for about 10 seconds until the lights blink, then let it reboot for a minute or two. Sure, take your time. First, find the small reset pinhole or button on the back of your router and press it for about 10 seconds until the lights flash.",
+    "outcome": "spoke_during_side_talk",
+    "said_during_hold": "Sure, take your time.",
+    "reply": "First, find the small reset pinhole or button on the back of your router and press it for about 10 seconds until the lights flash.",
+    "spoke_over_aside_ms": 880,
+    "cost_usd": 0.025,
+    "send_lateness_ms": {
+      "p50": 1.0396245,
+      "p99": 1.4200049100000005,
+      "max": 9.249166
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 30.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789606987,
+      "model": "gpt-live-1",
+      "instructions": "You are a tech-support voice assistant for home internet. Keep replies to one or two short sentences. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

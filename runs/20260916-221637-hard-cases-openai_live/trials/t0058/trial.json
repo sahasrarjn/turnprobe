@@ -1,0 +1,83 @@
+{
+  "trial_id": "t0058",
+  "setting": "default:",
+  "case": "correction",
+  "voice": "ash",
+  "variant": "digit",
+  "rep": 0,
+  "started": "2026-09-16T22:16:47.560081-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 4970.0,
+    "B.start": 5770.0,
+    "B.end": 8145.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        6220.0,
+        6560.0
+      ],
+      [
+        9240.0,
+        9500.0
+      ],
+      [
+        10140.0,
+        10990.0
+      ],
+      [
+        11450.0,
+        12400.0
+      ],
+      [
+        13020.0,
+        14400.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Thanks, Got it. Your number is 5-5-5, 0-1-9-3.",
+    "outcome": "spoke_during_correction",
+    "said_early": "Thanks,",
+    "reply": "Got it. Your number is 5-5-5, 0-1-9-3.",
+    "final_right": true,
+    "final_wrong": false,
+    "ends_mid_sentence": false,
+    "final_gap_ms": 1095,
+    "cost_usd": 0.01167,
+    "send_lateness_ms": {
+      "p50": 1.712,
+      "p99": 2.1143264999999998,
+      "max": 2.168042,
+      "spikes": [],
+      "send_call_max_ms": 0.5
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 14.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789631147,
+      "model": "gpt-live-1",
+      "instructions": "You are a customer support voice assistant. When the caller gives a phone number, read it back digit by digit to confirm. Keep replies short. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "trial_id": "t0036",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "echo_ctrl",
+  "voice": "ash",
+  "rep": 0,
+  "started": "2026-09-16T22:17:06.791855-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8063.895125
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8060.0,
+        8440.0
+      ],
+      [
+        8950.0,
+        13410.0
+      ],
+      [
+        13890.0,
+        18040.0
+      ],
+      [
+        18490.0,
+        21410.0
+      ],
+      [
+        21850.0,
+        22260.0
+      ],
+      [
+        22640.0,
+        27310.0
+      ],
+      [
+        27800.0,
+        28160.0
+      ],
+      [
+        28600.0,
+        31690.0
+      ],
+      [
+        32090.0,
+        35330.0
+      ],
+      [
+        35930.0,
+        36160.0
+      ],
+      [
+        36670.0,
+        40380.0
+      ],
+      [
+        40760.0,
+        41700.0
+      ],
+      [
+        42100.0,
+        45570.0
+      ],
+      [
+        46160.0,
+        46450.0
+      ],
+      [
+        46920.0,
+        50790.0
+      ],
+      [
+        51130.0,
+        53300.0
+      ],
+      [
+        53840.0,
+        54210.0
+      ],
+      [
+        54680.0,
+        56530.0
+      ],
+      [
+        56840.0,
+        58100.0
+      ]
+    ],
+    "responses": 1,
+    "truncations": 0,
+    "transcript": "Okay, let\u2019s walk through a quick, steady set of steps to calm that flaky Wi\u2011Fi down.First, restart your modem and router: unplug them for about 20 seconds, plug them back in, and wait until all the lights stabilize.\n\nNext, restart your computer or phone, then try the connection again to clear any temporary glitches.\n\nThird, move closer to the router if you can, and if the signal improves, consider relocating the router to a more central, higher spot.\n\nFourth, reduce interference by keeping it away from microwaves, cordless phones, and thick walls, and try switching to the 5 gigahertz band if your router supports it.\n\nFifth, update your router\u2019s firmware and your device\u2019s Wi\u2011Fi driver or operating system, since outdated software can cause drops.\n\nSixth, \u201cforget\u201d the Wi\u2011Fi network on your device, reconnect by entering the password fresh, and if it still drops, try a different channel in the router settings or contact your internet provider.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 41840,
+    "longest_gap_ms": 600,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 50040,
+    "cost_usd": 0.08328,
+    "send_lateness_ms": {
+      "p50": 1.482208,
+      "p99": 2.12240468,
+      "max": 3.9685,
+      "spikes": [],
+      "send_call_max_ms": 1.7
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOz89hnkuO8J7tkMifGkt",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789627165,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

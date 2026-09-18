@@ -1,0 +1,94 @@
+{
+  "experiment": "hard_cases",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-16T22:16:47.536987-07:00",
+  "config": {
+    "system": "openai_live",
+    "settings": [
+      "default:"
+    ],
+    "cases": [
+      "echo",
+      "echo_ctrl",
+      "correction"
+    ],
+    "reps": 5,
+    "tts": "openai",
+    "voice": "ash",
+    "voices": [
+      "coral",
+      "ash"
+    ],
+    "echo_levels_db": [
+      -24.0,
+      -18.0,
+      -12.0
+    ],
+    "variants": [
+      "day",
+      "time",
+      "digit"
+    ],
+    "model": null,
+    "concurrency": 1,
+    "out": "runs",
+    "budget_usd": 1.5,
+    "seed": 23
+  },
+  "tts": {
+    "provider": "openai",
+    "voices": [
+      "coral",
+      "ash"
+    ]
+  },
+  "cases": {
+    "echo": {
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "echo": {
+        "delay_ms": 150.0,
+        "gain_db": -12.0
+      }
+    },
+    "echo_ctrl": {
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "reps": 1
+    },
+    "correction": {
+      "pause_ms": 800
+    }
+  },
+  "corrections": {
+    "day": {
+      "instructions": "You are the phone booking assistant for Luigi's restaurant. When a caller asks for a table, confirm the booking by repeating the party size, day and time. Keep replies short.",
+      "a": "Can you book a table for two on Tuesday at seven,",
+      "b": "no, sorry, Thursday at seven.",
+      "right": "thursday",
+      "wrong": "tuesday"
+    },
+    "time": {
+      "instructions": "You are the phone booking assistant for Luigi's restaurant. When a caller asks for a table, confirm the booking by repeating the party size, day and time. Keep replies short.",
+      "a": "Can you book a table for four on Friday at six,",
+      "b": "no, wait, make that eight.",
+      "right": "eight",
+      "wrong": "six"
+    },
+    "digit": {
+      "instructions": "You are a customer support voice assistant. When the caller gives a phone number, read it back digit by digit to confirm. Keep replies short.",
+      "a": "My callback number is five five five, zero one nine two,",
+      "b": "sorry, zero one nine three.",
+      "right": "zero one nine three",
+      "wrong": "zero one nine two"
+    }
+  },
+  "question": "My wifi keeps dropping every few minutes. Can you walk me through fixing it, step by step?",
+  "split_methods": {
+    "coral|Can you book a table for two on Tuesday at seven,": "separate",
+    "coral|Can you book a table for four on Friday at six,": "continuous",
+    "coral|My callback number is five five five, zero one nine two,": "continuous",
+    "ash|Can you book a table for two on Tuesday at seven,": "continuous",
+    "ash|Can you book a table for four on Friday at six,": "continuous",
+    "ash|My callback number is five five five, zero one nine two,": "continuous"
+  },
+  "trials_planned": 62
+}

@@ -1,0 +1,154 @@
+{
+  "trial_id": "t0006",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "echo_ctrl",
+  "rep": 0,
+  "started": "2026-09-16T16:04:15.259948-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 9368.416375
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9370.0,
+        9690.0
+      ],
+      [
+        10190.0,
+        13100.0
+      ],
+      [
+        13570.0,
+        13930.0
+      ],
+      [
+        14320.0,
+        18290.0
+      ],
+      [
+        18650.0,
+        21240.0
+      ],
+      [
+        22130.0,
+        25590.0
+      ],
+      [
+        26020.0,
+        26380.0
+      ],
+      [
+        26740.0,
+        28820.0
+      ],
+      [
+        29430.0,
+        34290.0
+      ],
+      [
+        34670.0,
+        36960.0
+      ],
+      [
+        37510.0,
+        38390.0
+      ],
+      [
+        38750.0,
+        43690.0
+      ],
+      [
+        44550.0,
+        47020.0
+      ],
+      [
+        47350.0,
+        51050.0
+      ],
+      [
+        51680.0,
+        55030.0
+      ],
+      [
+        55350.0,
+        58250.0
+      ],
+      [
+        58600.0,
+        59260.0
+      ]
+    ],
+    "responses": 1,
+    "truncations": 0,
+    "transcript": "Okay, let\u2019s walk through a quick sequence to stabilize your connection.First, restart your router and modem by unplugging them for about 15 seconds, then plug them back in and wait until all the lights settle. Next, move closer to the router and see if the drops still happen; if not, signal strength or interference may be the issue. Then, check for obvious interference like a microwave, cordless phone, or thick walls, and try placing the router higher and more central. After that, update your router\u2019s firmware by logging into its admin page and installing any available updates. Also, \u201cforget\u201d the Wi\u2011Fi network on your device, then reconnect and re-enter the password to clear a bad saved configuration. Finally, if it still drops, try a different Wi\u2011Fi channel or switch between 2.4 gigahertz and 5 gigahertz, and if possible, test with another device to confirm whether it\u2019s the router or just one client.",
+    "outcome": "clean",
+    "speech_ms": 42100,
+    "longest_gap_ms": 890,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 49890,
+    "cost_usd": 0.07923,
+    "send_lateness_ms": {
+      "p50": 1.033042,
+      "p99": 2.299569880000002,
+      "max": 17.049375
+    },
+    "ends_mid_sentence": false
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOt0icsCggAwNQn9ikcfB",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789603640,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

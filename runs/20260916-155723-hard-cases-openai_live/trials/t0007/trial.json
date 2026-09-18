@@ -1,0 +1,84 @@
+{
+  "trial_id": "t0007",
+  "setting": "default:",
+  "case": "side_talk",
+  "rep": 2,
+  "started": "2026-09-16T15:57:39.043888-07:00",
+  "marks": {
+    "O.start": 500.0,
+    "O.end": 3375.0,
+    "H.start": 14055.125,
+    "H.end": 15115.125,
+    "T.start": 16015.125,
+    "T.end": 20435.125,
+    "F.start": 21935.125,
+    "F.end": 25855.125
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4450.0,
+        7940.0
+      ],
+      [
+        8520.0,
+        12750.0
+      ],
+      [
+        16580.0,
+        16840.0
+      ],
+      [
+        28480.0,
+        28730.0
+      ],
+      [
+        29040.0,
+        30280.0
+      ],
+      [
+        30720.0,
+        32620.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure\u2014unplug it, wait about 30 seconds, then plug it back in. If you mean a full factory reset, press and hold the reset button for about 10 seconds. Sure. No Mm. Unplug the router from power, wait 30 seconds, and plug it back in.",
+    "outcome": "spoke_during_side_talk",
+    "said_during_hold": "Sure.",
+    "reply": "No Mm. Unplug the router from power, wait 30 seconds, and plug it back in.",
+    "spoke_over_aside_ms": 260,
+    "cost_usd": 0.02583,
+    "send_lateness_ms": {
+      "p50": 1.0418125,
+      "p99": 3.164461250000004,
+      "max": 15.221458
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 31.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789606855,
+      "model": "gpt-live-1",
+      "instructions": "You are a tech-support voice assistant for home internet. Keep replies to one or two short sentences. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

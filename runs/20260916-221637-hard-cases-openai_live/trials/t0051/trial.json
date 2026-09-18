@@ -1,0 +1,90 @@
+{
+  "trial_id": "t0051",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -18.0,
+  "rep": 4,
+  "started": "2026-09-16T22:16:47.560053-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7893.086583
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7890.0,
+        8240.0
+      ],
+      [
+        8550.0,
+        10500.0
+      ],
+      [
+        11000.0,
+        14500.0
+      ],
+      [
+        15040.0,
+        17740.0
+      ],
+      [
+        18170.0,
+        19920.0
+      ],
+      [
+        20350.0,
+        24620.0
+      ],
+      [
+        25270.0,
+        31060.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your phone or laptop, then unplug your router for about thirty seconds, and plug it back in. Once things are back online, move closer to the router and turn Wi-Fi off and back on. If it still drops, forget the network on your device and reconnect with the password. After that, check if other devices have the same issue. If so, log into your router app and install any updates.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 20310,
+    "longest_gap_ms": 650,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 23170,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.500792,
+      "p99": 2.120458,
+      "max": 2.696667,
+      "spikes": [],
+      "send_call_max_ms": 2.5
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630901,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

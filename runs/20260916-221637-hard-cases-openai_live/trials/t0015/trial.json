@@ -1,0 +1,94 @@
+{
+  "trial_id": "t0015",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -12.0,
+  "rep": 0,
+  "started": "2026-09-16T22:16:47.559903-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8136.959292
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8130.0,
+        12650.0
+      ],
+      [
+        13230.0,
+        16590.0
+      ],
+      [
+        17160.0,
+        21320.0
+      ],
+      [
+        21900.0,
+        25740.0
+      ],
+      [
+        26470.0,
+        29190.0
+      ],
+      [
+        29670.0,
+        31300.0
+      ],
+      [
+        31620.0,
+        34130.0
+      ],
+      [
+        34480.0,
+        36580.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your device and unplug your router for thirty seconds, then plug it back in. Next, move closer to the router and see if the connection stabilizes. Then, forget the Wi-Fi network on your device and reconnect by entering the password again. After that, check for system or Wi-Fi driver updates and install them. Then try changing the router's Wi-Fi channel in its settings. Finally, if it\u2019s still dropping, test with another device, and if both have issues, contact your internet provider for line checks.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 24840,
+    "longest_gap_ms": 730,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 28450,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.335542,
+      "p99": 2.250255000000001,
+      "max": 5.164459,
+      "spikes": [],
+      "send_call_max_ms": 1.4
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789629854,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

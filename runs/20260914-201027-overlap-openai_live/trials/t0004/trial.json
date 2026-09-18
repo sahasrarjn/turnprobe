@@ -1,0 +1,69 @@
+{
+  "trial_id": "t0004",
+  "setting": "default:",
+  "clip": "stop",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-14T20:10:27.242182-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8142.639541,
+    "X.start": 10642.625,
+    "X.end": 12272.625
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8140.0,
+        11470.0
+      ],
+      [
+        13300.0,
+        14380.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": null,
+    "stop_latency_ms": 827.4,
+    "talk_over_ms": 827.4,
+    "reply_gap_ms": 1027.4,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.01167,
+    "send_lateness_ms": {
+      "p50": 0.641375,
+      "p99": 1.2187165999999996,
+      "max": 22.999625
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 14.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789449092,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

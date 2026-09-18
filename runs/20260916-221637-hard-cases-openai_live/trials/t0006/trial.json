@@ -1,0 +1,98 @@
+{
+  "trial_id": "t0006",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -12.0,
+  "rep": 3,
+  "started": "2026-09-16T22:16:47.559860-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7893.934833
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7890.0,
+        8190.0
+      ],
+      [
+        8730.0,
+        10860.0
+      ],
+      [
+        11230.0,
+        12910.0
+      ],
+      [
+        13400.0,
+        14480.0
+      ],
+      [
+        14790.0,
+        17320.0
+      ],
+      [
+        17920.0,
+        21950.0
+      ],
+      [
+        22400.0,
+        24190.0
+      ],
+      [
+        24570.0,
+        27080.0
+      ],
+      [
+        27660.0,
+        31260.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, turn off your Wi-Fi on your device, then unplug your router and modem. Wait about a full minute, plug them back in, and let them fully restart. Next, move closer to the router and check if other devices are having the same problem. If yes, reboot your device too, then make sure your system and router firmware are updated. Finally, forget the network on your device, reconnect, and test again.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 19650,
+    "longest_gap_ms": 600,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 23370,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.273417,
+      "p99": 2.3228769999999965,
+      "max": 12.995083,
+      "spikes": [],
+      "send_call_max_ms": 1.5
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789629570,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

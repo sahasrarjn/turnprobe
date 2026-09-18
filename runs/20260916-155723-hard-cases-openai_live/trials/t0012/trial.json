@@ -1,0 +1,78 @@
+{
+  "trial_id": "t0012",
+  "setting": "default:",
+  "case": "um_hold",
+  "rep": 2,
+  "started": "2026-09-16T15:57:39.043909-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2105.0,
+    "U.start": 2505.0,
+    "U.end": 5025.0,
+    "N.start": 5925.0,
+    "N.end": 8065.0,
+    "B.start": 9565.0,
+    "B.end": 13295.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        6370.0,
+        6640.0
+      ],
+      [
+        7100.0,
+        8110.0
+      ],
+      [
+        9220.0,
+        9940.0
+      ],
+      [
+        14570.0,
+        19290.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Got it: dot dot dot Sure, take your time. That's 4, 7, 7, 1, 2, 2, 9.",
+    "outcome": "cut_in_during_hold",
+    "said_during_hold": "Got it: dot dot dot Sure, take your time.",
+    "said_over_number": "",
+    "reply": "That's 4, 7, 7, 1, 2, 2, 9.",
+    "readback_ok": true,
+    "final_gap_ms": 1275,
+    "cost_usd": 0.01167,
+    "send_lateness_ms": {
+      "p50": 1.042833,
+      "p99": 1.3180187499999998,
+      "max": 6.31975
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 14.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789607029,
+      "model": "gpt-live-1",
+      "instructions": "You are a customer support voice assistant. When the caller gives an account number, read it back digit by digit to confirm. Keep replies short. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

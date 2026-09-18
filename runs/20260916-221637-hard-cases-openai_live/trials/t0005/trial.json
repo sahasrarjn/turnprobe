@@ -1,0 +1,106 @@
+{
+  "trial_id": "t0005",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -18.0,
+  "rep": 0,
+  "started": "2026-09-16T22:16:47.559855-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7983.115042
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7980.0,
+        8320.0
+      ],
+      [
+        8760.0,
+        10320.0
+      ],
+      [
+        10750.0,
+        12360.0
+      ],
+      [
+        12960.0,
+        14270.0
+      ],
+      [
+        14590.0,
+        16170.0
+      ],
+      [
+        16570.0,
+        18840.0
+      ],
+      [
+        19360.0,
+        21540.0
+      ],
+      [
+        22110.0,
+        23690.0
+      ],
+      [
+        24090.0,
+        25840.0
+      ],
+      [
+        26330.0,
+        26860.0
+      ],
+      [
+        27190.0,
+        29040.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. Start by restarting your router, and making sure the cables are snug. Then, on your device, turn Wi-Fi off and back on, forget the network, and reconnect with the password. If it still drops, move closer to the router, check that Airplane Mode is off, and try a different device to compare. After that, make sure your router firmware is up to date.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 16560,
+    "longest_gap_ms": 600,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 21060,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.344084,
+      "p99": 2.2444020000000005,
+      "max": 10.003125,
+      "spikes": [],
+      "send_call_max_ms": 3.4
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789629535,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

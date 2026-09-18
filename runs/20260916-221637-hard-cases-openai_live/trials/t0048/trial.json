@@ -1,0 +1,94 @@
+{
+  "trial_id": "t0048",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -18.0,
+  "rep": 3,
+  "started": "2026-09-16T22:16:47.560041-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7969.974291
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4770.0,
+        5040.0
+      ],
+      [
+        7970.0,
+        12570.0
+      ],
+      [
+        13090.0,
+        14830.0
+      ],
+      [
+        15240.0,
+        17900.0
+      ],
+      [
+        18500.0,
+        21340.0
+      ],
+      [
+        21950.0,
+        24930.0
+      ],
+      [
+        25400.0,
+        28740.0
+      ],
+      [
+        29100.0,
+        32990.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Hmm.First, restart your router by unplugging it for 30 seconds, then plugging it back in. Next, on your phone or laptop, turn Wi-Fi off, wait a moment, and turn it back on. Then, move closer to the router and see if it stabilizes. After that, check for a software update on your device. Then forget the Wi-Fi network and rejoin it with your password. And if it still drops, try resetting network settings or calling your provider.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 22050,
+    "longest_gap_ms": 610,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 25020,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.376291,
+      "p99": 2.11471616,
+      "max": 7.024916,
+      "spikes": [],
+      "send_call_max_ms": 1.7
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630805,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

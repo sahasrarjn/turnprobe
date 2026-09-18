@@ -1,0 +1,123 @@
+{
+  "trial_id": "t0007",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "correction",
+  "voice": "coral",
+  "variant": "digit",
+  "rep": 3,
+  "started": "2026-09-16T22:17:06.791729-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 5110.0,
+    "B.start": 5910.0,
+    "B.end": 7975.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9440.0,
+        9760.0
+      ],
+      [
+        10390.0,
+        11080.0
+      ],
+      [
+        11450.0,
+        11810.0
+      ],
+      [
+        12290.0,
+        12620.0
+      ],
+      [
+        13130.0,
+        13450.0
+      ],
+      [
+        14020.0,
+        14530.0
+      ],
+      [
+        14940.0,
+        15350.0
+      ],
+      [
+        15740.0,
+        16800.0
+      ]
+    ],
+    "responses": 2,
+    "truncations": 0,
+    "transcript": "Got it. Please confirm: 5, 5, 5, 0, 1, 9, 3.",
+    "outcome": "clean",
+    "said_early": "",
+    "reply": "Got it. Please confirm: 5, 5, 5, 0, 1, 9, 3.",
+    "final_right": true,
+    "final_wrong": false,
+    "ends_mid_sentence": false,
+    "final_gap_ms": 1465,
+    "cost_usd": 0.0145,
+    "send_lateness_ms": {
+      "p50": 1.485709,
+      "p99": 2.1839336,
+      "max": 2.327584,
+      "spikes": [],
+      "send_call_max_ms": 1.6
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOyrOZynoja9qDRTEYl47",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a customer support voice assistant. When the caller gives a phone number, read it back digit by digit to confirm. Keep replies short.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789626126,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

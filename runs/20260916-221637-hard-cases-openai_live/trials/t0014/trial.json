@@ -1,0 +1,98 @@
+{
+  "trial_id": "t0014",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -24.0,
+  "rep": 1,
+  "started": "2026-09-16T22:16:47.559899-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7913.287542
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4260.0,
+        4550.0
+      ],
+      [
+        7910.0,
+        12110.0
+      ],
+      [
+        12470.0,
+        13530.0
+      ],
+      [
+        14030.0,
+        18110.0
+      ],
+      [
+        18630.0,
+        20670.0
+      ],
+      [
+        21070.0,
+        24100.0
+      ],
+      [
+        24550.0,
+        27000.0
+      ],
+      [
+        27560.0,
+        32300.0
+      ],
+      [
+        33000.0,
+        36910.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Hmm. Sure thing. First, restart your router by unplugging it for 30 seconds, then plugging it back in. Next, on your phone or laptop, forget the network and then reconnect using your password. After that, move a bit closer to the router, and then see if the problem follows just one device or all of them. If it's just one, update that device and reboot it. If it's all devices, log into your router and then check for a firmware update and install it. Finally, if none of that steadies it, call your provider and have them test your line.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 25510,
+    "longest_gap_ms": 700,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 29000,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.3057295,
+      "p99": 2.1926552499999996,
+      "max": 8.639792,
+      "spikes": [],
+      "send_call_max_ms": 5.0
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789629812,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

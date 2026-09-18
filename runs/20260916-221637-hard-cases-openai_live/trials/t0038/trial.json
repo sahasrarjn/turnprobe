@@ -1,0 +1,98 @@
+{
+  "trial_id": "t0038",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -18.0,
+  "rep": 1,
+  "started": "2026-09-16T22:16:47.560001-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7990.6575
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7990.0,
+        11620.0
+      ],
+      [
+        11930.0,
+        12930.0
+      ],
+      [
+        13440.0,
+        16760.0
+      ],
+      [
+        17190.0,
+        20170.0
+      ],
+      [
+        20480.0,
+        22460.0
+      ],
+      [
+        23130.0,
+        26770.0
+      ],
+      [
+        27250.0,
+        27680.0
+      ],
+      [
+        28000.0,
+        31730.0
+      ],
+      [
+        32250.0,
+        36690.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "First, restart your modem and router by unplugging them for 30 seconds, then plug back in. Next, move closer to the router and see if the signal holds. Then open your device's network settings, forget the network, reconnect, and enter the password again. After that, check for device updates and install any pending ones. Next, try switching between the 2.4 and 5 gigahertz Wi-Fi bands. Finally, if it\u2019s still dropping, call your provider to check the line and your equipment.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 25150,
+    "longest_gap_ms": 670,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 28700,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.3460835,
+      "p99": 2.12299563,
+      "max": 10.007458,
+      "spikes": [],
+      "send_call_max_ms": 9.4
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630456,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

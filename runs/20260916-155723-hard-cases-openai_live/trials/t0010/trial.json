@@ -1,0 +1,86 @@
+{
+  "trial_id": "t0010",
+  "setting": "default:",
+  "rep": 1,
+  "case": "echo",
+  "started": "2026-09-16T16:19:33.910019-07:00",
+  "rerun": true,
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8218.571125
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8210.0,
+        14040.0
+      ],
+      [
+        14530.0,
+        18550.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure thing. Start by unplugging your modem and router, wait 30 seconds, and plug them back in. Once they're fully restarted, check that all the cables are snug, especially the coax",
+    "outcome": "went_quiet_mid_sentence",
+    "speech_ms": 9850,
+    "longest_gap_ms": 490,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 10340,
+    "cost_usd": 0.01167,
+    "send_lateness_ms": {
+      "p50": 1.493083,
+      "p99": 2.6165300000000067,
+      "max": 113.752333,
+      "spikes": [
+        [
+          19480,
+          113.8
+        ],
+        [
+          19500,
+          94.3
+        ],
+        [
+          19520,
+          74.5
+        ],
+        [
+          19540,
+          54.6
+        ]
+      ],
+      "send_call_max_ms": 0.9
+    },
+    "ends_mid_sentence": true
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 14.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789608012,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

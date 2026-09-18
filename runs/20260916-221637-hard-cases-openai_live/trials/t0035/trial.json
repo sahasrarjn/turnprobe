@@ -1,0 +1,94 @@
+{
+  "trial_id": "t0035",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -12.0,
+  "rep": 1,
+  "started": "2026-09-16T22:16:47.559988-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7896.503292
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7890.0,
+        8550.0
+      ],
+      [
+        8950.0,
+        10410.0
+      ],
+      [
+        10850.0,
+        12850.0
+      ],
+      [
+        13200.0,
+        15260.0
+      ],
+      [
+        15830.0,
+        16680.0
+      ],
+      [
+        17010.0,
+        20620.0
+      ],
+      [
+        21200.0,
+        25130.0
+      ],
+      [
+        25730.0,
+        31130.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your phone or laptop. Then unplug your modem and router, wait 30 seconds, and plug them back in. After it reboots, reconnect to your Wi-Fi and forget and rejoin your network if needed. Then move closer to the router and check that other devices aren't hogging bandwidth. Finally, run a quick speed test and if drops continue, update the router firmware or call your provider.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 19970,
+    "longest_gap_ms": 600,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 23240,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.20575,
+      "p99": 2.151363000000001,
+      "max": 8.758958,
+      "spikes": [],
+      "send_call_max_ms": 3.4
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630359,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

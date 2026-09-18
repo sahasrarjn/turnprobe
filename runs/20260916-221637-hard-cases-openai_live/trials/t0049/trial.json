@@ -1,0 +1,90 @@
+{
+  "trial_id": "t0049",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -18.0,
+  "rep": 2,
+  "started": "2026-09-16T22:16:47.560045-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8085.218459
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8080.0,
+        11740.0
+      ],
+      [
+        12310.0,
+        15090.0
+      ],
+      [
+        15520.0,
+        18760.0
+      ],
+      [
+        19360.0,
+        21930.0
+      ],
+      [
+        22530.0,
+        25220.0
+      ],
+      [
+        26000.0,
+        29730.0
+      ],
+      [
+        30260.0,
+        32040.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your phone or computer and your router. Next, move closer to the router to rule out weak signal. Then forget the network on your device and reconnect with the password. After that, check if other devices have the same issue. Then, if possible, switch to the five gigahertz band. And finally, update your router firmware and your device's network drivers, which often clears up those dropouts.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 20450,
+    "longest_gap_ms": 780,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 23960,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.2738960000000001,
+      "p99": 2.11550436,
+      "max": 2.791917,
+      "spikes": [],
+      "send_call_max_ms": 1.5
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630844,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

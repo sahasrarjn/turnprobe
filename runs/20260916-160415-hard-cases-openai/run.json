@@ -1,0 +1,71 @@
+{
+  "experiment": "hard_cases",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-16T16:04:15.238485-07:00",
+  "config": {
+    "system": "openai",
+    "settings": [
+      "server_vad:silence_duration_ms=500"
+    ],
+    "cases": [
+      "echo",
+      "echo_ctrl",
+      "side_talk",
+      "correction",
+      "um_hold"
+    ],
+    "reps": 3,
+    "tts": "openai",
+    "voice": "ash",
+    "model": null,
+    "concurrency": 1,
+    "out": "runs",
+    "budget_usd": 2.0,
+    "seed": 23
+  },
+  "tts": {
+    "provider": "openai",
+    "voice": "ash"
+  },
+  "cases": {
+    "echo": {
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "echo": {
+        "delay_ms": 150.0,
+        "gain_db": -12.0
+      }
+    },
+    "echo_ctrl": {
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "reps": 1
+    },
+    "side_talk": {
+      "instructions": "You are a tech-support voice assistant for home internet. Keep replies to one or two short sentences.",
+      "opener": "Hi, I need some help resetting my router.",
+      "hold": "Hold on a sec.",
+      "aside": "Honey, can you turn the TV down? I'm on the phone.",
+      "aside_gain_db": -10.0,
+      "back": "Sorry about that. Okay, what do I do first?"
+    },
+    "correction": {
+      "instructions": "You are the phone booking assistant for Luigi's restaurant. When a caller asks for a table, confirm the booking by repeating the party size, day and time. Keep replies short.",
+      "a": "Can you book a table for two on Tuesday at seven,",
+      "b": "no, sorry, Thursday at seven.",
+      "pause_ms": 800
+    },
+    "um_hold": {
+      "instructions": "You are a customer support voice assistant. When the caller gives an account number, read it back digit by digit to confirm. Keep replies short.",
+      "a": "My account number is",
+      "um": "Um...",
+      "hang_on": "Hang on, let me find it.",
+      "b": "it's four seven seven one, two two nine.",
+      "digits": "four seven seven one two two nine"
+    }
+  },
+  "question": "My wifi keeps dropping every few minutes. Can you walk me through fixing it, step by step?",
+  "split_methods": {
+    "Can you book a table for two on Tuesday at seven,": "continuous",
+    "My account number is": "continuous"
+  },
+  "trials_planned": 13
+}

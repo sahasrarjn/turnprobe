@@ -1,0 +1,90 @@
+{
+  "trial_id": "t0006",
+  "setting": "default:",
+  "case": "echo_ctrl",
+  "rep": 0,
+  "started": "2026-09-16T15:57:39.043881-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8058.387208
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8050.0,
+        8350.0
+      ],
+      [
+        9160.0,
+        11320.0
+      ],
+      [
+        11730.0,
+        13110.0
+      ],
+      [
+        13540.0,
+        17740.0
+      ],
+      [
+        18370.0,
+        21120.0
+      ],
+      [
+        21630.0,
+        22740.0
+      ],
+      [
+        23060.0,
+        24830.0
+      ],
+      [
+        25260.0,
+        29170.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure, first restart your router and your device, then move closer to the router. Next, forget the network on your device and reconnect by re-entering the password. After that, check for software updates on your device. Then, if possible, switch the router to a different Wi-Fi channel. And finally, if it\u2019s still dropping, run your device\u2019s network troubleshooter.",
+    "outcome": "clean",
+    "speech_ms": 17580,
+    "longest_gap_ms": 810,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 21120,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 0.923583,
+      "p99": 1.5665167200000083,
+      "max": 5.648375
+    },
+    "ends_mid_sentence": false
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789606820,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

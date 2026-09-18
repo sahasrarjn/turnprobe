@@ -1,0 +1,98 @@
+{
+  "trial_id": "t0023",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -18.0,
+  "rep": 1,
+  "started": "2026-09-16T22:16:47.559936-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8211.026458
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8210.0,
+        8440.0
+      ],
+      [
+        8790.0,
+        15710.0
+      ],
+      [
+        16130.0,
+        21500.0
+      ],
+      [
+        21870.0,
+        26420.0
+      ],
+      [
+        26890.0,
+        31890.0
+      ],
+      [
+        32390.0,
+        32840.0
+      ],
+      [
+        33210.0,
+        37540.0
+      ],
+      [
+        38040.0,
+        42530.0
+      ],
+      [
+        42870.0,
+        44210.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your modem and router by unplugging them for 30 seconds, then plug them back in and wait for all the lights to stabilize. Next, move closer to the router and make sure there aren\u2019t large obstacles or appliances interfering. Then, check if other devices are having the same issue. If they are, it\u2019s likely the network. Now, on your phone or computer, forget the network and reconnect by re-entering the password. After that, update your device\u2019s Wi-Fi drivers, or system software if updates are available. Finally, if it still drops, log into your router settings and switch the Wi-Fi channel, or contact your provider.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 32680,
+    "longest_gap_ms": 500,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 36000,
+    "cost_usd": 0.03667,
+    "send_lateness_ms": {
+      "p50": 1.304583,
+      "p99": 2.2002125000000006,
+      "max": 3.444333,
+      "spikes": [],
+      "send_call_max_ms": 3.5
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 44.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630092,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

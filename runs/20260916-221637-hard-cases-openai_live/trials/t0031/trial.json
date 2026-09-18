@@ -1,0 +1,99 @@
+{
+  "trial_id": "t0031",
+  "setting": "default:",
+  "case": "correction",
+  "voice": "ash",
+  "variant": "digit",
+  "rep": 3,
+  "started": "2026-09-16T22:16:47.559968-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 4970.0,
+    "B.start": 5770.0,
+    "B.end": 8145.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9300.0,
+        9610.0
+      ],
+      [
+        9950.0,
+        11980.0
+      ],
+      [
+        12620.0,
+        13340.0
+      ],
+      [
+        13870.0,
+        14270.0
+      ],
+      [
+        14720.0,
+        15220.0
+      ],
+      [
+        15630.0,
+        16150.0
+      ],
+      [
+        16620.0,
+        17000.0
+      ],
+      [
+        17660.0,
+        18150.0
+      ],
+      [
+        18580.0,
+        18910.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Got it: five, five, five, zero, one, nine, three. That\u2019s five, five, five, zero, one, nine, three.",
+    "outcome": "clean",
+    "said_early": "",
+    "reply": "Got it: five, five, five, zero, one, nine, three. That\u2019s five, five, five, zero, one, nine, three.",
+    "final_right": true,
+    "final_wrong": false,
+    "ends_mid_sentence": false,
+    "final_gap_ms": 1155,
+    "cost_usd": 0.01167,
+    "send_lateness_ms": {
+      "p50": 1.2538125,
+      "p99": 2.18349075,
+      "max": 2.352667,
+      "spikes": [],
+      "send_call_max_ms": 3.0
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 14.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630283,
+      "model": "gpt-live-1",
+      "instructions": "You are a customer support voice assistant. When the caller gives a phone number, read it back digit by digit to confirm. Keep replies short. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

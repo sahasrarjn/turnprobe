@@ -1,0 +1,108 @@
+{
+  "trial_id": "t0011",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "side_talk",
+  "rep": 0,
+  "started": "2026-09-16T16:04:15.259970-07:00",
+  "marks": {
+    "O.start": 500.0,
+    "O.end": 3375.0,
+    "H.start": 18096.166666666668,
+    "H.end": 19156.166666666668,
+    "T.start": 20056.166666666668,
+    "T.end": 24476.166666666668,
+    "F.start": 25976.166666666668,
+    "F.end": 29896.166666666668
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4830.0,
+        5160.0
+      ],
+      [
+        5970.0,
+        11320.0
+      ],
+      [
+        11670.0,
+        16810.0
+      ],
+      [
+        31600.0,
+        32220.0
+      ],
+      [
+        32530.0,
+        37660.0
+      ]
+    ],
+    "responses": 5,
+    "truncations": 1,
+    "transcript": "Sure. First, unplug the router\u2019s power for about 10 seconds, then plug it back in and wait for the lights to stabilize. If you need a full factory reset, press and hold the reset button for about 10 to 15 seconds.No worries. First, unplug the router\u2019s power for about 10 seconds, then plug it back in and wait for the lights to settle.",
+    "outcome": "clean",
+    "said_during_hold": "",
+    "reply": "No worries. First, unplug the router\u2019s power for about 10 seconds, then plug it back in and wait for the lights to settle.",
+    "spoke_over_aside_ms": 0,
+    "cost_usd": 0.04398,
+    "send_lateness_ms": {
+      "p50": 1.0591249999999999,
+      "p99": 1.8779252200000032,
+      "max": 9.553917
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOt4w0XFFxl57e8JFt0uO",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a tech-support voice assistant for home internet. Keep replies to one or two short sentences.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789603902,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

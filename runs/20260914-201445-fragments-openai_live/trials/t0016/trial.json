@@ -1,0 +1,64 @@
+{
+  "trial_id": "t0016",
+  "setting": "default:",
+  "stimulus": "reservation",
+  "voice": "coral",
+  "condition": "split",
+  "rep": 0,
+  "started": "2026-09-14T20:14:45.679207-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2465.0,
+    "U.start": 3965.0,
+    "U.end": 5370.0
+  },
+  "analysis": {
+    "outcome": "early_speech",
+    "final_gap_ms": 1120.0,
+    "commit_after_end_ms": null,
+    "decide_after_commit_ms": null,
+    "turns_ended": 0,
+    "model_segments": [
+      [
+        3730.0,
+        4900.0
+      ],
+      [
+        6490.0,
+        8630.0
+      ]
+    ],
+    "cost_usd": 0.01015,
+    "send_lateness_ms": {
+      "p50": 0.7955,
+      "p99": 2.1969520000000067,
+      "max": 7.949959
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": null,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789449386,
+      "model": "gpt-live-1",
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

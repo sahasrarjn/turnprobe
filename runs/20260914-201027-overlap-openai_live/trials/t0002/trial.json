@@ -1,0 +1,97 @@
+{
+  "trial_id": "t0002",
+  "setting": "default:",
+  "clip": "mmhm",
+  "offset_ms": 2500,
+  "rep": 0,
+  "started": "2026-09-14T20:10:27.242138-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8187.813292,
+    "X.start": 10687.833333333334,
+    "X.end": 11252.833333333334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8180.0,
+        8390.0
+      ],
+      [
+        8990.0,
+        9950.0
+      ],
+      [
+        10350.0,
+        13940.0
+      ],
+      [
+        14520.0,
+        17560.0
+      ],
+      [
+        18070.0,
+        22390.0
+      ],
+      [
+        22980.0,
+        24910.0
+      ],
+      [
+        25570.0,
+        32360.0
+      ],
+      [
+        33210.0,
+        33320.0
+      ],
+      [
+        33700.0,
+        35630.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "kept_talking",
+    "correct": true,
+    "detect_ms": null,
+    "stop_latency_ms": null,
+    "talk_over_ms": 565.0,
+    "reply_gap_ms": null,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.025,
+    "send_lateness_ms": {
+      "p50": 0.6275005,
+      "p99": 1.996803110000019,
+      "max": 7.193709
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 30.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789449051,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

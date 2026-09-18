@@ -1,0 +1,98 @@
+{
+  "trial_id": "t0045",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -24.0,
+  "rep": 2,
+  "started": "2026-09-16T22:16:47.560028-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8240.176959
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8230.0,
+        8820.0
+      ],
+      [
+        9310.0,
+        13490.0
+      ],
+      [
+        14040.0,
+        15650.0
+      ],
+      [
+        16510.0,
+        19060.0
+      ],
+      [
+        19470.0,
+        21770.0
+      ],
+      [
+        22280.0,
+        26190.0
+      ],
+      [
+        26730.0,
+        29410.0
+      ],
+      [
+        30070.0,
+        31400.0
+      ],
+      [
+        31790.0,
+        36940.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure thing. First, restart your router, and your device, and wait for them to fully come back. Then, move a bit closer to the router. Next, forget the Wi-Fi network on your device, then reconnect by entering the password again. After that, check for system updates and install any available ones. Also, toggle your Wi-Fi off and back on. Finally, if it\u2019s still acting up, try switching from 5 GHz to 2 point 4 GHz or the reverse in your Wi-Fi settings.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 24300,
+    "longest_gap_ms": 860,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 28710,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.34375,
+      "p99": 2.12041,
+      "max": 2.19925,
+      "spikes": [],
+      "send_call_max_ms": 0.5
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630697,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

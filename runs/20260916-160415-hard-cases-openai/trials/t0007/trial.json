@@ -1,0 +1,116 @@
+{
+  "trial_id": "t0007",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "side_talk",
+  "rep": 2,
+  "started": "2026-09-16T16:04:15.259952-07:00",
+  "marks": {
+    "O.start": 500.0,
+    "O.end": 3375.0,
+    "H.start": 21587.5,
+    "H.end": 22647.5,
+    "T.start": 23547.5,
+    "T.end": 27967.5,
+    "F.start": 29467.5,
+    "F.end": 33387.5
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        6140.0,
+        6470.0
+      ],
+      [
+        7080.0,
+        12610.0
+      ],
+      [
+        13170.0,
+        18170.0
+      ],
+      [
+        18560.0,
+        20320.0
+      ],
+      [
+        29410.0,
+        29630.0
+      ],
+      [
+        34770.0,
+        38290.0
+      ],
+      [
+        38690.0,
+        41930.0
+      ]
+    ],
+    "responses": 5,
+    "truncations": 1,
+    "transcript": "Sure. First, unplug the router\u2019s power for about 10 seconds, then plug it back in and wait for the lights to stabilize. If you mean a full factory reset, press and hold the reset button for about 10 to 15 seconds, but that will erase custom settings.Got it, Unplug the router\u2019s power and wait about 10 seconds. Then plug it back in and give it a minute for the lights to settle.",
+    "outcome": "spoke_during_side_talk",
+    "said_during_hold": "Got it,",
+    "reply": "Unplug the router\u2019s power and wait about 10 seconds. Then plug it back in and give it a minute for the lights to settle.",
+    "spoke_over_aside_ms": 0,
+    "cost_usd": 0.04745,
+    "send_lateness_ms": {
+      "p50": 1.0574795,
+      "p99": 1.7643727500000068,
+      "max": 10.747667
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOt1iSRyPGrhBXvCsAmCt",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a tech-support voice assistant for home internet. Keep replies to one or two short sentences.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789603702,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

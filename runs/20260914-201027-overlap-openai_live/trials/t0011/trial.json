@@ -1,0 +1,113 @@
+{
+  "trial_id": "t0011",
+  "setting": "default:",
+  "clip": "yeah_but",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-14T20:10:27.242239-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7822.527625,
+    "X.start": 10322.541666666666,
+    "X.end": 13622.541666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7820.0,
+        11560.0
+      ],
+      [
+        14830.0,
+        15640.0
+      ],
+      [
+        16040.0,
+        17240.0
+      ],
+      [
+        17900.0,
+        19030.0
+      ],
+      [
+        19350.0,
+        20430.0
+      ],
+      [
+        20900.0,
+        23910.0
+      ],
+      [
+        24350.0,
+        25230.0
+      ],
+      [
+        25560.0,
+        29410.0
+      ],
+      [
+        29820.0,
+        30230.0
+      ],
+      [
+        30550.0,
+        32870.0
+      ],
+      [
+        33400.0,
+        36050.0
+      ],
+      [
+        36660.0,
+        38160.0
+      ],
+      [
+        38540.0,
+        41610.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": null,
+    "stop_latency_ms": 1237.5,
+    "talk_over_ms": 1237.5,
+    "reply_gap_ms": 1207.5,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.025,
+    "send_lateness_ms": {
+      "p50": 0.347604,
+      "p99": 1.8634975200000021,
+      "max": 12.006875
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 30.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789449224,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

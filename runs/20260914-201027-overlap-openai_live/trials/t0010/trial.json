@@ -1,0 +1,105 @@
+{
+  "trial_id": "t0010",
+  "setting": "default:",
+  "clip": "repeat",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-14T20:10:27.242233-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7924.682125,
+    "X.start": 10424.666666666666,
+    "X.end": 13314.666666666666
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7920.0,
+        8470.0
+      ],
+      [
+        8900.0,
+        10860.0
+      ],
+      [
+        11280.0,
+        12230.0
+      ],
+      [
+        14540.0,
+        15040.0
+      ],
+      [
+        15370.0,
+        17690.0
+      ],
+      [
+        18260.0,
+        19930.0
+      ],
+      [
+        20270.0,
+        21980.0
+      ],
+      [
+        22320.0,
+        25020.0
+      ],
+      [
+        25390.0,
+        30280.0
+      ],
+      [
+        30610.0,
+        31580.0
+      ],
+      [
+        31950.0,
+        34820.0
+      ]
+    ],
+    "kind": "interrupt",
+    "outcome": "stopped_then_replied",
+    "correct": true,
+    "detect_ms": null,
+    "stop_latency_ms": 1805.3,
+    "talk_over_ms": 435.3,
+    "reply_gap_ms": 1225.3,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 0.95075,
+      "p99": 1.611033059999998,
+      "max": 6.337541
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789449184,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

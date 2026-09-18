@@ -1,0 +1,87 @@
+{
+  "trial_id": "t0002",
+  "setting": "default:",
+  "rep": 1,
+  "case": "side_talk",
+  "started": "2026-09-16T16:19:33.889364-07:00",
+  "rerun": true,
+  "marks": {
+    "O.start": 500.0,
+    "O.end": 3375.0,
+    "H.start": 14513.875,
+    "H.end": 15573.875,
+    "T.start": 16473.875,
+    "T.end": 20893.875,
+    "F.start": 22393.875,
+    "F.end": 26313.875
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4530.0,
+        4710.0
+      ],
+      [
+        5100.0,
+        8850.0
+      ],
+      [
+        9400.0,
+        13210.0
+      ],
+      [
+        17890.0,
+        18850.0
+      ],
+      [
+        28380.0,
+        29990.0
+      ],
+      [
+        30830.0,
+        32990.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure\u2014unplug it, count to ten, then plug it back in and wait for the lights to stabilize. If it\u2019s still not working, tell me what the lights are doing and I\u2019ll walk you through the next step. Sure, take your time. No problem\u2014whenever you\u2019re ready,  Start by unplugging the router from power.",
+    "outcome": "spoke_during_side_talk",
+    "said_during_hold": "Sure, take your time.",
+    "reply": "No problem\u2014whenever you\u2019re ready,  Start by unplugging the router from power.",
+    "spoke_over_aside_ms": 960,
+    "cost_usd": 0.02583,
+    "send_lateness_ms": {
+      "p50": 1.044375,
+      "p99": 1.29992125,
+      "max": 13.8805,
+      "spikes": [],
+      "send_call_max_ms": 1.0
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 31.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789607974,
+      "model": "gpt-live-1",
+      "instructions": "You are a tech-support voice assistant for home internet. Keep replies to one or two short sentences. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

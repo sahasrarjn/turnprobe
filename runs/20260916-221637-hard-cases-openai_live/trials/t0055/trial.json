@@ -1,0 +1,78 @@
+{
+  "trial_id": "t0055",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -24.0,
+  "rep": 1,
+  "started": "2026-09-16T22:16:47.560069-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 8004.393292
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8000.0,
+        12410.0
+      ],
+      [
+        12920.0,
+        25580.0
+      ],
+      [
+        26190.0,
+        28340.0
+      ],
+      [
+        28750.0,
+        34270.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "First, power off your modem and router, wait thirty seconds, then turn them back on. Next, on your device, forget the Wi-Fi network and reconnect by re-entering the password. After that, move closer to the router and make sure there aren't large obstacles blocking the signal. Then, check for device updates and install them. Then, run the built-in network troubleshooter. Finally, if it still cuts out, try changing the Wi-Fi channel in your router settings or give your provider a call.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 24740,
+    "longest_gap_ms": 610,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 26270,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.179542,
+      "p99": 2.123375,
+      "max": 2.813542,
+      "spikes": [],
+      "send_call_max_ms": 9.4
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789631038,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

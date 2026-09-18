@@ -1,0 +1,75 @@
+{
+  "trial_id": "t0039",
+  "setting": "default:",
+  "case": "correction",
+  "voice": "ash",
+  "variant": "time",
+  "rep": 3,
+  "started": "2026-09-16T22:16:47.560005-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 4525.0,
+    "B.start": 5325.0,
+    "B.end": 7495.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        5630.0,
+        5930.0
+      ],
+      [
+        6350.0,
+        6790.0
+      ],
+      [
+        8390.0,
+        11130.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure, a table Got it\u2014a table for eight this Friday at six.",
+    "outcome": "spoke_during_correction",
+    "said_early": "Sure, a table",
+    "reply": "Got it\u2014a table for eight this Friday at six.",
+    "final_right": true,
+    "final_wrong": true,
+    "ends_mid_sentence": false,
+    "final_gap_ms": 895,
+    "cost_usd": 0.01263,
+    "send_lateness_ms": {
+      "p50": 1.5057079999999998,
+      "p99": 2.1105415599999997,
+      "max": 2.797791,
+      "spikes": [],
+      "send_call_max_ms": 1.0
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": null,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630498,
+      "model": "gpt-live-1",
+      "instructions": "You are the phone booking assistant for Luigi's restaurant. When a caller asks for a table, confirm the booking by repeating the party size, day and time. Keep replies short. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

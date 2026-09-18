@@ -1,0 +1,70 @@
+{
+  "trial_id": "t0030",
+  "setting": "default:",
+  "stimulus": "order",
+  "kind": "complete",
+  "voice": "coral",
+  "pause_ms": 300,
+  "rep": 0,
+  "started": "2026-09-14T19:53:54.889872-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2330.0,
+    "B.start": 2630.0,
+    "B.end": 4375.0
+  },
+  "analysis": {
+    "outcome": "clean",
+    "first_onset_ms": 5760.0,
+    "split_in_pause": false,
+    "final_gap_ms": 1385.0,
+    "endpoint_lag_ms": null,
+    "vad_end_offset_ms": null,
+    "generation_lag_ms": null,
+    "responses": 0,
+    "cancelled": 0,
+    "talk_over_ms": 0.0,
+    "truncations": 0,
+    "api_errors": [],
+    "short_in_pause": 0,
+    "short_over_user": 0,
+    "model_segments": [
+      [
+        5760.0,
+        9270.0
+      ]
+    ],
+    "cost_usd": 0.01067,
+    "send_lateness_ms": {
+      "p50": 0.7508125,
+      "p99": 1.1312782600000004,
+      "max": 1.962708
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": null,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789448191,
+      "model": "gpt-live-1",
+      "instructions": "You are a friendly voice assistant on a phone line. Keep replies to one or two short sentences. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

@@ -1,0 +1,214 @@
+{
+  "trial_id": "t0027",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -12.0,
+  "rep": 0,
+  "started": "2026-09-16T22:17:06.791816-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 7900.671708
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7900.0,
+        8170.0
+      ],
+      [
+        9350.0,
+        9610.0
+      ],
+      [
+        10810.0,
+        11090.0
+      ],
+      [
+        12760.0,
+        13030.0
+      ],
+      [
+        14540.0,
+        14830.0
+      ],
+      [
+        16020.0,
+        16310.0
+      ],
+      [
+        17500.0,
+        17770.0
+      ],
+      [
+        19220.0,
+        19600.0
+      ],
+      [
+        20770.0,
+        21030.0
+      ],
+      [
+        22280.0,
+        22570.0
+      ],
+      [
+        23890.0,
+        24170.0
+      ],
+      [
+        25470.0,
+        25770.0
+      ],
+      [
+        27230.0,
+        27510.0
+      ],
+      [
+        28840.0,
+        29130.0
+      ],
+      [
+        30440.0,
+        30710.0
+      ],
+      [
+        32740.0,
+        33030.0
+      ],
+      [
+        34370.0,
+        34620.0
+      ],
+      [
+        36140.0,
+        36390.0
+      ],
+      [
+        37620.0,
+        37910.0
+      ],
+      [
+        39150.0,
+        39500.0
+      ],
+      [
+        40760.0,
+        41010.0
+      ],
+      [
+        42280.0,
+        42500.0
+      ],
+      [
+        43780.0,
+        44040.0
+      ],
+      [
+        45440.0,
+        45770.0
+      ],
+      [
+        46980.0,
+        47250.0
+      ],
+      [
+        48470.0,
+        48750.0
+      ],
+      [
+        50150.0,
+        50410.0
+      ],
+      [
+        51710.0,
+        51990.0
+      ],
+      [
+        53380.0,
+        53610.0
+      ],
+      [
+        54870.0,
+        55110.0
+      ],
+      [
+        56580.0,
+        56850.0
+      ]
+    ],
+    "responses": 32,
+    "truncations": 31,
+    "transcript": "Okay, let\u2019s Okay, I\u2019ll Alright, let\u2019s Alright, here\u2019s Alright, let\u2019s Alright, let\u2019s Alright, let\u2019s Alright, here\u2019s a Alright, Okay, let\u2019s walk First, restart your First, let\u2019s steady First, restart your First, power-cycle your Okay, let\u2019s First, restart your routerOkay, let\u2019s Okay, let\u2019s Okay, let\u2019s Okay, let\u2019s Let\u2019s go walk through First, stand near First, restart your First, restart Alright, let\u2019s First, restart First, restart your First, restart your First, restart Let\u2019s walk",
+    "outcome": "restart_loop",
+    "ends_mid_sentence": true,
+    "speech_ms": 8600,
+    "longest_gap_ms": 2030,
+    "stalls": 4,
+    "user_speech_detected": 31,
+    "answer_span_ms": 48950,
+    "cost_usd": 0.38973,
+    "send_lateness_ms": {
+      "p50": 1.482125,
+      "p99": 2.1244236400000003,
+      "max": 5.691833,
+      "spikes": [],
+      "send_call_max_ms": 1.9
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOz4CEa1h60CG69jj4UQr",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789626920,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

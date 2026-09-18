@@ -1,0 +1,186 @@
+{
+  "trial_id": "t0004",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "echo",
+  "rep": 2,
+  "started": "2026-09-16T16:04:15.259939-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8028.099334
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8020.0,
+        8310.0
+      ],
+      [
+        11110.0,
+        11620.0
+      ],
+      [
+        13110.0,
+        13430.0
+      ],
+      [
+        14920.0,
+        15230.0
+      ],
+      [
+        16900.0,
+        17210.0
+      ],
+      [
+        18780.0,
+        19100.0
+      ],
+      [
+        20980.0,
+        21320.0
+      ],
+      [
+        22880.0,
+        23200.0
+      ],
+      [
+        24830.0,
+        25200.0
+      ],
+      [
+        27320.0,
+        27760.0
+      ],
+      [
+        29130.0,
+        29470.0
+      ],
+      [
+        30950.0,
+        31300.0
+      ],
+      [
+        33100.0,
+        33440.0
+      ],
+      [
+        34920.0,
+        35200.0
+      ],
+      [
+        36690.0,
+        36960.0
+      ],
+      [
+        38530.0,
+        38850.0
+      ],
+      [
+        40880.0,
+        41290.0
+      ],
+      [
+        41800.0,
+        42330.0
+      ],
+      [
+        43940.0,
+        44990.0
+      ],
+      [
+        47070.0,
+        47310.0
+      ],
+      [
+        48730.0,
+        49040.0
+      ],
+      [
+        50410.0,
+        50770.0
+      ],
+      [
+        52360.0,
+        52640.0
+      ],
+      [
+        54650.0,
+        54980.0
+      ],
+      [
+        56510.0,
+        56860.0
+      ]
+    ],
+    "responses": 25,
+    "truncations": 24,
+    "transcript": "Alright, let\u2019s Alright, let\u2019s First, power-cycle the Okay, I\u2019ll walk First, reboot your First, restart your First, check the basics: First, restart Let me walk First, move closer First, move closer Let me walk First, power First, restart Let me First, move First, restart your router and modem by unplugging them for First, restart your router and modem by unplugging First, restart Let me walk through First, restart your First, restart your First, restart your router First, restart your",
+    "outcome": "restart_loop",
+    "speech_ms": 9290,
+    "longest_gap_ms": 2800,
+    "stalls": 15,
+    "user_speech_detected": 24,
+    "answer_span_ms": 48840,
+    "cost_usd": 0.30208,
+    "send_lateness_ms": {
+      "p50": 1.006959,
+      "p99": 1.2207711600000002,
+      "max": 8.045709
+    },
+    "ends_mid_sentence": true
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOszTK4nYjxj7J7IxNgjR",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789603563,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}

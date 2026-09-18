@@ -1,0 +1,111 @@
+{
+  "experiment": "pause_sweep",
+  "turnprobe_version": "0.1.0",
+  "started": "2026-09-14T19:53:54.871243-07:00",
+  "config": {
+    "system": "openai_live",
+    "settings": [
+      "default:"
+    ],
+    "pauses": [
+      300,
+      600,
+      900,
+      1500,
+      2500
+    ],
+    "reps": 1,
+    "stimuli": [
+      "booking",
+      "phone",
+      "capital",
+      "reservation",
+      "weather",
+      "remind",
+      "egg",
+      "router",
+      "address",
+      "gate",
+      "order",
+      "cancel"
+    ],
+    "tts": "openai",
+    "voice": null,
+    "voices": [
+      "coral",
+      "ash"
+    ],
+    "model": null,
+    "concurrency": 3,
+    "out": "runs",
+    "seed": 7,
+    "budget_usd": 2.0
+  },
+  "tts": {
+    "provider": "openai",
+    "voice": "coral,ash"
+  },
+  "stimuli": {
+    "booking": {
+      "kind": "incomplete",
+      "a": "I'd like to book a table for",
+      "b": "four people at seven tonight."
+    },
+    "phone": {
+      "kind": "dictation",
+      "a": "Sure, my phone number is four one five,",
+      "b": "five five five, zero one nine two."
+    },
+    "capital": {
+      "kind": "incomplete",
+      "a": "Can you tell me what the capital of",
+      "b": "Australia is?"
+    },
+    "reservation": {
+      "kind": "complete",
+      "a": "I need to change my reservation.",
+      "b": "It's under the name Jordan."
+    },
+    "weather": {
+      "kind": "incomplete",
+      "a": "What's the weather going to be like in",
+      "b": "Seattle this weekend?"
+    },
+    "remind": {
+      "kind": "incomplete",
+      "a": "Can you remind me to call my mom when I get",
+      "b": "home from work?"
+    },
+    "egg": {
+      "kind": "incomplete",
+      "a": "How long should I boil an egg if I want the yolk",
+      "b": "still a little runny?"
+    },
+    "router": {
+      "kind": "incomplete",
+      "a": "So what I'm trying to figure out is",
+      "b": "whether I need a new router."
+    },
+    "address": {
+      "kind": "dictation",
+      "a": "The delivery address is fourteen twenty eight Elm Street,",
+      "b": "Springfield, zip code six two seven oh four."
+    },
+    "gate": {
+      "kind": "dictation",
+      "a": "The gate code is four seven seven one,",
+      "b": "then the pound key."
+    },
+    "order": {
+      "kind": "complete",
+      "a": "My order hasn't arrived yet.",
+      "b": "It was supposed to come on Tuesday."
+    },
+    "cancel": {
+      "kind": "complete",
+      "a": "I want to cancel my subscription.",
+      "b": "The premium one, not the basic plan."
+    }
+  },
+  "trials_planned": 120
+}

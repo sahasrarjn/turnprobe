@@ -1,0 +1,98 @@
+{
+  "trial_id": "t0046",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -12.0,
+  "rep": 2,
+  "started": "2026-09-16T22:16:47.560033-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7954.824834
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        4740.0,
+        5060.0
+      ],
+      [
+        7950.0,
+        12800.0
+      ],
+      [
+        13420.0,
+        16260.0
+      ],
+      [
+        16780.0,
+        19730.0
+      ],
+      [
+        20140.0,
+        22750.0
+      ],
+      [
+        23120.0,
+        28170.0
+      ],
+      [
+        28770.0,
+        32140.0
+      ],
+      [
+        32600.0,
+        34830.0
+      ],
+      [
+        35390.0,
+        40900.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Mm-hmm. Sure thing. First, turn off Wi-Fi on your device, wait five seconds, then turn it back on. If it still drops, restart your router by unplugging it, wait about 30 seconds, then plug it back in. After it finishes rebooting, reconnect your device. Next, forget the network in your Wi-Fi settings, then rejoin it and re-enter the password. After that, move closer to the router to rule out signal issues, and if possible, test another device. And finally, if it keeps happening, check for router firmware updates, or call your internet provider.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 29410,
+    "longest_gap_ms": 620,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 32950,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.178084,
+      "p99": 2.1158339,
+      "max": 2.99175,
+      "spikes": [],
+      "send_call_max_ms": 2.8
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630740,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "trial_id": "t0042",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "coral",
+  "level_db": -12.0,
+  "rep": 4,
+  "started": "2026-09-16T22:16:47.560017-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6900.0,
+    "model.onset": 7975.59875
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        7970.0,
+        8240.0
+      ],
+      [
+        8640.0,
+        14610.0
+      ],
+      [
+        15010.0,
+        16080.0
+      ],
+      [
+        16930.0,
+        19470.0
+      ],
+      [
+        20440.0,
+        23030.0
+      ],
+      [
+        23500.0,
+        27110.0
+      ],
+      [
+        27560.0,
+        29110.0
+      ],
+      [
+        29760.0,
+        32040.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure! First, restart your phone or laptop and your router. Then, on your device, forget the network, rejoin it, and re-enter the password. Move closer to the router and turn off any VPN. Check for system updates and install them. Finally, if it still drops, reset your router to factory settings and set up the network again fresh. That usually stabilizes things pretty quickly.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 19880,
+    "longest_gap_ms": 970,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 24070,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.325,
+      "p99": 2.12012776,
+      "max": 5.301041,
+      "spikes": [],
+      "send_call_max_ms": 2.1
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630573,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

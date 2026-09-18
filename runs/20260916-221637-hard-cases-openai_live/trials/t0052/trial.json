@@ -1,0 +1,94 @@
+{
+  "trial_id": "t0052",
+  "setting": "default:",
+  "case": "echo",
+  "voice": "ash",
+  "level_db": -12.0,
+  "rep": 2,
+  "started": "2026-09-16T22:16:47.560057-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8199.033166
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8200.0,
+        8590.0
+      ],
+      [
+        9020.0,
+        14430.0
+      ],
+      [
+        14750.0,
+        17960.0
+      ],
+      [
+        18500.0,
+        21650.0
+      ],
+      [
+        22190.0,
+        26440.0
+      ],
+      [
+        26970.0,
+        28850.0
+      ],
+      [
+        29420.0,
+        34790.0
+      ],
+      [
+        35300.0,
+        37190.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your router and modem. Unplug them, wait thirty seconds, and plug them back in. Next, move closer to the router and check if it stabilizes. Then, forget the Wi-Fi network on your device and reconnect. After that, make sure your device's Wi-Fi drivers or system updates are installed. Also, reboot your device itself. Finally, log into your router settings and switch the Wi-Fi channel or band to reduce interference. That usually clears up frequent drops.",
+    "outcome": "clean",
+    "ends_mid_sentence": false,
+    "speech_ms": 25550,
+    "longest_gap_ms": 570,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 28990,
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 1.3195625,
+      "p99": 2.10730805,
+      "max": 4.497541,
+      "spikes": [],
+      "send_call_max_ms": 1.1
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789630938,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

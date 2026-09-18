@@ -1,0 +1,71 @@
+{
+  "trial_id": "t0009",
+  "setting": "default:",
+  "rep": 0,
+  "case": "echo",
+  "started": "2026-09-16T16:14:12.435424-07:00",
+  "rerun": true,
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8158.683
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8150.0,
+        8460.0
+      ],
+      [
+        8800.0,
+        14090.0
+      ],
+      [
+        14630.0,
+        15840.0
+      ]
+    ],
+    "responses": 0,
+    "truncations": 0,
+    "transcript": "Sure. First, restart your modem and router by unplugging them for thirty seconds, then plug them back in. Next, move closer to the router,",
+    "outcome": "went_quiet_mid_sentence",
+    "speech_ms": 6810,
+    "longest_gap_ms": 540,
+    "stalls": 0,
+    "user_speech_detected": 0,
+    "answer_span_ms": 7690,
+    "cost_usd": 0.01167,
+    "send_lateness_ms": {
+      "p50": 0.8371044999999999,
+      "p99": 2.750728250000002,
+      "max": 6.615042
+    },
+    "ends_mid_sentence": true
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 14.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789607676,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

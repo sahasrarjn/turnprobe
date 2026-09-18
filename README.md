@@ -24,6 +24,7 @@ turnprobe runs each trial as a fresh session and:
 | `turnprobe pause-sweep` | How long can you pause mid-sentence before the system takes the turn? Speaks the first half of a sentence, holds an exact silence, speaks the rest. Halves are cut from one continuous TTS take (so the first half sounds unfinished) and verified by transcription. |
 | `turnprobe overlap` | Does a backchannel ("mm-hm") stop the model like a real interruption ("wait, stop")? The user's clip is anchored 2.5 s after the model's audio becomes audible. |
 | `turnprobe fragments` | Control: does semantic VAD judge the whole sentence, or only what came after the last pause? Same sentence whole, second half alone, and split with a pause. |
+| `turnprobe hard-cases` | Situations where listening while talking can go wrong: the model's own audio echoing back from a speakerphone, the caller turning away to talk to someone else, a mid-sentence self-correction ("Tuesday, no, sorry, Thursday"), and a filled pause ("um... hang on"). A few trials per case, to find out whether a failure happens at all. |
 
 ## Results snapshot (gpt-realtime-2.1)
 
@@ -64,6 +65,13 @@ runs/<run>/trials/<id>/audio.mp3    in the release zip, same layout
 | `20260913-225604-fragments-openai` | gpt-realtime-2.1 | fragments control | 48 | $0.69 |
 | `20260913-223544-pause-sweep-openai_live` | gpt-live-1 | pause sweep | 72 | $0.78 |
 | `20260913-223544-overlap-openai_live` | gpt-live-1 | overlap | 21 | $0.51 |
+| `20260914-195354-pause-sweep-openai_live` | gpt-live-1 | pause sweep (12 sentences × 2 voices) | 119 | $1.35 |
+| `20260914-201027-overlap-openai_live` | gpt-live-1 | overlap, voice ash | 14 | $0.28 |
+| `20260914-201445-fragments-openai_live` | gpt-live-1 | fragments control | 24 | $0.23 |
+| `20260916-155723-hard-cases-openai_live` | gpt-live-1 | hard cases, first pass (4 cases, voice ash) | 13 | $0.22 |
+| `20260916-160415-hard-cases-openai` | gpt-realtime-2.1 | hard cases, first pass (server_vad) | 13 | $1.31 |
+| `20260916-221637-hard-cases-openai_live` | gpt-live-1 | echo levels + correction variants, 2 voices | 62 | $1.17 |
+| `20260916-221657-hard-cases-openai` | gpt-realtime-2.1 | echo levels + correction variants, 2 voices | 62 | $7.24 |
 | `calibration/` | mock | harness calibration | – | $0 |
 
 Notes on the data, so nothing surprises you:
@@ -71,6 +79,9 @@ Notes on the data, so nothing surprises you:
 - **v1 repeats are not independent.** Identical audio sent to a near-deterministic classifier gives near-identical results; v1's 3 repeats per condition are effectively 1. v2 uses sentence and voice variety instead.
 - **v2 had a network outage** partway through. Failed trials were re-run in place (rows marked `"rerun": true`; their `cost_usd` includes both attempts). 11 trials that hit the re-run budget remain `error`. The post's analysis also excludes trials where the audio pacer fell more than 20 ms behind (`send_lateness_ms.p99 > 20`, 6 trials, all just before the outage).
 - **GPT-Live cost** is estimated from session length ($0.05/min); the API did not report billed seconds before close.
+- **Echo trials on gpt-realtime cost about 4× a normal trial**, because the model restarts its answer over and over. In `20260916-221657-hard-cases-openai` the $7 cap stopped 18 of 62 trials (rows marked `skipped_budget`); the grid is shuffled, so the gaps fall at random.
+- **The "time" correction variant is a flawed stimulus.** In "a table for four on Friday at six, no, wait, make that eight", both models mostly read "eight" as the party size rather than the time. Treat that variant as ambiguous rather than as a turn-taking result.
+- **Six GPT-Live trials in the first hard-cases pass were re-run** after the sender fell behind real time (network, not the harness: the sender now records where it fell behind in `send_lateness_ms.spikes`).
 
 ## Reproduce
 
@@ -94,6 +105,9 @@ uv run turnprobe fragments --system openai --model gpt-realtime-2.1 \
 uv run turnprobe pause-sweep --system openai_live --setting default: --tts openai --voice coral \
   --pauses 300,600,900,1200,1800,2500 --reps 3 --concurrency 3
 
+uv run turnprobe hard-cases --system openai_live --setting default: --voices coral,ash \
+  --cases echo,echo_ctrl,correction --echo-levels=-24,-18,-12 --variants day,digit --reps 5 --budget-usd 2
+
 uv run turnprobe report runs/<run>      # static HTML report with charts and per-trial audio
 uv run turnprobe reanalyze runs/<run>   # re-score saved trials with current analysis code
 uv run turnprobe rerun runs/<run> --dry-run   # find trials affected by a harness fix
@@ -107,10 +121,13 @@ Every run takes `--budget-usd`: no new trial starts once estimated spend (from p
 src/turnprobe/session.py        real-time pacer, trial clock, reactive fixture scripts
 src/turnprobe/playout.py        emulated client speaker: scheduling, flush, played-ms accounting
 src/turnprobe/adapters/         openai_realtime (Realtime API), openai_live (GPT-Live), mock (calibration)
-src/turnprobe/experiments/      pause_sweep, overlap, fragments, runner, reanalyze, rerun
+src/turnprobe/experiments/      pause_sweep, overlap, fragments, hard_cases, runner, reanalyze, rerun
 src/turnprobe/labels.py         offline speech segmentation of the model channel
 src/turnprobe/tts.py            stimulus synthesis with continuous-take splitting and transcript verification
-scripts/build_post1_data.py     builds the blog post's chart data and audio clips from the runs
+scripts/build_post1_data.py     builds post 1's chart data and audio clips from the runs
+scripts/build_post2_data.py     the same for post 2 (paired clips: same prompt on both models)
+scripts/make_x_videos.py        renders post 1's traces as captioned videos for an X thread
+scripts/make_x_videos2.py       the same for post 2's paired clips (one model after the other)
 ```
 
 ## License

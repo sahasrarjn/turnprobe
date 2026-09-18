@@ -1,0 +1,85 @@
+{
+  "trial_id": "t0008",
+  "setting": "default:",
+  "clip": "yeah",
+  "offset_ms": 2500,
+  "rep": 1,
+  "started": "2026-09-14T20:10:27.242220-07:00",
+  "marks": {
+    "Q.start": 500.0,
+    "Q.end": 6880.0,
+    "model.onset": 8058.486875,
+    "X.start": 10558.5,
+    "X.end": 10928.5
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        8050.0,
+        8330.0
+      ],
+      [
+        8720.0,
+        11910.0
+      ],
+      [
+        12660.0,
+        14610.0
+      ],
+      [
+        15330.0,
+        20490.0
+      ],
+      [
+        20830.0,
+        27030.0
+      ],
+      [
+        27690.0,
+        33700.0
+      ]
+    ],
+    "kind": "backchannel",
+    "outcome": "kept_talking",
+    "correct": true,
+    "detect_ms": null,
+    "stop_latency_ms": null,
+    "talk_over_ms": 370.0,
+    "reply_gap_ms": null,
+    "responses_after_overlap": 0,
+    "answer_text": "",
+    "reply_text": "",
+    "cost_usd": 0.02417,
+    "send_lateness_ms": {
+      "p50": 0.5678544999999999,
+      "p99": 1.2889514999999983,
+      "max": 15.785542
+    }
+  },
+  "adapter": {
+    "system": "openai_live",
+    "model": "gpt-live-1",
+    "voice": null,
+    "usage_seconds": 29.0,
+    "session": {
+      "id": "live_session_redacted",
+      "expires_at": 1789449145,
+      "model": "gpt-live-1",
+      "instructions": "You are a patient tech-support voice assistant. When asked for steps, give one continuous spoken walkthrough of about six steps, roughly thirty seconds long. Do not stop to ask for confirmation. Answer directly; do not delegate.",
+      "audio": {
+        "output": {
+          "voice": "marin"
+        },
+        "format": {
+          "type": "audio/pcm",
+          "rate": 24000
+        }
+      },
+      "delegation": {
+        "type": "client"
+      },
+      "status": "active",
+      "input": []
+    }
+  }
+}

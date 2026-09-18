@@ -1,0 +1,126 @@
+{
+  "trial_id": "t0008",
+  "setting": "server_vad:silence_duration_ms=500",
+  "case": "um_hold",
+  "rep": 1,
+  "started": "2026-09-16T16:04:15.259958-07:00",
+  "marks": {
+    "A.start": 500.0,
+    "A.end": 2105.0,
+    "U.start": 2505.0,
+    "U.end": 5025.0,
+    "N.start": 5925.0,
+    "N.end": 8065.0,
+    "B.start": 9565.0,
+    "B.end": 13295.0
+  },
+  "analysis": {
+    "model_segments": [
+      [
+        9420.0,
+        9670.0
+      ],
+      [
+        17590.0,
+        18000.0
+      ],
+      [
+        18520.0,
+        20890.0
+      ],
+      [
+        21340.0,
+        21870.0
+      ],
+      [
+        22280.0,
+        22850.0
+      ],
+      [
+        23390.0,
+        23780.0
+      ],
+      [
+        24320.0,
+        24700.0
+      ],
+      [
+        25050.0,
+        25430.0
+      ],
+      [
+        25770.0,
+        26170.0
+      ]
+    ],
+    "responses": 3,
+    "truncations": 1,
+    "transcript": "No rush. Take Thanks. Confirming the account number as 4, 7, 7, 1, 2, 2, 9.",
+    "outcome": "cut_in_during_hold",
+    "said_during_hold": "No rush. Take",
+    "said_over_number": "",
+    "reply": "Thanks. Confirming the account number as 4, 7, 7, 1, 2, 2, 9.",
+    "readback_ok": true,
+    "final_gap_ms": 4295,
+    "cost_usd": 0.02673,
+    "send_lateness_ms": {
+      "p50": 1.051292,
+      "p99": 6.994375000000033,
+      "max": 16.002125
+    }
+  },
+  "adapter": {
+    "system": "openai",
+    "model": "gpt-realtime-2.1",
+    "voice": "marin",
+    "turn_detection": {
+      "type": "server_vad",
+      "silence_duration_ms": 500
+    },
+    "session": {
+      "type": "realtime",
+      "object": "realtime.session",
+      "id": "sess_EOt2TaHrZxQ75AdNeQNPf",
+      "model": "gpt-realtime-2.1",
+      "output_modalities": [
+        "audio"
+      ],
+      "instructions": "You are a customer support voice assistant. When the caller gives an account number, read it back digit by digit to confirm. Keep replies short.",
+      "tools": [],
+      "tool_choice": "auto",
+      "max_output_tokens": "inf",
+      "tracing": null,
+      "truncation": "auto",
+      "prompt": null,
+      "expires_at": 1789603749,
+      "audio": {
+        "input": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "transcription": null,
+          "noise_reduction": null,
+          "turn_detection": {
+            "type": "server_vad",
+            "threshold": 0.5,
+            "prefix_padding_ms": 300,
+            "silence_duration_ms": 500,
+            "idle_timeout_ms": null,
+            "create_response": true,
+            "interrupt_response": true
+          }
+        },
+        "output": {
+          "format": {
+            "type": "audio/pcm",
+            "rate": 24000
+          },
+          "voice": "marin",
+          "speed": 1.0
+        }
+      },
+      "include": null
+    }
+  }
+}
