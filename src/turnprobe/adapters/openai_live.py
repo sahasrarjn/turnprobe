@@ -94,6 +94,7 @@ class OpenAILive(Adapter):
                     if t == "session.started":
                         self.session = ev.get("session")
                         self._started.set()
+                        ev = {**ev, "session": self._scrub(self.session)}
                     elif t in ("session.usage.updated", "session.closed"):
                         usage = ev.get("usage") or ev
                         secs = usage.get("seconds")
@@ -122,6 +123,12 @@ class OpenAILive(Adapter):
             except Exception:
                 self._reader.cancel()
 
+    @staticmethod
+    def _scrub(session: dict | None) -> dict | None:
+        """Drop the server's session id before it reaches saved trials. It identifies one ended
+        session and is no use to a reader, and its shape trips secret scanners."""
+        return None if session is None else {k: v for k, v in session.items() if k != "id"}
+
     def describe(self) -> dict:
         return {"system": self.name, "model": self.model, "voice": self.voice,
-                "usage_seconds": self.usage_seconds, "session": self.session}
+                "usage_seconds": self.usage_seconds, "session": self._scrub(self.session)}
