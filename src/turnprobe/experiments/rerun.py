@@ -17,7 +17,7 @@ import soundfile as sf
 from ..tts import make_tts, synth_clip, synth_split
 from .runner import save_trial, trial_cost
 
-GRID_KEYS = ("setting", "stimulus", "kind", "voice", "pause_ms", "rep", "clip", "offset_ms", "condition")
+GRID_KEYS = ("setting", "stimulus", "kind", "voice", "pause_ms", "rep", "clip", "offset_ms", "condition", "case", "variant", "level_db")
 
 
 def ended_early(run_dir: Path) -> list[str]:
@@ -61,6 +61,13 @@ async def rerun(run_dir: Path, trial_ids: list[str], concurrency: int = 2, budge
         question = synth_clip(tts, mod.QUESTION, mod.SR)
         clips = {c: synth_clip(tts, mod.CLIPS[c]["text"], mod.SR) for c in ocfg.clips}
         run_one = lambda g: mod.run_trial(g, ocfg, question, clips)
+    elif exp == "hard_cases":
+        from . import hard_cases as mod
+        hcfg = mod.HardCasesConfig(**cfg)
+        scratch = run_dir / "rerun-stimuli"
+        (scratch / "stimuli").mkdir(parents=True, exist_ok=True)
+        clips = await mod.make_clips(hcfg, scratch)  # cached TTS: the same clips as the original run
+        run_one = lambda g: mod.run_trial(g, hcfg, clips)
     elif exp == "fragments":
         from . import fragments as mod
         fcfg = mod.FragmentsConfig(**cfg)

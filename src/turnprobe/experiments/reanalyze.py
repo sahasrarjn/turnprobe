@@ -15,6 +15,8 @@ def reanalyze(run_dir: str | Path) -> int:
     run = json.loads((run_dir / "run.json").read_text())
     if run["experiment"] == "overlap":
         from .overlap import analyze
+    elif run["experiment"] == "hard_cases":
+        from .hard_cases import analyze
     else:
         from .pause_sweep import analyze
     old = {json.loads(l)["trial_id"]: json.loads(l) for l in (run_dir / "summary.jsonl").read_text().splitlines() if l.strip()}

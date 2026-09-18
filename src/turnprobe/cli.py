@@ -63,6 +63,21 @@ def main(argv: list[str] | None = None) -> int:
     fr.add_argument("--out", default="runs")
     fr.add_argument("--budget-usd", type=float, default=None)
 
+    hc = sub.add_parser("hard-cases", help="echo, side talk, self-correction, 'um' holds: small existence tests")
+    hc.add_argument("--system", required=True, choices=["mock", "openai", "openai_live"])
+    hc.add_argument("--setting", action="append", required=True)
+    hc.add_argument("--cases", default="all", help="comma list from: echo, echo_ctrl, side_talk, correction, um_hold")
+    hc.add_argument("--reps", type=int, default=3)
+    hc.add_argument("--tts", default="openai", choices=["say", "openai"])
+    hc.add_argument("--voice", default="ash")
+    hc.add_argument("--voices", help="comma list of caller voices; overrides --voice")
+    hc.add_argument("--echo-levels", default="-12", help="comma list of echo gains in dB (echo case)")
+    hc.add_argument("--variants", default="day", help="comma list of correction variants: day, time, digit")
+    hc.add_argument("--model")
+    hc.add_argument("--concurrency", type=int, default=1)
+    hc.add_argument("--out", default="runs")
+    hc.add_argument("--budget-usd", type=float, default=None)
+
     rr = sub.add_parser("rerun", help="re-run selected trials in place (e.g. after a harness fix)")
     rr.add_argument("run_dir")
     rr.add_argument("--trials", help="comma list of trial ids; default: auto-detect trials that ended early")
@@ -90,14 +105,16 @@ def main(argv: list[str] | None = None) -> int:
         if ids and not args.dry_run:
             spent = asyncio.run(rerun(run_dir, ids, concurrency=args.concurrency, budget_usd=args.budget_usd))
             print(f"re-run spend ${spent:.2f}")
-            print(build_report(run_dir))
+            if json.loads((run_dir / "run.json").read_text())["experiment"] != "hard_cases":
+                print(build_report(run_dir))
         return 0
 
     if args.cmd == "reanalyze":
         from .experiments.reanalyze import reanalyze
 
         print(f"re-scored {reanalyze(args.run_dir)} trials")
-        print(build_report(args.run_dir))
+        if json.loads((Path(args.run_dir) / "run.json").read_text())["experiment"] != "hard_cases":
+            print(build_report(args.run_dir))
         return 0
 
     if args.cmd == "report":
@@ -128,6 +145,24 @@ def main(argv: list[str] | None = None) -> int:
             print(f"\nharness error: min {min(errors):.1f} ms, max {max(errors):.1f} ms, "
                   f"spread {max(errors) - min(errors):.1f} ms")
         print(build_report(run_dir))
+        return 0
+
+    if args.cmd == "hard-cases":
+        from .experiments.hard_cases import CASES, HardCasesConfig, run_hard_cases
+
+        cases = list(CASES) if args.cases == "all" else args.cases.split(",")
+        hcfg = HardCasesConfig(system=args.system, settings=args.setting, cases=cases, reps=args.reps, tts=args.tts,
+                               voice=None if args.tts == "say" else args.voice, model=args.model,
+                               voices=args.voices.split(",") if args.voices else None,
+                               echo_levels_db=[float(x) for x in args.echo_levels.split(",")],
+                               variants=args.variants.split(","),
+                               concurrency=args.concurrency, out=args.out, budget_usd=args.budget_usd)
+        run_dir = asyncio.run(run_hard_cases(hcfg))
+        for line in (run_dir / "summary.jsonl").read_text().splitlines():
+            r = json.loads(line)
+            said = r.get("said_during_hold") or r.get("said_early") or ""
+            print(f"{r['case']:<11} {r.get('voice')!s:<6} {r.get('level_db', r.get('variant', ''))!s:<6} {r['outcome']:<24} said early/hold: {said[:60]!r:<64} reply: {(r.get('reply') or r.get('transcript') or '')[:90]!r}")
+        print(run_dir)
         return 0
 
     if args.cmd == "fragments":

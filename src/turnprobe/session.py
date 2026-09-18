@@ -150,6 +150,7 @@ class Trial:
         self._cancelled_items: set[str] = set()
         self._sent: list[np.ndarray] = []
         self._lateness: list[float] = []
+        self._send_ms: list[float] = []
         self._stop = False
 
     def _ms(self, t_ns: int) -> float:
@@ -183,6 +184,9 @@ class Trial:
                 "p50": float(np.percentile(late, 50)),
                 "p99": float(np.percentile(late, 99)),
                 "max": float(late.max()),
+                # where the sender fell behind (frame time, ms late) and how long the slowest sends blocked
+                "spikes": [(i * FRAME_MS, round(x, 1)) for i, x in enumerate(self._lateness) if x > 50][:40],
+                "send_call_max_ms": round(max(self._send_ms, default=0.0), 1),
             },
             adapter=self.adapter.describe(),
         )
@@ -203,7 +207,9 @@ class Trial:
             if self.echo:
                 frame = frame + echo_gain * self.playout.render(self.t0_ns + i * frame_ns - echo_ns, n)
             self._sent.append(frame)
+            s0 = time.monotonic_ns()
             await self.adapter.send_audio(to_pcm16(frame))
+            self._send_ms.append((time.monotonic_ns() - s0) / 1e6)
             i += 1
 
     async def _receiver(self) -> None:
